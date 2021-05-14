@@ -1,0 +1,31 @@
+baseURL = "https://viz-redistricting-2020.data.spotlightpa.org"
+languageCode = "en-us"
+title = "Pennsylvania Redistricting"
+
+disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404"]
+buildFuture = true
+
+googleAnalytics = "UA-141126362-3"
+
+[build]
+  writeStats = true
+  noJSConfigInAssets = true
+
+[minify]
+  minifyOutput = true
+
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "src"
+target = "assets/js"
+
+[[module.mounts]]
+source = "node_modules/@fortawesome/fontawesome-free/svgs"
+target = "assets/@fontawesome"
+
+[[module.mounts]]
+source = "static"
+target = "static"
