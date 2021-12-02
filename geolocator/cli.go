@@ -20,7 +20,12 @@ import (
 
 const App = "geolocator"
 
-var logger = log.Default()
+var logger = func() *log.Logger {
+	l := log.Default()
+	l.SetPrefix(App + " ")
+	l.SetFlags(log.LstdFlags | log.Lshortfile)
+	return l
+}()
 
 func CLI(args []string) error {
 	var app appEnv
@@ -59,8 +64,6 @@ func (app *appEnv) ParseArgs(args []string) error {
 	if err := app.initSentry(*sentryDSN); err != nil {
 		return err
 	}
-	logger.SetPrefix(App + " ")
-	logger.SetFlags(log.LstdFlags | log.Lshortfile)
 	return nil
 }
 
