@@ -13,6 +13,7 @@ require (
 	github.com/carlmjohnson/versioninfo v0.21.0
 	github.com/getsentry/sentry-go v0.11.0
 	github.com/paulmach/orb v0.4.0
+	github.com/rs/cors v1.8.0
 )
 
 require (

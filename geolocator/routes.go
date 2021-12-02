@@ -10,13 +10,18 @@ import (
 	"github.com/carlmjohnson/rootdown"
 	"github.com/getsentry/sentry-go"
 	"github.com/paulmach/orb"
+	"github.com/rs/cors"
 )
 
 func (app *appEnv) routes() http.Handler {
+	middleware := []rootdown.Middleware{app.logRoute}
+	if !app.isLambda() {
+		middleware = append(middleware, cors.AllowAll().Handler)
+	}
 	var rr rootdown.Router
-	rr.Get("/api/by-location", app.getByLocation)
-	rr.Get("/api/by-address", app.getByAddress)
-	return app.logRoute(&rr)
+	rr.Get("/api/by-location", app.getByLocation, middleware...)
+	rr.Get("/api/by-address", app.getByAddress, middleware...)
+	return &rr
 }
 
 func (app *appEnv) logRoute(h http.Handler) http.Handler {
