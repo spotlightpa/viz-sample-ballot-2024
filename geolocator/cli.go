@@ -44,10 +44,9 @@ func (app *appEnv) ParseArgs(args []string) error {
 	fl.IntVar(&app.port, "port", -1, "specify a port to use http rather than AWS Lambda")
 	sentryDSN := fl.String("sentry-dsn", "", "DSN `pseudo-URL` for Sentry")
 
+	app.googleMaps = NewMapsClient()
 	fl.Func("api-key", "Google Maps API `key`", func(s string) error {
-		app.googleMaps = requests.
-			URL("https://maps.googleapis.com/maps/api/geocode/json").
-			Param("key", s)
+		app.googleMaps.Param("key", s)
 		return nil
 	})
 
