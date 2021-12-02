@@ -3,6 +3,7 @@ module github.com/spotlightpa/viz-redistricting-2020
 go 1.17
 
 require (
+	github.com/carlmjohnson/csv v1.20.0
 	github.com/carlmjohnson/exitcode v0.20.2
 	github.com/carlmjohnson/flagext v0.21.0
 	github.com/carlmjohnson/gateway v1.20.7
