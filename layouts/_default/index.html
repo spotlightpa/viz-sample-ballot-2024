@@ -34,7 +34,7 @@
       "ALPINE_VERSION" `"spl-dev"`
     )
     "params" (dict
-      "apiKey" (getenv "GOOGLE_MAPS_API_KEY" | default "xxx")
+      "apiBaseURL" (.Param "api-base-url")
   )}}
   {{ $js := resources.Get "js/main.js" | js.Build $jsOpts }}
   {{ if $minify }}
@@ -68,7 +68,7 @@
 >
   <main
     class="bg-white flex-grow p-1"
-    x-data="map">
+    x-data="app">
     <h1 class="text-black font-bold text-xl">
       <svg
         class="inline-block h-10 w-10 fill-current text-black"
@@ -93,7 +93,7 @@
           bg-yellow
         "
         type="button"
-        @click="locate"
+        @click="byLocation"
       >
         <svg
           class="inline-block h-6 w-6 fill-current text-white"
@@ -123,7 +123,7 @@
           bg-yellow text-g-1
           font-bold tracking-widest uppercase
         "
-        @click="geolocate()"
+        @click="byAddress()"
       >
         <svg
           class="w-6 h-6 fill-current text-white"
@@ -136,9 +136,13 @@
 
 
     <template x-if="error">
-      <div x-text="error"></div>
+      <div class="text-orange font-semibold" x-text="error"></div>
     </template>
-    <div x-text="`lat ${lat}, long ${long}`"></div>
+    <div x-text="`
+      lat ${lat}, long ${long}
+      old house ${oldHouse} new house ${newHouse}
+      old senate ${oldSenate} new senate ${newSenate}
+    `"></div>
 
     <footer>
       <p class="mt-2 text-right">

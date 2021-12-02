@@ -20,20 +20,27 @@ const locate = () =>
     navigator.geolocation.getCurrentPosition(resolve, reject)
   );
 
-Alpine.data("map", () => {
+Alpine.data("app", () => {
   return {
-    lat: null,
-    long: null,
+    lat: 40.26444,
+    long: -76.88375,
+    oldHouse: "103",
+    newHouse: "103",
+    oldSenate: "15",
+    newSenate: "15",
+    address: "",
+    error: null,
+
     isLoading: false,
     recentlyChanged: false,
-    error: null,
-    address: "",
 
     init() {
+      let timeoutID = null;
       this.$watch("isLoading", (val) => {
         if (val) {
           this.recentlyChanged = true;
-          window.setTimeout(() => {
+          window.clearTimeout(timeoutID);
+          timeoutID = window.setTimeout(() => {
             this.recentlyChanged = false;
           }, 1000);
         }
@@ -44,27 +51,67 @@ Alpine.data("map", () => {
       return this.isLoading || this.recentlyChanged;
     },
 
-    async geolocate() {
+    async byAddress() {
       if (this.isLoading || !this.address) {
         return;
       }
-      this.isLoading = true;
-      let { address } = this;
-      if (!/PA|Pennsylvania/.exec(address)) {
-        address += ", PA";
+      return this.callAPI(
+        "/api/by-address?address=" + encodeURIComponent(this.address)
+      );
+    },
+
+    async byLocation() {
+      if (this.isLoading) {
+        return;
       }
-      await fetch(
-        `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${params.apiKey}`
-      )
+
+      try {
+        let { coords } = await locate();
+        this.lat = coords.latitude;
+        this.long = coords.longitude;
+      } catch (e) {
+        this.error = e;
+        return;
+      }
+      return this.callAPI(
+        "/api/by-location?lat=" +
+          encodeURIComponent(this.lat) +
+          "&long=" +
+          encodeURIComponent(this.long)
+      );
+    },
+    async callAPI(path) {
+      this.isLoading = true;
+      await fetch(params.apiBaseURL + path)
         .then((rsp) => rsp.json())
         .then((json) => {
           if (json.error_message) {
             throw Error(json.error_message);
           }
-          this.address = json.results[0].formatted_address;
-          let { lat, lng } = json.results[0].geometry.location;
-          this.lat = lat;
-          this.long = lng;
+          this.error = null;
+          let {
+            address,
+            lat,
+            long,
+            old_house,
+            new_house,
+            old_senate,
+            new_senate,
+          } = json;
+          this.address = address || this.address;
+          this.lat = lat || this.lat;
+          this.long = long || this.long;
+          this.oldHouse = old_house || this.oldHouse;
+          this.newHouse = new_house || this.newHouse;
+          this.oldSenate = old_senate || this.oldSenate;
+          this.newSenate = new_senate || this.newSenate;
+          if (
+            ![old_house, new_house, old_senate, new_senate].every(
+              (item) => !!item
+            )
+          ) {
+            throw new Error("District could not be found.");
+          }
         })
         .catch((e) => {
           this.error = e;
@@ -72,16 +119,6 @@ Alpine.data("map", () => {
         .finally(() => {
           this.isLoading = false;
         });
-    },
-
-    async locate() {
-      try {
-        let { coords } = await locate();
-        this.lat = coords.latitude;
-        this.long = coords.longitude;
-      } catch (e) {
-        this.error = e;
-      }
     },
 
     map() {
