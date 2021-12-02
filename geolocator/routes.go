@@ -47,8 +47,8 @@ func (app *appEnv) replyErr(w http.ResponseWriter, r *http.Request, err error) {
 	code := resperr.StatusCode(err)
 	msg := resperr.UserMessage(err)
 	app.replyJSON(code, w, r, struct {
-		Status  int    `json:"status"`
-		Message string `json:"message"`
+		Status       int    `json:"status"`
+		ErrorMessage string `json:"error_message"`
 	}{
 		code,
 		msg,
