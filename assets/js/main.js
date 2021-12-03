@@ -9,12 +9,6 @@ import * as L from "leaflet";
 
 import * as params from "@params";
 
-initFrameAndPoll();
-
-onLoad(() => {
-  addGAListeners();
-});
-
 const locate = () =>
   new Promise((resolve, reject) =>
     navigator.geolocation.getCurrentPosition(resolve, reject)
@@ -173,3 +167,9 @@ Alpine.data("map", () => {
 });
 
 Alpine.start();
+
+initFrameAndPoll();
+
+onLoad(() => {
+  addGAListeners();
+});
