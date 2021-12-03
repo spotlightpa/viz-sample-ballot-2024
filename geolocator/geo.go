@@ -51,10 +51,14 @@ func geojson2Map(b []byte) Map {
 		if len(poly) < 1 {
 			panic(name)
 		}
+		bound := poly[0].Bound()
+		for _, ring := range poly[1:] {
+			bound = bound.Union(ring.Bound())
+		}
 		ds[i] = District{
 			name:    name,
 			Polygon: poly,
-			Bound:   poly.Bound(),
+			Bound:   bound,
 		}
 	}
 	return ds
@@ -73,6 +77,14 @@ func pointInPoly(p orb.Point, bound orb.Bound, poly orb.Polygon) bool {
 	if !bound.Contains(p) {
 		return false
 	}
-
-	return planar.PolygonContains(poly, p)
+	contained := false
+	for _, ring := range poly {
+		if planar.RingContains(ring, p) {
+			if ring.Orientation() == orb.CCW {
+				return false
+			}
+			contained = true
+		}
+	}
+	return contained
 }
