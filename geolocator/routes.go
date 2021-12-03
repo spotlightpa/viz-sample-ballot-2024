@@ -76,7 +76,7 @@ func (app *appEnv) getByLocation(w http.ResponseWriter, r *http.Request) {
 	lat, _ := strconv.ParseFloat(q.Get("lat"), 64)
 	long, _ := strconv.ParseFloat(q.Get("long"), 64)
 
-	w.Header().Set("Cache-Control", "public, max-age=3600")
+	w.Header().Set("Cache-Control", "public, max-age=3600, s-maxage=0")
 	app.replyJSON(http.StatusOK, w, r, NewLocationInfo(lat, long))
 }
 
@@ -106,7 +106,7 @@ func (app *appEnv) getByAddress(w http.ResponseWriter, r *http.Request) {
 	long := result.Geometry.Location.Lng
 	lat := result.Geometry.Location.Lat
 
-	w.Header().Set("Cache-Control", "public, max-age=3600")
+	w.Header().Set("Cache-Control", "public, max-age=3600, s-maxage=0")
 	app.replyJSON(http.StatusOK, w, r, struct {
 		Address string  `json:"address"`
 		Lat     float64 `json:"lat"`
