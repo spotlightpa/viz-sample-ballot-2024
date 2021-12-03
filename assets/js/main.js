@@ -20,14 +20,40 @@ const locate = () =>
     navigator.geolocation.getCurrentPosition(resolve, reject)
   );
 
+Alpine.store("state", {
+  oldHouse: "103",
+  newHouse: "103",
+  oldSenate: "15",
+  newSenate: "15",
+
+  lat: 40.26444,
+  long: -76.88375,
+
+  get latLong() {
+    return [this.lat, this.long];
+  },
+
+  update(json) {
+    let { address, lat, long, old_house, new_house, old_senate, new_senate } =
+      json;
+
+    this.address = address || this.address;
+    this.lat = lat || this.lat;
+    this.long = long || this.long;
+    this.oldHouse = old_house || this.oldHouse;
+    this.newHouse = new_house || this.newHouse;
+    this.oldSenate = old_senate || this.oldSenate;
+    this.newSenate = new_senate || this.newSenate;
+    if (
+      ![old_house, new_house, old_senate, new_senate].every((item) => !!item)
+    ) {
+      throw new Error("District could not be found.");
+    }
+  },
+});
+
 Alpine.data("app", () => {
   return {
-    lat: 40.26444,
-    long: -76.88375,
-    oldHouse: "103",
-    newHouse: "103",
-    oldSenate: "15",
-    newSenate: "15",
     address: "",
     error: null,
 
@@ -67,8 +93,8 @@ Alpine.data("app", () => {
 
       try {
         let { coords } = await locate();
-        this.lat = coords.latitude;
-        this.long = coords.longitude;
+        this.$store.state.lat = coords.latitude;
+        this.$store.state.long = coords.longitude;
       } catch (e) {
         this.error = e;
         return;
@@ -89,29 +115,7 @@ Alpine.data("app", () => {
             throw Error(json.error_message);
           }
           this.error = null;
-          let {
-            address,
-            lat,
-            long,
-            old_house,
-            new_house,
-            old_senate,
-            new_senate,
-          } = json;
-          this.address = address || this.address;
-          this.lat = lat || this.lat;
-          this.long = long || this.long;
-          this.oldHouse = old_house || this.oldHouse;
-          this.newHouse = new_house || this.newHouse;
-          this.oldSenate = old_senate || this.oldSenate;
-          this.newSenate = new_senate || this.newSenate;
-          if (
-            ![old_house, new_house, old_senate, new_senate].every(
-              (item) => !!item
-            )
-          ) {
-            throw new Error("District could not be found.");
-          }
+          this.$store.state.update(json);
         })
         .catch((e) => {
           this.error = e;
@@ -120,20 +124,49 @@ Alpine.data("app", () => {
           this.isLoading = false;
         });
     },
+  };
+});
 
-    map() {
-      L.map(this.$el);
-      // map.createPane("labels");
+Alpine.data("map", () => {
+  return {
+    map: null,
+    layer: null,
+    geojson: "",
 
-      // var CartoDB_VoyagerLabelsUnder = L.tileLayer(
-      //   "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png",
-      //   {
-      //     attribution:
-      //       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      //     subdomains: "abcd",
-      //     maxZoom: 20,
-      //   }
-      // );
+    init() {
+      this.map = L.map(this.$refs.leaflet).setView(
+        [this.$store.state.lat, this.$store.state.long],
+        12
+      );
+      L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png",
+        {
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ' +
+            '&copy; <a href="https://carto.com/attributions">CARTO</a>',
+          subdomains: "abcd",
+          maxZoom: 12,
+        }
+      ).addTo(this.map);
+
+      this.$watch("$store.state.latLong", (latLong) => {
+        this.map.flyTo(latLong);
+      });
+
+      this.$watch("geojson", async (url) => {
+        let geojsonFeature;
+        try {
+          geojsonFeature = await fetch(url).then((rsp) => rsp.json());
+        } catch (e) {
+          this.error = e;
+          return;
+        }
+        if (this.layer) this.layer.remove();
+        let layer = L.geoJSON(geojsonFeature);
+        layer.addTo(this.map);
+        this.map.flyToBounds(layer.getBounds());
+        this.layer = layer;
+      });
     },
   };
 });
