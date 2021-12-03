@@ -145,7 +145,7 @@ Alpine.data("map", () => {
             '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ' +
             '&copy; <a href="https://carto.com/attributions">CARTO</a>',
           subdomains: "abcd",
-          maxZoom: 12,
+          maxZoom: 14,
         }
       ).addTo(this.map);
 
