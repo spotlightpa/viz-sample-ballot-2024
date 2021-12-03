@@ -153,7 +153,10 @@
       <div
         class="w-1/2"
         x-data="map"
-        x-effect="geojson = `/geojson/senate-2001-${$store.state.oldSenate}.json`"
+        x-effect="
+          geojson = `/geojson/senate-2001-${$store.state.oldSenate}.json`;
+          latLong = $store.state.latLong
+        "
       >
         <div class="my-8">
           <div
@@ -165,7 +168,10 @@
       <div
         class="w-1/2"
         x-data="map"
-        x-effect="geojson = `/geojson/senate-2012-${$store.state.newSenate}.json`"
+        x-effect="
+          geojson = `/geojson/senate-2012-${$store.state.newSenate}.json`
+          latLong = $store.state.latLong
+        "
       >
         <div class="my-8">
           <div
@@ -180,7 +186,10 @@
       <div
         class="w-1/2"
         x-data="map"
-        x-effect="geojson = `/geojson/house-2012-${$store.state.newHouse}.json`"
+        x-effect="
+          geojson = `/geojson/house-2012-${$store.state.newHouse}.json`
+          latLong = $store.state.latLong
+        "
       >
         <div class="my-8">
           <div

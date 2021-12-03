@@ -101,9 +101,9 @@ Alpine.data("app", () => {
       }
       return this.callAPI(
         "/api/by-location?lat=" +
-          encodeURIComponent(this.lat) +
+          encodeURIComponent(this.$store.state.lat) +
           "&long=" +
-          encodeURIComponent(this.long)
+          encodeURIComponent(this.$store.state.long)
       );
     },
     async callAPI(path) {
@@ -131,6 +131,7 @@ Alpine.data("map", () => {
   return {
     map: null,
     layer: null,
+    latLong: null,
     geojson: "",
 
     init() {
@@ -149,7 +150,7 @@ Alpine.data("map", () => {
         }
       ).addTo(this.map);
 
-      this.$watch("$store.state.latLong", (latLong) => {
+      this.$watch("latLong", (latLong) => {
         this.map.flyTo(latLong);
       });
 
