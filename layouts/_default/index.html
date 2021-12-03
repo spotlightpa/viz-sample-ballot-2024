@@ -91,7 +91,11 @@
       Pennsylvania has new political maps. See which districts your home is in.
     </p>
 
-    <form class="mt-4 flex gap-1 items-stretch" @submit.prevent>
+    <form
+      class="mt-4 flex gap-1 items-stretch"
+      autocomplete="on"
+      @submit.prevent="document.activeElement.blur()"
+    >
       <button
         class="
           px-4 flex-shrink-0
@@ -118,7 +122,10 @@
           placeholder-g-5 placeholder-opacity-100
           tracking-wider
         "
+        type="search"
+        name="address"
         placeholder="1723 Commonwealth Ave, Harrisburg"
+        autocomplete="postal-code"
         x-model="address"
         autofocus
       >
