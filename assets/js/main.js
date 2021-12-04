@@ -48,7 +48,6 @@ Alpine.store("state", {
 
 Alpine.data("app", () => {
   return {
-    address: "",
     error: null,
 
     isLoading: false,
@@ -72,11 +71,11 @@ Alpine.data("app", () => {
     },
 
     async byAddress() {
-      if (this.isLoading || !this.address) {
+      if (this.isLoading || !this.$store.state.address) {
         return;
       }
       return this.callAPI(
-        "/api/by-address?address=" + encodeURIComponent(this.address)
+        "/api/by-address?address=" + encodeURIComponent(this.$store.state.address)
       );
     },
 
