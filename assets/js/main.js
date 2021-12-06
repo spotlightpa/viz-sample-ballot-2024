@@ -124,27 +124,46 @@ Alpine.data("app", () => {
 Alpine.data("map", () => {
   return {
     map: null,
-    layer: null,
     latLong: null,
+    marker: null,
+    layer: null,
     geojson: "",
+    props: null,
 
     init() {
       this.map = L.map(this.$refs.leaflet).setView(
         [this.$store.state.lat, this.$store.state.long],
         12
       );
+      this.map.createPane("labels");
+      this.map.getPane("labels").style.zIndex = 650;
+      this.map.getPane("labels").style.pointerEvents = "none";
       L.tileLayer(
-        "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png",
+        "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png",
         {
           attribution:
-            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ' +
-            '&copy; <a href="https://carto.com/attributions">CARTO</a>',
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
           subdomains: "abcd",
-          maxZoom: 14,
+          maxZoom: 12,
+        }
+      ).addTo(this.map);
+      L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png",
+        {
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+          subdomains: "abcd",
+          maxZoom: 12,
+          pane: "labels",
         }
       ).addTo(this.map);
 
       this.$watch("latLong", (latLong) => {
+        if (this.marker) this.marker.remove();
+
+        this.marker = L.marker(latLong);
+        this.marker.addTo(this.map);
+
         this.map.flyTo(latLong);
       });
 
@@ -158,9 +177,11 @@ Alpine.data("map", () => {
         }
         if (this.layer) this.layer.remove();
         let layer = L.geoJSON(geojsonFeature);
+        this.layer = layer;
+        this.props = geojsonFeature.features[0].properties;
+        layer.bindPopup(() => `District ${this.props.district}`);
         layer.addTo(this.map);
         this.map.flyToBounds(layer.getBounds());
-        this.layer = layer;
       });
     },
   };
