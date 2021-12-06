@@ -20,8 +20,8 @@ func TestGetDistrict(t *testing.T) {
 	} {
 		t.Run(name, func(t *testing.T) {
 			d := geolocator.House2012Map.District(tc.Point)
-			if tc.Name != d.Name() {
-				t.Fatalf("want %q; got %q", tc.Name, d.Name())
+			if tc.Name != d.GetName() {
+				t.Fatalf("want %q; got %q", tc.Name, d.GetName())
 			}
 		})
 	}
@@ -41,7 +41,7 @@ func BenchmarkGetDistrict(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		tc := cases[i%len(cases)]
 		d := geolocator.House2012Map.District(tc.Point)
-		if d.Name() != tc.Name {
+		if d.GetName() != tc.Name {
 			b.FailNow()
 		}
 	}

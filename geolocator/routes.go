@@ -130,9 +130,9 @@ type LocationInfo struct {
 func NewLocationInfo(lat, long float64) LocationInfo {
 	p := orb.Point{long, lat}
 	return LocationInfo{
-		OldHouse:  House2012Map.District(p).Name(),
-		NewHouse:  House2012Map.District(p).Name(),
-		OldSenate: Senate2001Map.District(p).Name(),
-		NewSenate: Senate2012Map.District(p).Name(),
+		OldHouse:  House2012Map.District(p).GetName(),
+		NewHouse:  House2012Map.District(p).GetName(),
+		OldSenate: Senate2001Map.District(p).GetName(),
+		NewSenate: Senate2012Map.District(p).GetName(),
 	}
 }
