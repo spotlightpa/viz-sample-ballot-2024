@@ -75,7 +75,8 @@ Alpine.data("app", () => {
         return;
       }
       return this.callAPI(
-        "/api/by-address?address=" + encodeURIComponent(this.$store.state.address)
+        "/api/by-address?address=" +
+          encodeURIComponent(this.$store.state.address)
       );
     },
 
