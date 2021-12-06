@@ -27,6 +27,38 @@ Alpine.store("state", {
     return [this.lat, this.long];
   },
 
+  async updateAddress() {
+    if (!this.address) {
+      return;
+    }
+    return this.callAPI(
+      "/api/by-address?address=" + encodeURIComponent(this.address)
+    );
+  },
+
+  async updateLocation([lat, long]) {
+    this.lat = lat;
+    this.long = long;
+
+    return this.callAPI(
+      "/api/by-location?lat=" +
+        encodeURIComponent(this.lat) +
+        "&long=" +
+        encodeURIComponent(this.long)
+    );
+  },
+
+  async callAPI(path) {
+    return fetch(params.apiBaseURL + path)
+      .then((rsp) => rsp.json())
+      .then((json) => {
+        if (json.error_message) {
+          throw Error(json.error_message);
+        }
+        this.update(json);
+      });
+  },
+
   update(json) {
     let { address, lat, long, old_house, new_house, old_senate, new_senate } =
       json;
@@ -71,52 +103,37 @@ Alpine.data("app", () => {
     },
 
     async byAddress() {
-      if (this.isLoading || !this.$store.state.address) {
+      if (this.isLoading) {
         return;
       }
-      return this.callAPI(
-        "/api/by-address?address=" +
-          encodeURIComponent(this.$store.state.address)
-      );
+      this.isLoading = true;
+      return this.$store.state
+        .updateAddress()
+        .then(() => {
+          this.error = null;
+        })
+        .finally(() => {
+          this.isLoading = false;
+        });
     },
 
     async byLocation() {
       if (this.isLoading) {
         return;
       }
-
       try {
         let { coords } = await locate();
-        this.$store.state.lat = coords.latitude;
-        this.$store.state.long = coords.longitude;
+        this.isLoading = true;
+        await this.$store.state.updateLocation([
+          coords.latitude,
+          coords.longitude,
+        ]);
+        this.error = null;
       } catch (e) {
         this.error = e;
-        return;
+      } finally {
+        this.isLoading = false;
       }
-      return this.callAPI(
-        "/api/by-location?lat=" +
-          encodeURIComponent(this.$store.state.lat) +
-          "&long=" +
-          encodeURIComponent(this.$store.state.long)
-      );
-    },
-    async callAPI(path) {
-      this.isLoading = true;
-      await fetch(params.apiBaseURL + path)
-        .then((rsp) => rsp.json())
-        .then((json) => {
-          if (json.error_message) {
-            throw Error(json.error_message);
-          }
-          this.error = null;
-          this.$store.state.update(json);
-        })
-        .catch((e) => {
-          this.error = e;
-        })
-        .finally(() => {
-          this.isLoading = false;
-        });
     },
   };
 });
@@ -131,12 +148,13 @@ Alpine.data("map", () => {
     props: null,
 
     init() {
-      this.map = L.map(this.$refs.leaflet).setView(
-        [this.$store.state.lat, this.$store.state.long],
-        12
-      );
+      this.map = L.map(this.$refs.leaflet, {
+        center: [this.$store.state.lat, this.$store.state.long],
+        scrollWheelZoom: false,
+        zoom: 12,
+      });
       this.map.createPane("labels");
-      this.map.getPane("labels").style.zIndex = 650;
+      this.map.getPane("labels").style.zIndex = 400;
       this.map.getPane("labels").style.pointerEvents = "none";
       L.tileLayer(
         "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png",
@@ -158,10 +176,19 @@ Alpine.data("map", () => {
         }
       ).addTo(this.map);
 
+      const watchDrag = () => {
+        let { lat, lng } = this.marker.getLatLng();
+        if (lat && lng) {
+          this.layer.remove();
+          return this.$store.state.updateLocation([lat, lng]);
+        }
+      };
+
       this.$watch("latLong", (latLong) => {
         if (this.marker) this.marker.remove();
 
-        this.marker = L.marker(latLong);
+        this.marker = L.marker(latLong, { draggable: true, zIndexOffset: 651 });
+        this.marker.on("moveend", watchDrag);
         this.marker.addTo(this.map);
 
         this.map.flyTo(latLong);
@@ -177,6 +204,12 @@ Alpine.data("map", () => {
         }
         if (this.layer) this.layer.remove();
         let layer = L.geoJSON(geojsonFeature);
+        layer.setStyle({
+          weight: 1,
+          color: "#cda52d",
+          fillColor: "#ffcb05",
+          fillOpacity: 0.5,
+        });
         this.layer = layer;
         this.props = geojsonFeature.features[0].properties;
         layer.bindPopup(() => `District ${this.props.district}`);
