@@ -123,6 +123,9 @@ Alpine.data("app", () => {
         .then(() => {
           this.error = null;
         })
+        .catch((e) => {
+          this.error = e;
+        })
         .finally(() => {
           this.isLoading = false;
         });

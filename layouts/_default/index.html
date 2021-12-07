@@ -145,7 +145,7 @@
 
 
     <template x-if="error">
-      <div class="text-orange font-semibold" x-text="error"></div>
+      <div class="text-orange font-semibold" x-text="error.message"></div>
     </template>
     <div x-text="`
       lat ${$store.state.lat}, long ${$store.state.long}
