@@ -30,5 +30,9 @@ source = "node_modules/@fortawesome/fontawesome-free/svgs"
 target = "assets/@fontawesome"
 
 [[module.mounts]]
+source = "node_modules/leaflet/dist"
+target = "assets/@leaflet"
+
+[[module.mounts]]
 source = "static"
 target = "static"
