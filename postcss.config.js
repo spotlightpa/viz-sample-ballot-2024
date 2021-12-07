@@ -5,15 +5,12 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
     return els.tags.concat(els.classes, els.ids);
   },
   safelist: {
-    standard: [
-      // modal bg
-      "is-clipped",
-    ],
+    standard: [],
     deep: [
       // Don't purge attributes
       /disabled|multiple|readonly|rows|type|x-cloak/,
     ],
-    greedy: [],
+    greedy: [/leaflet/],
   },
 });
 

@@ -14,21 +14,16 @@
 
   {{ $cssFonts := resources.Get "css/fonts.css" }}
   {{ $cssTW := resources.Get "css/main.css" }}
-  {{ $css := slice $cssFonts $cssTW | resources.Concat "styles.css" }}
+  {{ $cssLeaflet := resources.Get "@leaflet/leaflet.css" }}
+  {{ $css := slice $cssFonts $cssTW $cssLeaflet | resources.Concat "styles.css" }}
   {{ $css = $css | postCSS }}
   {{ if ne hugo.Environment "development" }}
-    {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+    {{ $css = $css | minify | resources.PostProcess }}
     <style type="text/css">
       {{ $css.Content }}
     </style>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
 {{ else }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
   {{ end }}
   {{ $minify := not site.IsServer }}
   {{ $jsOpts := dict
