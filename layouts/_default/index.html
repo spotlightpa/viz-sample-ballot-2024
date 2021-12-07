@@ -143,10 +143,10 @@
       </button>
     </form>
 
-
-    <template x-if="error">
-      <div class="text-orange font-semibold" x-text="error.message"></div>
-    </template>
+    <div
+      x-show="error && error.message"
+      class="text-orange font-semibold"
+      x-text="error && error.message || error"></div>
 
     <div
       class="flex gap-8"
