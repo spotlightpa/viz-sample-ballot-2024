@@ -1,0 +1,43 @@
+<div class="my-8">
+  <template x-if="props">
+    <div>
+      <h2 class="text-center text-2xl font-semibold" x-template>
+          ${age} ${kind} <br> District ${props.district}
+      </h2>
+      <div
+        class="
+          my-8 h-8 flex justify-between
+          rounded overflow-hidden shadow-sm
+          bg-yellow text-white font-semibold leading-none
+        "
+        :title="`Other: ${props.per_other}`"
+      >
+        <div
+          class="flex-none truncate flex justify-around items-center bg-blue"
+          :style="{width: props.per_dem}"
+          :title="`Democrats: ${props.per_dem}`"
+        >
+          <span x-template>D ${props.per_dem}</span>
+        </div>
+        <div
+          class="flex-none truncate flex justify-around items-center"
+          :style="{width: props.per_other}"
+          :title="`Others: ${props.per_other}`"
+        >
+          <span x-template>O ${props.per_other}</span>
+        </div>
+        <div
+          class="flex-none truncate flex justify-around items-center bg-orange"
+          :style="{width: props.per_rep}"
+          :title="`Republicans: ${props.per_rep}`"
+        >
+          <span x-template>R ${props.per_rep}</span>
+        </div>
+      </div>
+    </div>
+  </template>
+  <div
+    style="height: 300px"
+    x-ref="leaflet"
+  ></div>
+</div>

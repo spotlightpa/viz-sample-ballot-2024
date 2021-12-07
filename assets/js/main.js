@@ -25,6 +25,22 @@ const locate = () =>
     navigator.geolocation.getCurrentPosition(resolve, reject)
   );
 
+Alpine.directive(
+  "template",
+  (el, { expression }, { effect, evaluateLater }) => {
+    let evalStr = expression
+      ? "`" + expression + "`"
+      : "`" + el.innerText.trim() + "`";
+    let evaluate = evaluateLater(evalStr);
+
+    effect(() => {
+      evaluate((value) => {
+        el.innerText = value;
+      });
+    });
+  }
+);
+
 Alpine.store("state", {
   oldHouse: "103",
   newHouse: "103",
@@ -152,8 +168,11 @@ Alpine.data("app", () => {
   };
 });
 
-Alpine.data("map", () => {
+Alpine.data("map", ({ age, kind }) => {
   return {
+    age,
+    kind,
+
     map: null,
     latLong: null,
     marker: null,

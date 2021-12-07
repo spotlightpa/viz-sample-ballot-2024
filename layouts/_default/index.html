@@ -147,62 +147,54 @@
     <template x-if="error">
       <div class="text-orange font-semibold" x-text="error.message"></div>
     </template>
-    <div x-text="`
-      lat ${$store.state.lat}, long ${$store.state.long}
-      old house ${$store.state.oldHouse} new house ${$store.state.newHouse}
-      old senate ${$store.state.oldSenate} new senate ${$store.state.newSenate}
-    `"></div>
 
     <div
       class="flex gap-8"
     >
       <div
         class="w-1/2"
-        x-data="map"
+        x-data="map({ age: 'Old', kind: 'Senate' })"
         x-effect="
           geojson = `/geojson/senate-2001-${$store.state.oldSenate}.json`;
           latLong = $store.state.latLong
         "
       >
-        <div class="my-8">
-          <div
-            style="height: 300px"
-            x-ref="leaflet"
-          ></div>
-        </div>
+        {{ partial "map.html" . }}
       </div>
       <div
         class="w-1/2"
-        x-data="map"
+        x-data="map({ age: 'New', kind: 'Senate' })"
         x-effect="
           geojson = `/geojson/senate-2012-${$store.state.newSenate}.json`
           latLong = $store.state.latLong
         "
       >
-        <div class="my-8">
-          <div
-            style="height: 300px"
-            x-ref="leaflet"
-          ></div>
-        </div>
+        {{ partial "map.html" . }}
       </div>
     </div>
 
-    <div>
+    <div
+      class="flex gap-8"
+    >
       <div
         class="w-1/2"
-        x-data="map"
+        x-data="map({ age: 'New', kind: 'House' })"
         x-effect="
           geojson = `/geojson/house-2012-${$store.state.newHouse}.json`
           latLong = $store.state.latLong
         "
       >
-        <div class="my-8">
-          <div
-            style="height: 300px"
-            x-ref="leaflet"
-          ></div>
-        </div>
+        {{ partial "map.html" . }}
+      </div>
+      <div
+        class="w-1/2"
+        x-data="map({ age: 'New', kind: 'House' })"
+        x-effect="
+          geojson = `/geojson/house-2012-${$store.state.newHouse}.json`
+          latLong = $store.state.latLong
+        "
+      >
+        {{ partial "map.html" . }}
       </div>
     </div>
 
