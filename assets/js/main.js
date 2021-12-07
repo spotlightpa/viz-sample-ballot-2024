@@ -30,16 +30,19 @@ Alpine.directive(
   (el, { expression }, { effect, evaluateLater }) => {
     let evalStr = expression
       ? "`" + expression + "`"
-      : "`" + el.innerText.trim() + "`";
+      : "`" + el.innerHTML.trim() + "`";
     let evaluate = evaluateLater(evalStr);
 
     effect(() => {
       evaluate((value) => {
-        el.innerText = value;
+        el.innerHTML = value;
       });
     });
   }
 );
+
+let commaFormatter = new Intl.NumberFormat("en-US");
+Alpine.magic("comma", () => (n) => commaFormatter.format(n));
 
 Alpine.store("state", {
   oldHouse: "103",

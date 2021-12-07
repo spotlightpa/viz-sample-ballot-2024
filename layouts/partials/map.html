@@ -1,9 +1,18 @@
-<div class="my-8">
+<div class="mt-4">
   <template x-if="props">
     <div>
       <h2 class="text-center text-2xl font-semibold" x-template>
-          ${age} ${kind} <br> District ${props.district}
+          ${age} District ${props.district}
       </h2>
+      <p :class="{'invisible': age === 'New'}" class="mt-4 leading-normal" x-template>
+        The current lawmaker is <b class='font-semibold'>${props.lawmaker_name}</b> (${props.lawmaker_party[0]}).
+      </p>
+      <p class="mt-4 leading-normal" x-template>
+        Of ${$comma(props.party_oth)} registered voters in this district,
+        <b class="text-blue text-semibold">${props.per_dem}</b> are registered <b class="text-blue text-semibold">Democrats</b>,
+        <b class="text-orange text-semibold">${props.per_rep}</b> are registered <b class="text-orange text-semibold">Republicans</b>,
+        and <b class="text-yellow text-semibold">${props.per_other}</b> are unaffiliated or registered for another party.
+      </p>
       <div
         class="
           my-8 h-8 flex justify-between
@@ -32,6 +41,47 @@
           :title="`Republicans: ${props.per_rep}`"
         >
           <span x-template>R ${props.per_rep}</span>
+        </div>
+      </div>
+      <p class="mt-4 leading-normal" x-template>
+        TKTK better language,
+        <b class="text-blue text-semibold">${props.per_asian}</b> are <b class="text-blue text-semibold">Asian</b>,
+        <b class="text-yellow text-semibold">${props.per_black}</b> are <b class="text-yellow text-semibold">Black</b>,
+        <b class="text-orange text-semibold">${props.per_hispanic}</b> are <b class="text-orange text-semibold">Hispanic</b>,
+        <b class="text-green text-semibold">${props.per_white}</b> are <b class="text-green text-semibold">white</b>,
+        ${props.per_mixed} are mixed race,
+        and ${props.per_misc} are another race or did not self-identify.
+      </p>
+      <div
+        class="
+          my-8 h-8 flex justify-start
+          rounded overflow-hidden shadow-sm
+          bg-g-5 text-white font-semibold leading-none
+        "
+      >
+        <div
+          class="flex-none truncate flex justify-around items-center bg-blue"
+          :style="{width: props.per_asian}"
+        >
+          <span x-template>${props.per_asian}</span>
+        </div>
+        <div
+          class="flex-none truncate flex justify-around items-center bg-yellow"
+          :style="{width: props.per_black}"
+        >
+          <span x-template>${props.per_black}</span>
+        </div>
+        <div
+          class="flex-none truncate flex justify-around items-center bg-orange"
+          :style="{width: props.per_hispanic}"
+        >
+          <span x-template>${props.per_hispanic}</span>
+        </div>
+        <div
+          class="flex-none truncate flex justify-around items-center bg-green"
+          :style="{width: props.per_white}"
+        >
+          <span x-template>${props.per_white}</span>
         </div>
       </div>
     </div>

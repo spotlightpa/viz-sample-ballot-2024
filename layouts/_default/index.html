@@ -148,11 +148,15 @@
       class="text-orange font-semibold"
       x-text="error && error.message || error"></div>
 
+    <h2 class="mt-8 text-center text-2xl font-semibold">
+        Pa. State Senate
+    </h2>
+
     <div
-      class="flex gap-8"
+      class="sm:flex gap-8"
     >
       <div
-        class="w-1/2"
+        class="sm:w-1/2"
         x-data="map({ age: 'Old', kind: 'Senate' })"
         x-effect="
           geojson = `/geojson/senate-2001-${$store.state.oldSenate}.json`;
@@ -162,7 +166,7 @@
         {{ partial "map.html" . }}
       </div>
       <div
-        class="w-1/2"
+        class="sm:w-1/2"
         x-data="map({ age: 'New', kind: 'Senate' })"
         x-effect="
           geojson = `/geojson/senate-2012-${$store.state.newSenate}.json`
@@ -173,11 +177,15 @@
       </div>
     </div>
 
+    <h2 class="mt-16 text-center text-2xl font-semibold">
+        Pa. State House
+    </h2>
+
     <div
-      class="flex gap-8"
+      class="sm:flex gap-8"
     >
       <div
-        class="w-1/2"
+        class="sm:w-1/2"
         x-data="map({ age: 'New', kind: 'House' })"
         x-effect="
           geojson = `/geojson/house-2012-${$store.state.newHouse}.json`
@@ -187,7 +195,7 @@
         {{ partial "map.html" . }}
       </div>
       <div
-        class="w-1/2"
+        class="sm:w-1/2"
         x-data="map({ age: 'New', kind: 'House' })"
         x-effect="
           geojson = `/geojson/house-2012-${$store.state.newHouse}.json`
