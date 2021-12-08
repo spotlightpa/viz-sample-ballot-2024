@@ -70,22 +70,9 @@
   <main
     class="bg-white flex-grow p-1"
     x-data="app">
-    <h1 class="text-black font-bold text-xl">
-      <svg
-        class="inline-block h-10 w-10 fill-current text-black"
-        role="img"
-        aria-label="Spotlight PA logo"
-      >
-        <use xlink:href="#logo-svg"></use>
-      </svg>
-      <span>
-        Redistricting
-      </span>
+    <h1 class="text-base font-semibold">
+      Search for your district to see how it would change.
     </h1>
-    <p class="text-sm">
-      Pennsylvania has new political maps. See which districts your home is in.
-    </p>
-
     <form
       class="mt-4 flex gap-1 items-stretch"
       autocomplete="on"
@@ -142,6 +129,10 @@
         </svg>
       </button>
     </form>
+
+    <p class="mt-2 text-sm text-g-6">
+      Address information is not collected or stored. These maps are preliminary and subject to change.
+    </p>
 
     <div
       x-show="error && error.message"

@@ -4,25 +4,25 @@
       <h2 class="text-center text-2xl font-semibold" x-template>
           ${age} District ${props.district}
       </h2>
-      <p :class="{'invisible': age === 'New'}" class="mt-4 leading-normal" x-template>
+      <p :class="{'sm:invisible': age === 'New'}" class="mt-4 leading-normal" x-template>
         The current lawmaker is <b class='font-semibold'>${props.lawmaker_name}</b> (${props.lawmaker_party[0]}).
       </p>
       <p class="mt-4 leading-normal" x-template>
         Of ${$comma(props.party_oth)} registered voters in this district,
-        <b class="text-blue text-semibold">${props.per_dem}</b> are registered <b class="text-blue text-semibold">Democrats</b>,
-        <b class="text-orange text-semibold">${props.per_rep}</b> are registered <b class="text-orange text-semibold">Republicans</b>,
-        and <b class="text-yellow text-semibold">${props.per_other}</b> are unaffiliated or registered for another party.
+        <b class="text-chart-blue text-semibold">${props.per_dem}</b> are registered <b class="text-chart-blue text-semibold">Democrats</b>,
+        <b class="text-chart-red text-semibold">${props.per_rep}</b> are registered <b class="text-chart-red text-semibold">Republicans</b>,
+        and <b class="text-chart-purple text-semibold">${props.per_other}</b> are unaffiliated or registered for another party.
       </p>
       <div
         class="
           my-8 h-8 flex justify-between
           rounded overflow-hidden shadow-sm
-          bg-yellow text-white font-semibold leading-none
+          bg-chart-purple text-white font-semibold leading-none
         "
-        :title="`Other: ${props.per_other}`"
+        aria-hidden="true"
       >
         <div
-          class="flex-none truncate flex justify-around items-center bg-blue"
+          class="flex-none truncate flex justify-around items-center bg-chart-blue"
           :style="{width: props.per_dem}"
           :title="`Democrats: ${props.per_dem}`"
         >
@@ -33,10 +33,9 @@
           :style="{width: props.per_other}"
           :title="`Others: ${props.per_other}`"
         >
-          <span x-template>O ${props.per_other}</span>
         </div>
         <div
-          class="flex-none truncate flex justify-around items-center bg-orange"
+          class="flex-none truncate flex justify-around items-center bg-chart-red"
           :style="{width: props.per_rep}"
           :title="`Republicans: ${props.per_rep}`"
         >
@@ -44,46 +43,61 @@
         </div>
       </div>
       <p class="mt-4 leading-normal" x-template>
-        TKTK better language,
-        <b class="text-blue text-semibold">${props.per_asian}</b> are <b class="text-blue text-semibold">Asian</b>,
-        <b class="text-yellow text-semibold">${props.per_black}</b> are <b class="text-yellow text-semibold">Black</b>,
-        <b class="text-orange text-semibold">${props.per_hispanic}</b> are <b class="text-orange text-semibold">Hispanic</b>,
-        <b class="text-green text-semibold">${props.per_white}</b> are <b class="text-green text-semibold">white</b>,
-        ${props.per_mixed} are mixed race,
-        and ${props.per_misc} are another race or did not self-identify.
+        TKTK Among people who live here, this district has
       </p>
       <div
         class="
-          my-8 h-8 flex justify-start
+          mt-8 h-8 flex justify-start
           rounded overflow-hidden shadow-sm
-          bg-g-5 text-white font-semibold leading-none
+          text-white font-semibold leading-none
         "
+        aria-hidden="true"
       >
+        {{ $rows := slice
+          (slice "per_asian" "Asian: " "bg-chart-red")
+          (slice "per_black" "Black: " "bg-chart-purple")
+          (slice "per_hispanic" "Hispanic: " "bg-chart-blue")
+          (slice "per_white" "White: " "bg-chart-green")
+        }}
+        {{ range $rows }}
+          {{ $prop := index . 0 }}
+          {{ $label := index . 1 }}
+          {{ $class := index . 2 }}
+          <div
+            class="flex-none truncate flex justify-around items-center {{ $class }}"
+            data-prop="{{ $prop }}"
+            data-label="{{ $label }}"
+            :style="{width: props[$el.dataset.prop]}"
+            :title="$el.dataset.label + props[$el.dataset.prop]"
+          ></div>
+        {{ end }}
         <div
-          class="flex-none truncate flex justify-around items-center bg-blue"
-          :style="{width: props.per_asian}"
-        >
-          <span x-template>${props.per_asian}</span>
-        </div>
-        <div
-          class="flex-none truncate flex justify-around items-center bg-yellow"
-          :style="{width: props.per_black}"
-        >
-          <span x-template>${props.per_black}</span>
-        </div>
-        <div
-          class="flex-none truncate flex justify-around items-center bg-orange"
-          :style="{width: props.per_hispanic}"
-        >
-          <span x-template>${props.per_hispanic}</span>
-        </div>
-        <div
-          class="flex-none truncate flex justify-around items-center bg-green"
-          :style="{width: props.per_white}"
-        >
-          <span x-template>${props.per_white}</span>
-        </div>
+          class="flex-grow truncate flex justify-around items-center bg-chart-orange"
+          :title="`Mixed race: ${props.per_mixed} Other: ${props.per_misc}`"
+        ></div>
       </div>
+      <p class="mt-2 flex flex-wrap gap-4 font-semibold leading-none" x-template>
+        <span class="inline-block">
+          <span class="inline-block w-3 h-3 bg-chart-red"></span>
+          <span class="text-chart-red">Asian: ${props.per_asian}</span>
+        </span>
+        <span class="inline-block">
+          <span class="inline-block w-3 h-3 bg-chart-purple"></span>
+          <span class="text-chart-purple">Black: ${props.per_black}</span>
+        </span>
+        <span class="inline-block">
+          <span class="inline-block w-3 h-3 bg-chart-blue"></span>
+          <span class="text-chart-blue">Hispanic: ${props.per_hispanic}</span>
+        </span>
+        <span class="inline-block">
+          <span class="inline-block w-3 h-3 bg-chart-green"></span>
+          <span class="text-chart-green">White: ${props.per_white}</span>
+        </span>
+        <span class="inline-block">
+          <span class="inline-block w-3 h-3 bg-chart-orange"></span>
+          <span class="text-chart-orange">Mixed race: ${props.per_mixed} Other: ${props.per_misc}</span>
+        </span>
+      </p>
     </div>
   </template>
   <div

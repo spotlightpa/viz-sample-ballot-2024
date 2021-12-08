@@ -36,6 +36,11 @@ module.exports = {
       darkblue: "#22416e",
       goldenrod: "#fff1bd",
       cyan: "#e5f6ff",
+      "chart-red": "#d7191c",
+      "chart-orange": "#fdae61",
+      "chart-green": "#abdda4",
+      "chart-blue": "#2b83ba",
+      "chart-purple": "#7b3294",
     },
     extend: {
       boxShadow: {
