@@ -138,11 +138,15 @@
       class="text-orange font-semibold"
       x-text="error && error.message || error"></div>
 
-    {{ partial "promo.html" . }}
-
     <h2 class="mt-8 text-center text-2xl font-semibold">
         Pennsylvania State Senate
     </h2>
+
+    <p class="mt-2">
+      Republicans currently hold X seats in the Pennsylvania Senate while Democrats hold X. The new map does TKTK
+    </p>
+
+    {{ partial "promo.html" . }}
 
     <div
       class="sm:flex gap-8"
@@ -172,6 +176,10 @@
     <h2 class="mt-16 text-center text-2xl font-semibold">
         Pennsylvania State House
     </h2>
+
+    <p class="mt-2">
+      Republicans currently hold X seats in the Pennsylvania House while Democrats hold X. The new map (increase/decreases the number of Republican-majority districts while also increasing/decreasing the numbers of districts that aren’t majority white) TKTK
+    </p>
 
     <section>
       {{ partial "newsletter.html" . }}
