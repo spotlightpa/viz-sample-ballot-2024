@@ -25,6 +25,14 @@ const locate = () =>
     navigator.geolocation.getCurrentPosition(resolve, reject)
   );
 
+const toFloat = (s) => {
+  s = s.replace("%", "");
+  if (isNaN(s)) {
+    return 0;
+  }
+  return parseFloat(s);
+};
+
 Alpine.directive(
   "template",
   (el, { expression }, { effect, evaluateLater }) => {
@@ -171,9 +179,9 @@ Alpine.data("app", () => {
   };
 });
 
-Alpine.data("map", ({ age, kind }) => {
+Alpine.data("map", ({ isPrior, kind }) => {
   return {
-    age,
+    isPrior,
     kind,
 
     map: null,
@@ -182,6 +190,71 @@ Alpine.data("map", ({ age, kind }) => {
     layer: null,
     geojson: "",
     props: null,
+
+    partyClass(name) {
+      return name.startsWith("R")
+        ? "chart-red"
+        : name.startsWith("D")
+        ? "chart-blue"
+        : "chart-purple";
+    },
+    propNames: {
+      per_asian: "an Asian",
+      per_black: "a Black",
+      per_hispanic: "a Hispanic",
+      per_white: "a white",
+      per_mixed: "a mixed-race",
+      per_misc: "an other race",
+
+      per_dem: "Democrats",
+      per_rep: "Republicans",
+      per_other: "third party or unaffiliated",
+    },
+    plurality(names) {
+      if (!this.props) {
+        return "";
+      }
+
+      let max = 0;
+      let maxName = "xxx";
+      for (let name of names) {
+        let val = toFloat(this.props[name]);
+        if (val > max) {
+          max = val;
+          maxName = name;
+        }
+      }
+      return maxName;
+    },
+
+    isMajority(name) {
+      return toFloat(this.props[name]) > 50;
+    },
+
+    get pluralityRace() {
+      return this.plurality([
+        "per_asian",
+        "per_black",
+        "per_hispanic",
+        "per_white",
+        "per_mixed",
+        "per_misc",
+      ]);
+    },
+
+    get majorityRace() {
+      let prop = this.pluralityRace;
+      return this.isMajority(prop) ? prop : "";
+    },
+
+    get pluralityParty() {
+      return this.plurality(["per_dem", "per_rep", "per_other"]);
+    },
+
+    get majorityParty() {
+      let prop = this.pluralityParty;
+      return this.isMajority(prop) ? prop : "";
+    },
 
     init() {
       this.map = L.map(this.$refs.leaflet, {

@@ -147,7 +147,7 @@
     >
       <div
         class="sm:w-1/2"
-        x-data="map({ age: 'Old', kind: 'Senate' })"
+        x-data="map({ isPrior: true, kind: 'Senate' })"
         x-effect="
           geojson = `/geojson/senate-2001-${$store.state.oldSenate}.json`;
           latLong = $store.state.latLong
@@ -157,7 +157,7 @@
       </div>
       <div
         class="sm:w-1/2"
-        x-data="map({ age: 'New', kind: 'Senate' })"
+        x-data="map({ isPrior: false, kind: 'Senate' })"
         x-effect="
           geojson = `/geojson/senate-2012-${$store.state.newSenate}.json`
           latLong = $store.state.latLong
@@ -176,7 +176,7 @@
     >
       <div
         class="sm:w-1/2"
-        x-data="map({ age: 'New', kind: 'House' })"
+        x-data="map({ isPrior: true, kind: 'House' })"
         x-effect="
           geojson = `/geojson/house-2012-${$store.state.newHouse}.json`
           latLong = $store.state.latLong
@@ -186,7 +186,7 @@
       </div>
       <div
         class="sm:w-1/2"
-        x-data="map({ age: 'New', kind: 'House' })"
+        x-data="map({ isPrior: false, kind: 'House' })"
         x-effect="
           geojson = `/geojson/house-2012-${$store.state.newHouse}.json`
           latLong = $store.state.latLong
