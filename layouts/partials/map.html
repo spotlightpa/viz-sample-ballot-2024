@@ -1,4 +1,9 @@
 <div class="mt-4">
+  <div x-show="!props">
+    <h2 class="text-center text-2xl font-semibold">
+        Loading District…
+    </h2>
+  </div>
   <template x-if="props">
     <div>
       <h2 class="text-center text-2xl font-semibold" x-template>
@@ -8,7 +13,7 @@
         The current lawmaker is <b class='font-semibold'>${props.lawmaker_name}</b> (${props.lawmaker_party[0]}).
       </p>
       <p class="mt-4 leading-normal" x-template>
-        Of ${$comma(props.party_oth)} registered voters in this district,
+        Of ${$comma(props.party_total)} registered voters in this district,
         <b class="text-chart-blue text-semibold">${props.per_dem}</b> are registered <b class="text-chart-blue text-semibold">Democrats</b>,
         <b class="text-chart-red text-semibold">${props.per_rep}</b> are registered <b class="text-chart-red text-semibold">Republicans</b>,
         and <b class="text-chart-purple text-semibold">${props.per_other}</b> are unaffiliated or registered for another party.
@@ -76,32 +81,27 @@
           :title="`Mixed race: ${props.per_mixed} Other: ${props.per_misc}`"
         ></div>
       </div>
-      <p class="mt-2 flex flex-wrap gap-4 font-semibold leading-none" x-template>
-        <span class="inline-block">
-          <span class="inline-block w-3 h-3 bg-chart-red"></span>
-          <span class="text-chart-red">Asian: ${props.per_asian}</span>
-        </span>
-        <span class="inline-block">
-          <span class="inline-block w-3 h-3 bg-chart-purple"></span>
-          <span class="text-chart-purple">Black: ${props.per_black}</span>
-        </span>
-        <span class="inline-block">
-          <span class="inline-block w-3 h-3 bg-chart-blue"></span>
-          <span class="text-chart-blue">Hispanic: ${props.per_hispanic}</span>
-        </span>
-        <span class="inline-block">
-          <span class="inline-block w-3 h-3 bg-chart-green"></span>
-          <span class="text-chart-green">White: ${props.per_white}</span>
-        </span>
-        <span class="inline-block">
-          <span class="inline-block w-3 h-3 bg-chart-orange"></span>
-          <span class="text-chart-orange">Mixed race: ${props.per_mixed} Other: ${props.per_misc}</span>
-        </span>
+      <p class="mt-2 flex flex-wrap gap-x-4 gap-y-2 font-semibold leading-none">
+        {{ $rows = slice
+          (slice "chart-red" "Asian: ${props.per_asian}")
+          (slice "chart-purple" "Black: ${props.per_black}")
+          (slice "chart-blue" "Hispanic: ${props.per_hispanic}")
+          (slice "chart-green" "White: ${props.per_white}")
+          (slice "chart-orange" "Mixed race: ${props.per_mixed} Other: ${props.per_misc}")
+        }}
+        {{ range $rows }}
+          <span class="block">
+            <span class="inline-block w-3 h-3 bg-{{ index . 0 }}"></span>
+            <span class="text-{{ index . 0 }} leading-none" x-template>{{ index . 1}}</span>
+          </span>
+        {{ end }}
       </p>
     </div>
   </template>
-  <div
-    style="height: 300px"
-    x-ref="leaflet"
-  ></div>
+  <div class="mt-6 h-96 shadow bg-g-4">
+    <div
+      style="height: 100%"
+      x-ref="leaflet"
+    ></div>
+  </div>
 </div>
