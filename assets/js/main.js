@@ -285,25 +285,29 @@ Alpine.data("map", ({ isPrior, kind }) => {
         }
       ).addTo(this.map);
 
-      const watchDrag = () => {
+      this.marker = L.marker(this.$store.state.latLong, {
+        draggable: true,
+        zIndexOffset: 651,
+      });
+      this.marker.on("moveend", () => {
         let { lat, lng } = this.marker.getLatLng();
         if (lat && lng) {
-          this.layer.remove();
           return this.$store.state.updateLocation([lat, lng]);
         }
-      };
+      });
+      this.marker.addTo(this.map);
 
-      this.$watch("latLong", (latLong) => {
-        if (this.marker) this.marker.remove();
-
-        this.marker = L.marker(latLong, { draggable: true, zIndexOffset: 651 });
-        this.marker.on("moveend", watchDrag);
-        this.marker.addTo(this.map);
-
-        this.map.flyTo(latLong);
+      this.$watch("latLong", ([newLat, newLong]) => {
+        let { lat: oldLat, lng: oldLong } = this.marker.getLatLng();
+        if (oldLat !== newLat || oldLong != newLong) {
+          this.marker.setLatLng(this.latLong);
+          this.map.panTo(this.latLong);
+          this.$nextTick(() => this.map.invalidateSize(true));
+        }
       });
 
       this.$watch("geojson", async (url) => {
+        if (this.layer) this.layer.remove();
         let geojsonFeature;
         try {
           geojsonFeature = await fetch(url).then((rsp) => rsp.json());
@@ -311,7 +315,6 @@ Alpine.data("map", ({ isPrior, kind }) => {
           this.error = e;
           return;
         }
-        if (this.layer) this.layer.remove();
         let layer = L.geoJSON(geojsonFeature);
         layer.setStyle({
           weight: 1,
@@ -324,6 +327,7 @@ Alpine.data("map", ({ isPrior, kind }) => {
         layer.bindPopup(() => `District ${this.props.district}`);
         layer.addTo(this.map);
         this.map.flyToBounds(layer.getBounds());
+        this.$nextTick(() => this.map.invalidateSize(true));
       });
     },
   };
