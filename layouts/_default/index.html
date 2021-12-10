@@ -63,8 +63,8 @@
 {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
 {{ if eq .Kind "home" }}{{ $pageCat = "home "}}{{ end }}
 <body
-  data-ga-label='interactive:redistricting-2020'
-  data-ga-category="interactive"
+  data-ga-label='interactive:viz-redistricting-2020'
+  data-ga-category="interactive:viz-redistricting-2020"
   class="w-screen overflow-x-hidden flex flex-col bg-beige text-g-9 font-rale leading-normal"
 >
   <main
@@ -87,6 +87,7 @@
         "
         type="button"
         @click="byLocation"
+        data-ga-action="find-location"
       >
         <svg
           aria-hidden="true"
@@ -121,6 +122,7 @@
           font-bold tracking-widest uppercase
         "
         @click="byAddress()"
+        data-ga-action="location-search"
       >
         <svg
           aria-hidden="true"
@@ -195,6 +197,7 @@
             $store.state.newHouse = $el.dataset.newHouse;
             $store.state.oldSenate = $el.dataset.oldSenate;
             $store.state.newSenate = $el.dataset.newSenate;
+            $report($event);
           "
           data-lat="{{ .lat }}"
           data-long="{{ .long }}"
@@ -202,6 +205,7 @@
           data-new-house="{{ .newHouse }}"
           data-old-senate="{{ .oldSenate }}"
           data-new-senate="{{ .newSenate }}"
+          data-ga-action="select-location:{{ .name | urlize }}"
         >{{ .name }}</button>
       {{ end }}
     </p>

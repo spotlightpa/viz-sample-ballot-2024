@@ -1,4 +1,7 @@
-<div class="mt-4">
+<div
+  class="mt-4"
+  :data-ga-category="kind"
+>
   <h3
     class="text-center text-lg font-semibold tracking-wider uppercase"
     x-text="isPrior? 'Previously' : 'Now'"
@@ -132,6 +135,7 @@
     <div
       style="height: 384px;"
       x-ref="leaflet"
+      data-ga-action="map-interaction"
     ></div>
   </div>
 </div>

@@ -3,7 +3,7 @@ import Alpine from "alpinejs/src/index.js";
 import { initFrameAndPoll } from "@newswire/frames";
 
 import { onLoad } from "./utils/dom-utils.js";
-import { addGAListeners } from "./utils/google-analytics.js";
+import { addGAListeners, reportClick } from "./utils/google-analytics.js";
 
 import * as L from "leaflet";
 
@@ -51,6 +51,8 @@ Alpine.directive(
 
 let commaFormatter = new Intl.NumberFormat("en-US");
 Alpine.magic("comma", () => (n) => commaFormatter.format(n));
+
+Alpine.magic("report", () => (ev) => void reportClick(ev));
 
 Alpine.store("state", {
   oldHouse: "103",
@@ -155,6 +157,7 @@ Alpine.data("app", () => {
         })
         .finally(() => {
           this.isLoading = false;
+          this.$report({ target: this.$el });
         });
     },
 
@@ -174,6 +177,7 @@ Alpine.data("app", () => {
         this.error = e;
       } finally {
         this.isLoading = false;
+        this.$report({ target: this.$el });
       }
     },
   };
@@ -305,9 +309,10 @@ Alpine.data("map", ({ isPrior, kind }) => {
       });
       this.marker.on("moveend", () => {
         let { lat, lng } = this.marker.getLatLng();
-        if (lat && lng) {
-          return this.$store.state.updateLocation([lat, lng]);
-        }
+        if (!lat || !lng) return;
+
+        this.$store.state.updateLocation([lat, lng]);
+        this.$report({ target: this.$refs.leaflet });
       });
       this.marker.addTo(this.map);
 
