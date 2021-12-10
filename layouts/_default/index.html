@@ -192,7 +192,7 @@
         class="sm:w-1/2"
         x-data="map({ isPrior: true, kind: 'House' })"
         x-effect="
-          geojson = `/geojson/house-2012-${$store.state.newHouse}.json`
+          geojson = `/geojson/house-2012-${$store.state.newHouse}.json`;
           latLong = $store.state.latLong
         "
       >
@@ -202,7 +202,7 @@
         class="sm:w-1/2"
         x-data="map({ isPrior: false, kind: 'House' })"
         x-effect="
-          geojson = `/geojson/house-2012-${$store.state.newHouse}.json`
+          geojson = `/geojson/house-2012-${$store.state.newHouse}.json`;
           latLong = $store.state.latLong
         "
       >
