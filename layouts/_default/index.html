@@ -79,6 +79,7 @@
       @submit.prevent="document.activeElement.blur()"
     >
       <button
+        aria-label="Find my location"
         class="
           px-4 flex-shrink-0
           rounded-l-lg border-2 border-goldenrod
@@ -88,6 +89,7 @@
         @click="byLocation"
       >
         <svg
+          aria-hidden="true"
           class="inline-block h-6 w-6 fill-current text-white"
           role="img"
           aria-label="Spotlight PA logo"
@@ -111,6 +113,7 @@
         x-model="$store.state.address"
       >
       <button
+        aria-label="Search"
         class="
           px-4
           rounded-r-lg border-2 border-goldenrod
@@ -120,6 +123,7 @@
         @click="byAddress()"
       >
         <svg
+          aria-hidden="true"
           class="w-6 h-6 fill-current text-white"
           :class="{ 'animate-spin': isLoadingThrottled }"
         >
