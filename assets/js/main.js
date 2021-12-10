@@ -216,7 +216,7 @@ Alpine.data("map", ({ isPrior, kind }) => {
       }
 
       let max = 0;
-      let maxName = "xxx";
+      let maxName = "";
       for (let name of names) {
         let val = toFloat(this.props[name]);
         if (val > max) {
