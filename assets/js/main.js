@@ -231,6 +231,10 @@ Alpine.data("map", ({ isPrior, kind }) => {
       return toFloat(this.props[name]) > 50;
     },
 
+    isSuperMajority(name) {
+      return toFloat(this.props[name]) > 60;
+    },
+
     get pluralityRace() {
       return this.plurality([
         "per_asian",
@@ -247,6 +251,11 @@ Alpine.data("map", ({ isPrior, kind }) => {
       return this.isMajority(prop) ? prop : "";
     },
 
+    get superMajorityRace() {
+      let prop = this.pluralityRace;
+      return this.isSuperMajority(prop) ? prop : "";
+    },
+
     get pluralityParty() {
       return this.plurality(["per_dem", "per_rep", "per_other"]);
     },
@@ -254,6 +263,11 @@ Alpine.data("map", ({ isPrior, kind }) => {
     get majorityParty() {
       let prop = this.pluralityParty;
       return this.isMajority(prop) ? prop : "";
+    },
+
+    get superMajorityParty() {
+      let prop = this.pluralityParty;
+      return this.isSuperMajority(prop) ? prop : "";
     },
 
     init() {

@@ -26,7 +26,7 @@
       </p>
       <p class="mt-6 leading-normal" x-template>
         In TKTK, of ${$comma(props.party_total)} registered voters in this district,
-        a ${majorityParty? `majority`:`plurality`} were registered
+        a ${superMajorityParty? `supermajority`: majorityParty? `majority`: `plurality`} were registered
         <span class="${
             pluralityParty === 'per_rep'?
             'text-chart-red':
@@ -84,6 +84,8 @@
         Among people who live here, this district has
         <span
           x-text="
+            superMajorityRace?
+            `${propNames[majorityRace]} supermajority`:
             majorityRace?
             `${propNames[majorityRace]} majority`:
             'no race or ethnicity more than 50%'
