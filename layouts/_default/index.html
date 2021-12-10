@@ -70,7 +70,7 @@
   <main
     class="bg-white flex-grow p-1"
     x-data="app">
-    <h1 class="text-lg font-semibold">
+    <h1 class="text-2xl font-semibold">
       Search for your district to see how it would change.
     </h1>
     <form
@@ -146,8 +146,6 @@
       Republicans currently hold X seats in the Pennsylvania Senate while Democrats hold X. The new map does TKTK
     </p>
 
-    {{ partial "promo.html" . }}
-
     <div
       class="sm:flex gap-8"
     >
@@ -173,18 +171,17 @@
       </div>
     </div>
 
+    <section>
+      {{ partial "newsletter.html" . }}
+    </section>
+
     <h2 class="mt-16 text-center text-2xl font-semibold">
-        Pennsylvania State House
+      Pennsylvania State House
     </h2>
 
     <p class="mt-2">
       Republicans currently hold X seats in the Pennsylvania House while Democrats hold X. The new map (increase/decreases the number of Republican-majority districts while also increasing/decreasing the numbers of districts that aren’t majority white) TKTK
     </p>
-
-    <section>
-      {{ partial "newsletter.html" . }}
-    </section>
-
     <div
       class="sm:flex gap-8"
     >
