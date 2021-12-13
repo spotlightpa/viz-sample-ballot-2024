@@ -12,6 +12,8 @@
   {{ partial "header/meta.html" . }}
   {{ partial "header/google-analytics-async.html" . }}
 
+  <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-regular.woff2" crossorigin>
+  <link rel="preload" as="font" href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-600.woff2" crossorigin>
   {{ $cssFonts := resources.Get "css/fonts.css" }}
   {{ $cssTW := resources.Get "css/main.css" }}
   {{ $cssLeaflet := resources.Get "@leaflet/leaflet.css" }}
