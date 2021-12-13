@@ -1,24 +1,16 @@
 <div
   class="mt-4"
-  :data-ga-category="kind"
 >
   <h3
     class="text-center text-lg font-semibold tracking-wider uppercase"
-    x-text="isPrior? 'Previously' : 'Now'"
-  ></h3>
-  <div x-show="!props">
-    <h2 class="text-center text-2xl font-semibold">
-        Loading District…
-    </h2>
-  </div>
+  >{{ cond .prior "Previously" "Now" }}</h3>
   <template x-if="props">
     <div>
       <h2 class="text-center text-2xl font-semibold" x-template>
           District ${props.district}
       </h2>
       <p
-        class="mt-4 leading-normal"
-        :class="!isPrior ? 'hidden sm:block sm:invisible' : ''"
+        class='mt-4 leading-normal {{ cond .prior "" "hidden sm:block sm:invisible" }}'
       >
         The current lawmaker is
         <b

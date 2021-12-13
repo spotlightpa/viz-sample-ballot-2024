@@ -223,23 +223,27 @@
     >
       <div
         class="sm:w-1/2"
-        x-data="map({ isPrior: true, kind: 'Senate' })"
+        x-data="map('oldSenate')"
+        x-init="urlPattern = '/geojson/senate-2001-%%.json'"
         x-effect="
-          geojson = `/geojson/senate-2001-${$store.state.oldSenate}.json`;
+          district = $store.state.oldSenate;
           latLong = $store.state.latLong
         "
+        data-ga-category="old-senate"
       >
-        {{ partial "map.html" . }}
+        {{ partial "map.html" (dict "prior" true) }}
       </div>
       <div
         class="sm:w-1/2"
-        x-data="map({ isPrior: false, kind: 'Senate' })"
+        x-data="map('newSenate')"
+        x-init="urlPattern = '/geojson/senate-2012-%%.json'"
         x-effect="
-          geojson = `/geojson/senate-2012-${$store.state.newSenate}.json`
+          district = $store.state.newSenate;
           latLong = $store.state.latLong
         "
+        data-ga-category="new-senate"
       >
-        {{ partial "map.html" . }}
+        {{ partial "map.html" (dict "prior" false) }}
       </div>
     </div>
 
@@ -259,23 +263,27 @@
     >
       <div
         class="sm:w-1/2"
-        x-data="map({ isPrior: true, kind: 'House' })"
+        x-data="map('oldHouse')"
+        x-init="urlPattern = '/geojson/house-2012-%%.json'"
         x-effect="
-          geojson = `/geojson/house-2012-${$store.state.newHouse}.json`;
+          district = $store.state.oldHouse;
           latLong = $store.state.latLong
         "
+        data-ga-category="old-house"
       >
-        {{ partial "map.html" . }}
+        {{ partial "map.html" (dict "prior" true) }}
       </div>
       <div
         class="sm:w-1/2"
-        x-data="map({ isPrior: false, kind: 'House' })"
+        x-data="map('newHouse')"
+        x-init="urlPattern = '/geojson/house-2012-%%.json'"
         x-effect="
-          geojson = `/geojson/house-2012-${$store.state.newHouse}.json`;
+          district = $store.state.newHouse;
           latLong = $store.state.latLong
         "
+        data-ga-category="new-house"
       >
-        {{ partial "map.html" . }}
+        {{ partial "map.html" (dict "prior" false) }}
       </div>
     </div>
 
@@ -290,15 +298,6 @@
         </svg>
       </p>
     </footer>
-    <datalist>
-      {{ range site.Data.report }}
-        <option
-          x-ref="contact-{{ .County }}"
-          data-mailto="mailto:{{.warden}}<{{.email}}>"
-          data-phone="tel:{{.phone}}"
-        >
-      {{ end }}
-    </datalist>
   </main>
 
   {{ $svgs := dict

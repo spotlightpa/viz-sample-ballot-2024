@@ -1,11 +1,14 @@
 import Alpine from "alpinejs/src/index.js";
-
+import * as L from "leaflet";
 import { initFrameAndPoll } from "@newswire/frames";
 
-import { onLoad } from "./utils/dom-utils.js";
 import { addGAListeners, reportClick } from "./utils/google-analytics.js";
 
-import * as L from "leaflet";
+import * as oldHouse from "data/house-2012.json";
+let newHouse = oldHouse;
+import * as oldSenate from "data/senate-2012.json";
+let newSenate = oldSenate;
+import * as params from "@params";
 
 L.Marker.prototype.options.icon = L.icon({
   iconUrl: "/images/marker-icon.png",
@@ -17,8 +20,6 @@ L.Marker.prototype.options.icon = L.icon({
   tooltipAnchor: [16, -28],
   shadowSize: [41, 41],
 });
-
-import * as params from "@params";
 
 const locate = () =>
   new Promise((resolve, reject) =>
@@ -183,17 +184,26 @@ Alpine.data("app", () => {
   };
 });
 
-Alpine.data("map", ({ isPrior, kind }) => {
-  return {
-    isPrior,
-    kind,
+Alpine.data("map", (propName) => {
+  let propSrc = {
+    oldHouse,
+    newHouse,
+    oldSenate,
+    newSenate,
+  }[propName];
 
+  return {
     map: null,
     latLong: null,
     marker: null,
     layer: null,
-    geojson: "",
-    props: null,
+    propType: null,
+    district: "",
+    urlPattern: "",
+
+    get props() {
+      return !this.district ? {} : propSrc[this.district];
+    },
 
     partyClass(name) {
       return name.startsWith("R")
@@ -325,7 +335,9 @@ Alpine.data("map", ({ isPrior, kind }) => {
         }
       });
 
-      this.$watch("geojson", async (url) => {
+      this.$watch("district", async (district) => {
+        let url = this.urlPattern.replace("%%", district);
+
         if (this.layer) this.layer.remove();
         let geojsonFeature;
         try {
@@ -342,8 +354,8 @@ Alpine.data("map", ({ isPrior, kind }) => {
           fillOpacity: 0.5,
         });
         this.layer = layer;
-        this.props = geojsonFeature.features[0].properties;
-        layer.bindPopup(() => `District ${this.props.district}`);
+        let props = geojsonFeature.features[0].properties;
+        layer.bindPopup(() => `District ${props.district}`);
         layer.addTo(this.map);
         this.map.flyToBounds(layer.getBounds());
         this.$nextTick(() => this.map.invalidateSize(true));
@@ -353,9 +365,5 @@ Alpine.data("map", ({ isPrior, kind }) => {
 });
 
 Alpine.start();
-
+addGAListeners();
 initFrameAndPoll();
-
-onLoad(() => {
-  addGAListeners();
-});
