@@ -169,8 +169,8 @@
           "name" "Lehigh Valley"
           "lat" "40.6076972"
           "long" "-75.4348623"
-          "newHouse" "132"
-          "newSenate" "16"
+          "newHouse" "22"
+          "newSenate" "14"
           "oldHouse" "132"
           "oldSenate" "16"
         )
@@ -185,7 +185,7 @@
         )
         (dict
           "name" "Pittsburgh"
-          "lat" "40.44062479999999"
+          "lat" "40.4406248"
           "long" "-79.9958864"
           "newHouse" "19"
           "newSenate" "42"
@@ -197,7 +197,7 @@
           "lat" "40.7933949"
           "long" "-77.8600012"
           "newHouse" "77"
-          "newSenate" "34"
+          "newSenate" "25"
           "oldHouse" "77"
           "oldSenate" "34"
         )
@@ -225,47 +225,6 @@
       {{ end }}
     </p>
 
-    <h2 class="mt-12 text-center text-2xl font-semibold">
-        Pennsylvania State Senate
-    </h2>
-
-    <p class="mt-2">
-      Republicans currently hold 28 seats in the Pennsylvania Senate while Democrats hold 21. The new map does TKTK
-    </p>
-
-    <div
-      class="mt-8 sm:flex gap-8"
-    >
-      <div
-        class="sm:w-1/2"
-        x-data="map('oldSenate')"
-        x-init="urlPattern = '/geojson/senate-2001-%%.json'"
-        x-effect="
-          district = $store.state.oldSenate;
-          latLong = $store.state.latLong
-        "
-        data-ga-category="old-senate"
-      >
-        {{ partial "map.html" (dict "prior" true) }}
-      </div>
-      <div
-        class="sm:w-1/2"
-        x-data="map('newSenate')"
-        x-init="urlPattern = '/geojson/senate-2012-%%.json'"
-        x-effect="
-          district = $store.state.newSenate;
-          latLong = $store.state.latLong
-        "
-        data-ga-category="new-senate"
-      >
-        {{ partial "map.html" (dict "prior" false) }}
-      </div>
-    </div>
-
-    <section>
-      {{ partial "newsletter.html" . }}
-    </section>
-
     <h2 class="mt-16 text-center text-2xl font-semibold">
       Pennsylvania State House
     </h2>
@@ -273,6 +232,7 @@
     <p class="mt-2">
       Republicans currently hold 113 seats in the Pennsylvania House while Democrats hold 90. The new map (increase/decreases the number of Republican-majority districts while also increasing/decreasing the numbers of districts that aren’t majority white) TKTK
     </p>
+
     <div
       class="mt-8 sm:flex gap-8"
     >
@@ -291,12 +251,53 @@
       <div
         class="sm:w-1/2"
         x-data="map('newHouse')"
-        x-init="urlPattern = '/geojson/house-2012-%%.json'"
+        x-init="urlPattern = '/geojson/house-2021-%%.json'"
         x-effect="
           district = $store.state.newHouse;
           latLong = $store.state.latLong
         "
         data-ga-category="new-house"
+      >
+        {{ partial "map.html" (dict "prior" false) }}
+      </div>
+    </div>
+
+    <section>
+      {{ partial "newsletter.html" . }}
+    </section>
+
+    <h2 class="mt-12 text-center text-2xl font-semibold">
+      Pennsylvania State Senate
+    </h2>
+
+    <p class="mt-2">
+      Republicans currently hold 28 seats in the Pennsylvania Senate while Democrats hold 21. The new map does TKTK
+    </p>
+
+    <div
+      class="mt-8 sm:flex gap-8"
+    >
+      <div
+        class="sm:w-1/2"
+        x-data="map('oldSenate')"
+        x-init="urlPattern = '/geojson/senate-2012-%%.json'"
+        x-effect="
+          district = $store.state.oldSenate;
+          latLong = $store.state.latLong
+        "
+        data-ga-category="old-senate"
+      >
+        {{ partial "map.html" (dict "prior" true) }}
+      </div>
+      <div
+        class="sm:w-1/2"
+        x-data="map('newSenate')"
+        x-init="urlPattern = '/geojson/senate-2021-%%.json'"
+        x-effect="
+          district = $store.state.newSenate;
+          latLong = $store.state.latLong
+        "
+        data-ga-category="new-senate"
       >
         {{ partial "map.html" (dict "prior" false) }}
       </div>

@@ -15,19 +15,22 @@ import (
 var (
 	//go:embed embeds/house-2012.geojson
 	house2012 []byte
-	//go:embed embeds/senate-2001.geojson
-	senate2001 []byte
 	//go:embed embeds/senate-2012.geojson
 	senate2012 []byte
+	//go:embed embeds/house-2021.geojson
+	house2021 []byte
+	//go:embed embeds/senate-2021.geojson
+	senate2021 []byte
 )
 
 var (
-	House2012Map  = geojson2Map(house2012, "embeds/house-2012.gob")
-	Senate2001Map = geojson2Map(senate2001, "embeds/senate-2001.gob")
-	Senate2012Map = geojson2Map(senate2012, "embeds/senate-2012.gob")
+	House2012Map  = geojson2Map(house2012, "embeds/house-2012.gob", false)
+	House2021Map  = geojson2Map(house2021, "embeds/house-2021.gob", true)
+	Senate2012Map = geojson2Map(senate2012, "embeds/senate-2012.gob", false)
+	Senate2021Map = geojson2Map(senate2021, "embeds/senate-2021.gob", true)
 )
 
-func geojson2Map(b []byte, name string) Map {
+func geojson2Map(b []byte, name string, newstyle bool) Map {
 	fc, err := geojson.UnmarshalFeatureCollection(b)
 	if err != nil {
 		panic(err)
@@ -35,19 +38,31 @@ func geojson2Map(b []byte, name string) Map {
 
 	ds := make(Map, len(fc.Features))
 	for i, f := range fc.Features {
-		name := f.Properties["District_1"].(string)
-		poly := f.Geometry.(orb.Polygon)
-		if len(poly) < 1 {
-			panic(name)
+		propname := "District_1"
+		if newstyle {
+			propname = "District"
 		}
-		bound := poly[0].Bound()
-		for _, ring := range poly[1:] {
-			bound = bound.Union(ring.Bound())
+		dist := f.Properties[propname].(string)
+
+		mgon, ok := f.Geometry.(orb.MultiPolygon)
+		if !ok {
+			poly := f.Geometry.(orb.Polygon)
+			mgon = []orb.Polygon{poly}
+		}
+		if len(mgon[0]) < 1 {
+			panic(name + "-" + dist)
+		}
+		bound := mgon[0][0].Bound()
+		for _, poly := range mgon {
+			for _, ring := range poly {
+				bound = bound.Union(ring.Bound())
+			}
 		}
 		ds[i] = District{
-			Name:    name,
-			Polygon: poly,
-			Bound:   bound,
+			Name:         dist,
+			MultiPolygon: mgon,
+			Bound:        bound,
+			NewStyle:     newstyle,
 		}
 	}
 	var buf bytes.Buffer
