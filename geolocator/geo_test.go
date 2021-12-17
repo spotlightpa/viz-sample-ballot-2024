@@ -35,16 +35,20 @@ func BenchmarkGetDistrict(b *testing.B) {
 	cases := []struct {
 		Point orb.Point
 		Name  string
+		geolocator.Map
 	}{
-		{},
-		{orb.Point{-76.88375, 40.26444}, "103"},
-		{orb.Point{-80.34728, 41.00326}, "9"},
-		{orb.Point{-80.38492, 40.96953}, "10"},
-		{orb.Point{-80.33811, 40.88811}, "10"},
+		{orb.Point{-76.88375, 40.26444}, "103", geolocator.House2012Map},
+		{orb.Point{-80.34728, 41.00326}, "9", geolocator.House2012Map},
+		{orb.Point{-80.38492, 40.96953}, "10", geolocator.House2012Map},
+		{orb.Point{-80.33811, 40.88811}, "10", geolocator.House2012Map},
+		{orb.Point{-76.88375, 40.26444}, "15", geolocator.Senate2021Map},
+		{orb.Point{-76.88375, 40.26444}, "103", geolocator.House2021Map},
+		{orb.Point{-80.38492, 40.96953}, "10", geolocator.House2021Map},
+		{orb.Point{-80.33811, 40.88811}, "17", geolocator.House2021Map},
 	}
 	for i := 0; i < b.N; i++ {
-		tc := cases[i%len(cases)]
-		d := geolocator.House2012Map.District(tc.Point)
+		tc := &cases[i%len(cases)]
+		d := tc.Map.District(tc.Point)
 		if d.GetName() != tc.Name {
 			b.FailNow()
 		}

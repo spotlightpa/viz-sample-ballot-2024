@@ -23,21 +23,21 @@ type Map []District
 
 func (m Map) District(p orb.Point) *District {
 	for _, d := range m {
-		if pointInMultiPoly(p, d.Bound, d.MultiPolygon, d.NewStyle) {
+		if d.Contains(p) {
 			return &d
 		}
 	}
 	return nil
 }
 
-func pointInMultiPoly(p orb.Point, bound orb.Bound, mgon orb.MultiPolygon, newstyle bool) bool {
-	if !bound.Contains(p) {
+func (d *District) Contains(p orb.Point) bool {
+	if !d.Bound.Contains(p) {
 		return false
 	}
-	if newstyle {
-		return planar.MultiPolygonContains(mgon, p)
+	if d.NewStyle {
+		return planar.MultiPolygonContains(d.MultiPolygon, p)
 	}
-	poly := mgon[0]
+	poly := d.MultiPolygon[0]
 	contained := false
 	for _, ring := range poly {
 		if planar.RingContains(ring, p) {
