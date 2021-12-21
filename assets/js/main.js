@@ -5,7 +5,7 @@ import { initFrameAndPoll } from "@newswire/frames";
 import { addGAListeners, reportClick } from "./utils/google-analytics.js";
 
 import * as oldHouse from "data/house-2012.json";
-let newHouse = oldHouse;
+import * as newHouse from "data/house-2021.json";
 import * as oldSenate from "data/senate-2012.json";
 let newSenate = oldSenate;
 import * as params from "@params";
