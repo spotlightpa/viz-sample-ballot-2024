@@ -9,27 +9,45 @@
       <h2 class="text-center text-2xl font-semibold" x-template>
           District ${props.district}
       </h2>
-      <p
-        class='mt-4 leading-normal {{ cond .prior "" "hidden sm:block sm:invisible" }}'
-      >
-        The current lawmaker is
-        <b
-          class='font-semibold'
-          :class="`text-${partyClass(props.lawmaker_party)}`"
-          x-text="`${props.lawmaker_name} (${props.lawmaker_party[0]})`"
-        ></b>.
-      </p>
-      <p class="mt-6 leading-normal" x-template>
-        According to the 2020 census, of registered voters in this district,
-        a ${superMajorityParty? `supermajority`: majorityParty? `majority`: `plurality`} were registered
-        <span class="${
-            pluralityParty === 'per_rep'?
-            'text-chart-red':
-            pluralityParty === 'per_dem'?
-            'text-chart-blue':
-            'text-chart-purple'
-        } font-semibold">${propNames[pluralityParty]}</span>.
-      </p>
+      {{ if not .prior }}
+        <p class='mt-4 leading-normal hidden sm:block sm:invisible'>The lawmaker will be …</p>
+      {{ else }}
+        <p
+          class='mt-4 leading-normal {{ cond .prior "" "hidden sm:block sm:invisible" }}'
+        >
+          The current lawmaker is
+          <b
+            class='font-semibold'
+            :class="`text-${partyClass(props.lawmaker_party)}`"
+            x-text="`${props.lawmaker_name} (${props.lawmaker_party[0]})`"
+          ></b>.
+        </p>
+      {{ end }}
+      {{ if .prior }}
+        <p class="mt-6 leading-normal" x-template>
+          According to the 2020 census, of registered voters in this new district,
+          a ${superMajorityParty? `supermajority`: majorityParty? `majority`: `plurality`} would be
+          <span class="${
+              pluralityParty === 'per_rep'?
+              'text-chart-red':
+              pluralityParty === 'per_dem'?
+              'text-chart-blue':
+              'text-chart-purple'
+          } font-semibold">${propNames[pluralityParty]}</span>.
+        </p>
+      {{ else }}
+        <p class="mt-6 leading-normal" x-template>
+          According to the 2020 census, of registered voters in this district,
+          a ${superMajorityParty? `supermajority`: majorityParty? `majority`: `plurality`} were registered
+          <span class="${
+              pluralityParty === 'per_rep'?
+              'text-chart-red':
+              pluralityParty === 'per_dem'?
+              'text-chart-blue':
+              'text-chart-purple'
+          } font-semibold">${propNames[pluralityParty]}</span>.
+        </p>
+      {{ end }}
       <div
         class="
           mt-4 h-8 flex justify-between
@@ -76,7 +94,9 @@
         {{ end }}
 
       <p class="mt-12 leading-normal">
-        Among people who live here, this district has
+        Among people who live here, this
+        {{ cond .prior "" "new" }}
+        district has
         <span
           x-text="
             superMajorityRace?
