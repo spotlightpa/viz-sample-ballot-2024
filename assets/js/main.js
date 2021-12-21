@@ -7,7 +7,7 @@ import { addGAListeners, reportClick } from "./utils/google-analytics.js";
 import * as oldHouse from "data/house-2012.json";
 import * as newHouse from "data/house-2021.json";
 import * as oldSenate from "data/senate-2012.json";
-let newSenate = oldSenate;
+import * as newSenate from "data/senate-2021.json";
 import * as params from "@params";
 
 L.Marker.prototype.options.icon = L.icon({
