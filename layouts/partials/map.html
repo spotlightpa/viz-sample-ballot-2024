@@ -25,10 +25,9 @@
       {{ end }}
 
       <p class="mt-6 leading-normal">
-        {{ $dot := cond .prior " as of August 2021." "." }}
         Of registered voters in this {{ cond .prior "" "new" }} district,
         <span x-show="majorityParty">
-          a majority {{ cond .prior "were" "would be" }}
+          a majority {{ cond .prior "were" "would be registered" }}
           <span
             class="font-semibold"
             :class="
@@ -39,10 +38,10 @@
               'text-chart-purple'
           "
           x-text="propNames[pluralityParty]"
-          ></span>{{ $dot }}
+          ></span>.
         </span>
         <span x-show="!majorityParty">
-          no party {{ cond .prior "had" "would have" }} more than 50% of registrations{{ $dot }}
+          no party {{ cond .prior "had" "would have" }} more than 50% of registrations.
         </span>
       </p>
       <div
