@@ -5,43 +5,56 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"path"
-	"strings"
 
 	"github.com/carlmjohnson/csv"
+	"github.com/paulmach/orb/geojson"
 )
 
 func main() {
-	oldHouse := flag.String("old-house", "", "CSV `file` for old house district info")
-	newHouse := flag.String("new-house", "", "CSV `file` for new house district info")
-	oldSenate := flag.String("old-senate", "", "CSV `file` for old senate district info")
-	newSenate := flag.String("new-senate", "", "CSV `file` for new senate district info")
-	format := flag.String("format", "", "destination file path")
+	districtCSV := flag.String("district-csv", "", "CSV `file` for district info")
+	geojson := flag.String("geojson", "", "")
+	dst := flag.String("dst", "", "destination file path")
 	flag.Parse()
-	if err := run(*oldHouse, *newHouse, *oldSenate, *newSenate, *format); err != nil {
+	if err := run(*districtCSV, *geojson, *dst); err != nil {
 		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 		os.Exit(1)
 	}
 }
 
-func run(oldHouse, newHouse, oldSenate, newSenate, format string) error {
-	for _, csvname := range []string{
-		oldHouse, newHouse, oldSenate, newSenate,
-	} {
-		m, err := readCSV(csvname)
-		if err != nil {
-			return err
-		}
-		b, err := json.MarshalIndent(m, "", "  ")
-		if err != nil {
-			return err
-		}
-		name := path.Base(csvname)
-		name = strings.TrimSuffix(name, path.Ext(name))
-		name = fmt.Sprintf(format, name)
-		if err = os.WriteFile(name, b, 0644); err != nil {
-			return err
-		}
+func run(districtCSV, geojsonname, dst string) error {
+	m, err := readCSV(districtCSV)
+	if err != nil {
+		return err
+	}
+
+	data, err := os.ReadFile(geojsonname)
+	if err != nil {
+		return err
+	}
+
+	fc, err := geojson.UnmarshalFeatureCollection(data)
+	if err != nil {
+		return err
+	}
+	for _, feat := range fc.Features {
+		district := feat.Properties["District"].(string)
+		m[district]["per_asian"] = getProp(feat, "[% Adj_NH_Asn]")
+		m[district]["per_black"] = getProp(feat, "[% Adj_NH_Blk]")
+		m[district]["per_hispanic"] = getProp(feat, "[% Adj_Hispanic Origin]")
+		m[district]["per_white"] = getProp(feat, "[% Adj_NH_Wht]")
+		m[district]["per_mixed"] = getProp(feat, "[% Adj_NH_2+ Races]")
+		other := feat.Properties["[% Adj_NH_Hwn]"].(float64) +
+			feat.Properties["[% Adj_NH_Ind]"].(float64) +
+			feat.Properties["[% Adj_NH_Oth]"].(float64)
+		m[district]["per_misc"] = fmt.Sprintf("%.2f%%", other*100)
+	}
+
+	b, err := json.MarshalIndent(m, "", "  ")
+	if err != nil {
+		return err
+	}
+	if err = os.WriteFile(dst, b, 0644); err != nil {
+		return err
 	}
 	return nil
 }
@@ -63,4 +76,12 @@ func readCSV(csvname string) (map[string]map[string]string, error) {
 		return nil, err
 	}
 	return m, nil
+}
+
+func getProp(feat *geojson.Feature, name string) string {
+	f64, ok := feat.Properties[name].(float64)
+	if !ok {
+		panic(name)
+	}
+	return fmt.Sprintf("%.2f%%", f64*100)
 }
