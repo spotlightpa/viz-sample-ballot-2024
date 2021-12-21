@@ -10,7 +10,7 @@
           District ${props.district}
       </h2>
       {{ if not .prior }}
-        <p class='mt-4 leading-normal hidden sm:block sm:invisible'>The lawmaker will be …</p>
+        <p class='mt-4 leading-normal hidden sm:block sm:invisible'>&nbsp;</p>
       {{ else }}
         <p
           class='mt-4 leading-normal {{ cond .prior "" "hidden sm:block sm:invisible" }}'
@@ -23,31 +23,28 @@
           ></b>.
         </p>
       {{ end }}
-      {{ if .prior }}
-        <p class="mt-6 leading-normal" x-template>
-          According to the 2020 census, of registered voters in this new district,
-          a ${superMajorityParty? `supermajority`: majorityParty? `majority`: `plurality`} would be
-          <span class="${
+
+      <p class="mt-6 leading-normal">
+        Of registered voters in this {{ cond .prior "" "new" }} district,
+        <span x-show="majorityParty">
+          a majority {{ cond .prior "were" "would be" }}
+          <span
+            class="font-semibold"
+            :class="
               pluralityParty === 'per_rep'?
               'text-chart-red':
               pluralityParty === 'per_dem'?
               'text-chart-blue':
               'text-chart-purple'
-          } font-semibold">${propNames[pluralityParty]}</span>.
-        </p>
-      {{ else }}
-        <p class="mt-6 leading-normal" x-template>
-          According to the 2020 census, of registered voters in this district,
-          a ${superMajorityParty? `supermajority`: majorityParty? `majority`: `plurality`} were registered
-          <span class="${
-              pluralityParty === 'per_rep'?
-              'text-chart-red':
-              pluralityParty === 'per_dem'?
-              'text-chart-blue':
-              'text-chart-purple'
-          } font-semibold">${propNames[pluralityParty]}</span>.
-        </p>
-      {{ end }}
+          "
+          x-text="propNames[pluralityParty]"
+          ></span>
+        </span>
+        <span x-show="!majorityParty">
+          no party had more than 50% of registrations
+        </span>
+        as of August 2021.
+      </p>
       <div
         class="
           mt-4 h-8 flex justify-between
@@ -99,8 +96,6 @@
         district has
         <span
           x-text="
-            superMajorityRace?
-            `${propNames[majorityRace]} supermajority`:
             majorityRace?
             `${propNames[majorityRace]} majority`:
             'no race or ethnicity more than 50%'
