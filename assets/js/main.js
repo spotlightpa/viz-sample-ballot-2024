@@ -299,7 +299,6 @@ Alpine.data("map", (propName) => {
           attribution:
             '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
           subdomains: "abcd",
-          maxZoom: 12,
         }
       ).addTo(this.map);
       L.tileLayer(
@@ -308,7 +307,6 @@ Alpine.data("map", (propName) => {
           attribution:
             '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
           subdomains: "abcd",
-          maxZoom: 12,
           pane: "labels",
         }
       ).addTo(this.map);
