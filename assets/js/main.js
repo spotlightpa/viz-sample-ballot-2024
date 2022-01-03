@@ -1,6 +1,6 @@
 import Alpine from "alpinejs/src/index.js";
 import * as L from "leaflet";
-import { initFrameAndPoll } from "@newswire/frames";
+import { initFrameAndPoll } from "js/framer/index.mjs";
 
 import { addGAListeners, reportClick } from "./utils/google-analytics.js";
 
@@ -289,6 +289,7 @@ Alpine.data("map", (propName) => {
         center: [this.$store.state.lat, this.$store.state.long],
         scrollWheelZoom: false,
         zoom: 12,
+        zoomSnap: 1,
       });
       this.map.createPane("labels");
       this.map.getPane("labels").style.zIndex = 400;
