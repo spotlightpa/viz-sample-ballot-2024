@@ -53,7 +53,7 @@ Alpine.directive(
 let commaFormatter = new Intl.NumberFormat("en-US");
 Alpine.magic("comma", () => (n) => commaFormatter.format(n));
 
-Alpine.magic("report", () => (ev) => void reportClick(ev));
+Alpine.magic("report", () => (ev) => reportClick(ev));
 
 Alpine.store("state", {
   oldHouse: "103",
