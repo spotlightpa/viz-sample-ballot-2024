@@ -5,6 +5,7 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"strconv"
 
 	"github.com/carlmjohnson/csv"
 	"github.com/paulmach/orb/geojson"
@@ -37,15 +38,14 @@ func run(districtCSV, geojsonname, dst string) error {
 		return err
 	}
 	for _, feat := range fc.Features {
-		district := feat.Properties["District"].(string)
-		m[district]["per_asian"] = getProp(feat, "[% Adj_NH_Asn]")
-		m[district]["per_black"] = getProp(feat, "[% Adj_NH_Blk]")
-		m[district]["per_hispanic"] = getProp(feat, "[% Adj_Hispanic Origin]")
-		m[district]["per_white"] = getProp(feat, "[% Adj_NH_Wht]")
-		m[district]["per_mixed"] = getProp(feat, "[% Adj_NH_2+ Races]")
-		other := feat.Properties["[% Adj_NH_Hwn]"].(float64) +
-			feat.Properties["[% Adj_NH_Ind]"].(float64) +
-			feat.Properties["[% Adj_NH_Oth]"].(float64)
+		district := feat.Properties["DISTRICT"].(string)
+		m[district]["per_asian"] = getPct(feat, "ADJ_NH_ASN")
+		m[district]["per_black"] = getPct(feat, "ADJ_NH_BLK")
+		m[district]["per_hispanic"] = getPct(feat, "ADJ_HISPAN")
+		m[district]["per_white"] = getPct(feat, "ADJ_NH_WHT")
+		m[district]["per_mixed"] = getPct(feat, "ADJ_NH_2_R")
+		other := getProp(feat, "ADJ_NH_HWN") + getProp(feat, "ADJ_NH_IND") + getProp(feat, "ADJ_NH_OTH")
+		other /= getProp(feat, "ADJ_POPULA")
 		m[district]["per_misc"] = fmt.Sprintf("%.2f%%", other*100)
 	}
 
@@ -70,7 +70,12 @@ func readCSV(csvname string) (map[string]map[string]string, error) {
 	csvr := csv.NewFieldReader(csvf)
 	for csvr.Scan() {
 		row := csvr.Fields()
-		m[row["district"]] = row
+		m[row["district"]] = map[string]string{
+			"district":  row["district"],
+			"per_dem":   row["per_dem"],
+			"per_other": row["per_other"],
+			"per_rep":   row["per_rep"],
+		}
 	}
 	if err = csvr.Err(); err != nil {
 		return nil, err
@@ -78,10 +83,28 @@ func readCSV(csvname string) (map[string]map[string]string, error) {
 	return m, nil
 }
 
-func getProp(feat *geojson.Feature, name string) string {
-	f64, ok := feat.Properties[name].(float64)
+func getPct(feat *geojson.Feature, name string) string {
+	popstr := feat.Properties["ADJ_POPULA"].(string)
+	pop, err := strconv.ParseFloat(popstr, 64)
+	if err != nil {
+		panic(name)
+	}
+	str, ok := feat.Properties[name].(string)
 	if !ok {
 		panic(name)
 	}
-	return fmt.Sprintf("%.2f%%", f64*100)
+	f64, err := strconv.ParseFloat(str, 64)
+	if err != nil {
+		panic(name)
+	}
+	return fmt.Sprintf("%.2f%%", f64/pop*100)
+}
+
+func getProp(feat *geojson.Feature, name string) float64 {
+	s := feat.Properties[name].(string)
+	f64, err := strconv.ParseFloat(s, 64)
+	if err != nil {
+		panic(name)
+	}
+	return f64
 }
