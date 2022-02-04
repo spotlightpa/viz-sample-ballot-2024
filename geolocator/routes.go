@@ -131,8 +131,8 @@ func NewLocationInfo(lat, long float64) LocationInfo {
 	p := orb.Point{long, lat}
 	return LocationInfo{
 		OldHouse:  House2012Map.District(p).GetName(),
-		NewHouse:  House2021Map.District(p).GetName(),
+		NewHouse:  House2022Map.District(p).GetName(),
 		OldSenate: Senate2012Map.District(p).GetName(),
-		NewSenate: Senate2021Map.District(p).GetName(),
+		NewSenate: Senate2022Map.District(p).GetName(),
 	}
 }

@@ -29,7 +29,7 @@ func run(geojsonname, format string) error {
 		return err
 	}
 	for _, feat := range fc.Features {
-		district := feat.Properties["District"].(string)
+		district := feat.Properties["DISTRICT"].(string)
 		newfc := geojson.NewFeatureCollection()
 		newfeat := geojson.NewFeature(feat.Geometry)
 		newfeat.Properties["district"] = district

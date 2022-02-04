@@ -11,19 +11,19 @@ import (
 var (
 	//go:embed embeds/house-2012.gob
 	house2012 []byte
-	//go:embed embeds/house-2021.gob
-	house2021 []byte
+	//go:embed embeds/house-2022.gob
+	house2022 []byte
 	//go:embed embeds/senate-2012.gob
 	senate2012 []byte
-	//go:embed embeds/senate-2021.gob
-	senate2021 []byte
+	//go:embed embeds/senate-2022.gob
+	senate2022 []byte
 )
 
 var (
 	House2012Map  = gob2Map(house2012)
-	House2021Map  = gob2Map(house2021)
+	House2022Map  = gob2Map(house2022)
 	Senate2012Map = gob2Map(senate2012)
-	Senate2021Map = gob2Map(senate2021)
+	Senate2022Map = gob2Map(senate2022)
 )
 
 func gob2Map(b []byte) Map {

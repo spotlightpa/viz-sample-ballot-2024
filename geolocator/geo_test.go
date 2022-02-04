@@ -19,8 +19,8 @@ func TestGetDistrict(t *testing.T) {
 		"exclusion island":  {orb.Point{-80.38492, 40.96953}, "10", geolocator.House2012Map},
 		"wampum":            {orb.Point{-80.33811, 40.88811}, "10", geolocator.House2012Map},
 		"senate Harrisburg": {orb.Point{-76.88375, 40.26444}, "15", geolocator.Senate2012Map},
-		"new h Harrisburg":  {orb.Point{-76.88375, 40.26444}, "103", geolocator.House2021Map},
-		"new s Harrisburg":  {orb.Point{-76.88375, 40.26444}, "15", geolocator.Senate2021Map},
+		"new h Harrisburg":  {orb.Point{-76.88375, 40.26444}, "103", geolocator.House2022Map},
+		"new s Harrisburg":  {orb.Point{-76.88375, 40.26444}, "15", geolocator.Senate2022Map},
 	} {
 		t.Run(name, func(t *testing.T) {
 			d := tc.Map.District(tc.Point)
@@ -41,10 +41,10 @@ func BenchmarkGetDistrict(b *testing.B) {
 		{orb.Point{-80.34728, 41.00326}, "9", geolocator.House2012Map},
 		{orb.Point{-80.38492, 40.96953}, "10", geolocator.House2012Map},
 		{orb.Point{-80.33811, 40.88811}, "10", geolocator.House2012Map},
-		{orb.Point{-76.88375, 40.26444}, "15", geolocator.Senate2021Map},
-		{orb.Point{-76.88375, 40.26444}, "103", geolocator.House2021Map},
-		{orb.Point{-80.38492, 40.96953}, "10", geolocator.House2021Map},
-		{orb.Point{-80.33811, 40.88811}, "17", geolocator.House2021Map},
+		{orb.Point{-76.88375, 40.26444}, "15", geolocator.Senate2022Map},
+		{orb.Point{-76.88375, 40.26444}, "103", geolocator.House2022Map},
+		{orb.Point{-80.38492, 40.96953}, "10", geolocator.House2022Map},
+		{orb.Point{-80.33811, 40.88811}, "17", geolocator.House2022Map},
 	}
 	for i := 0; i < b.N; i++ {
 		tc := &cases[i%len(cases)]

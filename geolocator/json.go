@@ -17,17 +17,17 @@ var (
 	house2012 []byte
 	//go:embed embeds/senate-2012.geojson
 	senate2012 []byte
-	//go:embed embeds/house-2021.geojson
-	house2021 []byte
-	//go:embed embeds/senate-2021.geojson
-	senate2021 []byte
+	//go:embed embeds/house-2022.geojson
+	house2022 []byte
+	//go:embed embeds/senate-2022.geojson
+	senate2022 []byte
 )
 
 var (
 	House2012Map  = geojson2Map(house2012, "embeds/house-2012.gob", false)
-	House2021Map  = geojson2Map(house2021, "embeds/house-2021.gob", true)
+	House2022Map  = geojson2Map(house2022, "embeds/house-2022.gob", false)
 	Senate2012Map = geojson2Map(senate2012, "embeds/senate-2012.gob", false)
-	Senate2021Map = geojson2Map(senate2021, "embeds/senate-2021.gob", true)
+	Senate2022Map = geojson2Map(senate2022, "embeds/senate-2022.gob", false)
 )
 
 func geojson2Map(b []byte, name string, newstyle bool) Map {
@@ -38,9 +38,9 @@ func geojson2Map(b []byte, name string, newstyle bool) Map {
 
 	ds := make(Map, len(fc.Features))
 	for i, f := range fc.Features {
-		propname := "District_1"
-		if newstyle {
-			propname = "District"
+		propname := "DISTRICT"
+		if _, ok := f.Properties[propname]; !ok {
+			propname = "District_1"
 		}
 		dist := f.Properties[propname].(string)
 
