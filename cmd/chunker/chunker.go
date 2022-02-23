@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"strconv"
 
 	"github.com/paulmach/orb/geojson"
 )
@@ -29,7 +30,8 @@ func run(geojsonname, format string) error {
 		return err
 	}
 	for _, feat := range fc.Features {
-		district := feat.Properties["DISTRICT"].(string)
+		n := feat.Properties["LEG_DISTRICT_NO"].(float64)
+		district := strconv.Itoa(int(n))
 		newfc := geojson.NewFeatureCollection()
 		newfeat := geojson.NewFeature(feat.Geometry)
 		newfeat.Properties["district"] = district
