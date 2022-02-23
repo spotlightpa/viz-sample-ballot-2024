@@ -4,6 +4,8 @@ import { initFrameAndPoll } from "js/framer/index.mjs";
 
 import { addGAListeners, reportClick } from "./utils/google-analytics.js";
 
+import * as oldCongress from "data/congress-2018.json";
+import * as newCongress from "data/congress-2018.json";
 import * as oldHouse from "data/house-2012.json";
 import * as newHouse from "data/house-2022.json";
 import * as oldSenate from "data/senate-2012.json";
@@ -56,6 +58,8 @@ Alpine.magic("comma", () => (n) => commaFormatter.format(n));
 Alpine.magic("report", () => (ev) => reportClick(ev));
 
 Alpine.store("state", {
+  oldCongress: "10",
+  newCongress: "10",
   oldHouse: "103",
   newHouse: "103",
   oldSenate: "15",
@@ -101,12 +105,23 @@ Alpine.store("state", {
   },
 
   update(json) {
-    let { address, lat, long, old_house, new_house, old_senate, new_senate } =
-      json;
+    let {
+      address,
+      lat,
+      long,
+      old_congress,
+      new_congress,
+      old_house,
+      new_house,
+      old_senate,
+      new_senate,
+    } = json;
 
     this.address = address || this.address;
     this.lat = lat || this.lat;
     this.long = long || this.long;
+    this.oldCongress = old_congress || this.oldCongress;
+    this.newCongress = new_congress || this.newCongress;
     this.oldHouse = old_house || this.oldHouse;
     this.newHouse = new_house || this.newHouse;
     this.oldSenate = old_senate || this.oldSenate;
@@ -186,6 +201,8 @@ Alpine.data("app", () => {
 
 Alpine.data("map", (propName) => {
   let propSrc = {
+    oldCongress,
+    newCongress,
     oldHouse,
     newHouse,
     oldSenate,

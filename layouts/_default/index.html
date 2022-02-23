@@ -225,6 +225,45 @@
       {{ end }}
     </p>
 
+    {{ partial "promo.html" . }}
+
+    <h2 class="mt-16 text-center text-2xl font-semibold">
+      Congressional Districts
+    </h2>
+
+    <p class="mt-2">
+      TK
+    </p>
+
+    <div
+      class="mt-8 sm:flex gap-8"
+    >
+      <div
+        class="sm:w-1/2"
+        x-data="map('oldCongress')"
+        x-init="urlPattern = '/geojson/congress-2018-%%.json'"
+        x-effect="
+          district = $store.state.oldCongress;
+          latLong = $store.state.latLong
+        "
+        data-ga-category="old-congress"
+      >
+        {{ partial "map.html" (dict "prior" true) }}
+      </div>
+      <div
+        class="sm:w-1/2"
+        x-data="map('newCongress')"
+        x-init="urlPattern = '/geojson/congress-2022-%%.json'"
+        x-effect="
+          district = $store.state.newCongress;
+          latLong = $store.state.latLong
+        "
+        data-ga-category="new-congress"
+      >
+        {{ partial "map.html" (dict "prior" false) }}
+      </div>
+    </div>
+
     <h2 class="mt-16 text-center text-2xl font-semibold">
       Pennsylvania House
     </h2>
