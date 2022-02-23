@@ -9,6 +9,10 @@ import (
 )
 
 var (
+	//go:embed embeds/congress-2018.gob
+	congress2018 []byte
+	//go:embed embeds/congress-2022.gob
+	congress2022 []byte
 	//go:embed embeds/house-2012.gob
 	house2012 []byte
 	//go:embed embeds/house-2022.gob
@@ -20,10 +24,12 @@ var (
 )
 
 var (
-	House2012Map  = gob2Map(house2012)
-	House2022Map  = gob2Map(house2022)
-	Senate2012Map = gob2Map(senate2012)
-	Senate2022Map = gob2Map(senate2022)
+	Congress2018Map = gob2Map(congress2018)
+	Congress2022Map = gob2Map(congress2022)
+	House2012Map    = gob2Map(house2012)
+	House2022Map    = gob2Map(house2022)
+	Senate2012Map   = gob2Map(senate2012)
+	Senate2022Map   = gob2Map(senate2022)
 )
 
 func gob2Map(b []byte) Map {

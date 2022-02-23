@@ -6,13 +6,19 @@ import (
 	"bytes"
 	_ "embed"
 	"encoding/gob"
+	"fmt"
 	"os"
+	"strconv"
 
 	"github.com/paulmach/orb"
 	"github.com/paulmach/orb/geojson"
 )
 
 var (
+	//go:embed embeds/congress-2018.geojson
+	congress2018 []byte
+	//go:embed embeds/congress-2022.geojson
+	congress2022 []byte
 	//go:embed embeds/house-2012.geojson
 	house2012 []byte
 	//go:embed embeds/senate-2012.geojson
@@ -24,10 +30,12 @@ var (
 )
 
 var (
-	House2012Map  = geojson2Map(house2012, "embeds/house-2012.gob", false)
-	House2022Map  = geojson2Map(house2022, "embeds/house-2022.gob", false)
-	Senate2012Map = geojson2Map(senate2012, "embeds/senate-2012.gob", false)
-	Senate2022Map = geojson2Map(senate2022, "embeds/senate-2022.gob", false)
+	Congress2018Map = geojson2Map(congress2018, "embeds/congress-2018.gob", true)
+	Congress2022Map = geojson2Map(congress2022, "embeds/congress-2022.gob", false)
+	House2012Map    = geojson2Map(house2012, "embeds/house-2012.gob", false)
+	House2022Map    = geojson2Map(house2022, "embeds/house-2022.gob", false)
+	Senate2012Map   = geojson2Map(senate2012, "embeds/senate-2012.gob", false)
+	Senate2022Map   = geojson2Map(senate2022, "embeds/senate-2022.gob", false)
 )
 
 func geojson2Map(b []byte, name string, newstyle bool) Map {
@@ -38,11 +46,19 @@ func geojson2Map(b []byte, name string, newstyle bool) Map {
 
 	ds := make(Map, len(fc.Features))
 	for i, f := range fc.Features {
-		propname := "DISTRICT"
-		if _, ok := f.Properties[propname]; !ok {
-			propname = "District_1"
+		var dist string
+		if v, ok := f.Properties["DISTRICT"]; ok {
+			dist = v.(string)
+		} else if v, ok := f.Properties["District_1"]; ok {
+			dist = v.(string)
+		} else if v, ok := f.Properties["LEG_DISTRICT_NO"]; ok {
+			n := v.(float64)
+			dist = strconv.Itoa(int(n))
 		}
-		dist := f.Properties[propname].(string)
+
+		if dist == "" {
+			panic(fmt.Sprintf("%d %s", i, name))
+		}
 
 		mgon, ok := f.Geometry.(orb.MultiPolygon)
 		if !ok {

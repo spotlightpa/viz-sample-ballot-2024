@@ -15,6 +15,8 @@ func TestGetDistrict(t *testing.T) {
 	}{
 		"blank":             {Map: geolocator.House2012Map},
 		"Harrisburg":        {orb.Point{-76.88375, 40.26444}, "103", geolocator.House2012Map},
+		"Harrisburg CD18":   {orb.Point{-76.88375, 40.26444}, "10", geolocator.Congress2018Map},
+		"Harrisburg CD22":   {orb.Point{-76.88375, 40.26444}, "10", geolocator.Congress2022Map},
 		"includes islands":  {orb.Point{-80.34728, 41.00326}, "9", geolocator.House2012Map},
 		"exclusion island":  {orb.Point{-80.38492, 40.96953}, "10", geolocator.House2012Map},
 		"wampum":            {orb.Point{-80.33811, 40.88811}, "10", geolocator.House2012Map},
@@ -43,14 +45,14 @@ func BenchmarkGetDistrict(b *testing.B) {
 		{orb.Point{-80.33811, 40.88811}, "10", geolocator.House2012Map},
 		{orb.Point{-76.88375, 40.26444}, "15", geolocator.Senate2022Map},
 		{orb.Point{-76.88375, 40.26444}, "103", geolocator.House2022Map},
-		{orb.Point{-80.38492, 40.96953}, "10", geolocator.House2022Map},
-		{orb.Point{-80.33811, 40.88811}, "17", geolocator.House2022Map},
+		{orb.Point{-80.38492, 40.96953}, "9", geolocator.House2022Map},
+		{orb.Point{-80.33811, 40.88811}, "8", geolocator.House2022Map},
 	}
 	for i := 0; i < b.N; i++ {
 		tc := &cases[i%len(cases)]
 		d := tc.Map.District(tc.Point)
 		if d.GetName() != tc.Name {
-			b.FailNow()
+			b.Fatal(i, d.GetName(), tc.Name)
 		}
 	}
 }

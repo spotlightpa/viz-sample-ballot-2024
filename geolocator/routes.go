@@ -121,18 +121,22 @@ func (app *appEnv) getByAddress(w http.ResponseWriter, r *http.Request) {
 }
 
 type LocationInfo struct {
-	OldHouse  string `json:"old_house"`
-	NewHouse  string `json:"new_house"`
-	OldSenate string `json:"old_senate"`
-	NewSenate string `json:"new_senate"`
+	OldCongress string `json:"old_congress"`
+	NewCongress string `json:"new_congress"`
+	OldHouse    string `json:"old_house"`
+	NewHouse    string `json:"new_house"`
+	OldSenate   string `json:"old_senate"`
+	NewSenate   string `json:"new_senate"`
 }
 
 func NewLocationInfo(lat, long float64) LocationInfo {
 	p := orb.Point{long, lat}
 	return LocationInfo{
-		OldHouse:  House2012Map.District(p).GetName(),
-		NewHouse:  House2022Map.District(p).GetName(),
-		OldSenate: Senate2012Map.District(p).GetName(),
-		NewSenate: Senate2022Map.District(p).GetName(),
+		OldCongress: Congress2018Map.District(p).GetName(),
+		NewCongress: Congress2022Map.District(p).GetName(),
+		OldHouse:    House2012Map.District(p).GetName(),
+		NewHouse:    House2022Map.District(p).GetName(),
+		OldSenate:   Senate2012Map.District(p).GetName(),
+		NewSenate:   Senate2022Map.District(p).GetName(),
 	}
 }
