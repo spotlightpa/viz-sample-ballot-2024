@@ -160,6 +160,8 @@
           "name" "Harrisburg"
           "lat" "40.26444"
           "long" "-76.88375"
+          "oldCongress" "10"
+          "newCongress" "10"
           "oldHouse" "103"
           "newHouse" "103"
           "oldSenate" "15"
@@ -169,6 +171,8 @@
           "name" "Lehigh Valley"
           "lat" "40.6076972"
           "long" "-75.4348623"
+          "oldCongress" "7"
+          "newCongress" "7"
           "newHouse" "22"
           "newSenate" "14"
           "oldHouse" "132"
@@ -178,6 +182,8 @@
           "name" "Philadelphia"
           "lat" "39.9498857"
           "long" "-75.145896"
+          "oldCongress" "3"
+          "newCongress" "2"
           "oldHouse" "175"
           "newHouse" "175"
           "oldSenate" "1"
@@ -187,6 +193,8 @@
           "name" "Pittsburgh"
           "lat" "40.4406248"
           "long" "-79.9958864"
+          "oldCongress" "18"
+          "newCongress" "12"
           "newHouse" "19"
           "newSenate" "42"
           "oldHouse" "19"
@@ -196,6 +204,8 @@
           "name" "State College"
           "lat" "40.7933949"
           "long" "-77.8600012"
+          "oldCongress" "12"
+          "newCongress" "15"
           "newHouse" "77"
           "newSenate" "25"
           "oldHouse" "77"
@@ -208,6 +218,8 @@
           @click="
             $store.state.lat = $el.dataset.lat;
             $store.state.long = $el.dataset.long;
+            $store.state.oldCongress = $el.dataset.oldCongress;
+            $store.state.newCongress = $el.dataset.newCongress;
             $store.state.oldHouse = $el.dataset.oldHouse;
             $store.state.newHouse = $el.dataset.newHouse;
             $store.state.oldSenate = $el.dataset.oldSenate;
@@ -216,6 +228,8 @@
           "
           data-lat="{{ .lat }}"
           data-long="{{ .long }}"
+          data-old-congress="{{ .oldCongress }}"
+          data-new-congress="{{ .newCongress }}"
           data-old-house="{{ .oldHouse }}"
           data-new-house="{{ .newHouse }}"
           data-old-senate="{{ .oldSenate }}"
