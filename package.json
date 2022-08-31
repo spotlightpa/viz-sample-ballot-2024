@@ -37,7 +37,7 @@
     "journalize": "^2.5.0",
     "leaflet": "^1.7.1",
     "postcss": "^8.4.4",
-    "postcss-cli": "^9.0.2",
+    "postcss-cli": "^10.0.0",
     "prettier": "^2.5.0",
     "tailwindcss": "^2.2.19"
   }
