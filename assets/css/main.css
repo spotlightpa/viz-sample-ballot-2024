@@ -44,7 +44,7 @@ html {
 }
 
 .content-area > h3 {
-  @apply font-sans italic text-3xl mt-4 mb-8 leading-8;
+  @apply mt-4 mb-8 font-sans text-3xl italic leading-8;
 }
 
 .content-area > ul {
@@ -74,10 +74,10 @@ html {
 }
 
 .content-aside > ul {
-  @apply list-disc list-inside;
+  @apply list-inside list-disc;
 }
 .content-aside > ol {
-  @apply list-decimal list-inside;
+  @apply list-inside list-decimal;
 }
 
 @screen sm {
@@ -93,7 +93,7 @@ html {
 .content-aside > h2,
 .content-aside > h3,
 .content-aside > h4 {
-  @apply uppercase font-bold text-lg leading-none;
+  @apply text-lg font-bold uppercase leading-none;
 }
 
 .content-aside > * + h1,

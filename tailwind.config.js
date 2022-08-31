@@ -79,4 +79,5 @@ module.exports = {
     purgeLayersByDefault: true,
     removeDeprecatedGapUtilities: true,
   },
+  darkMode: "media",
 };
