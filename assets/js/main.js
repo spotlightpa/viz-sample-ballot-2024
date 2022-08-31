@@ -308,6 +308,7 @@ Alpine.data("map", (propName) => {
         zoom: 12,
         zoomSnap: 1,
       });
+      this.map.attributionControl.setPrefix("");
       this.map.createPane("labels");
       this.map.getPane("labels").style.zIndex = 400;
       this.map.getPane("labels").style.pointerEvents = "none";
