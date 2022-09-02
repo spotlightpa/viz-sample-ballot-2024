@@ -14,13 +14,17 @@ import (
 )
 
 func (app *appEnv) routes() http.Handler {
-	middleware := []rootdown.Middleware{app.logRoute}
+	var mw rootdown.MiddlewareStack
+	mw.Push(app.logRoute)
 	if !app.isLambda() {
-		middleware = append(middleware, cors.AllowAll().Handler)
+		mw.Push(cors.AllowAll().Handler)
 	}
 	var rr rootdown.Router
-	rr.Get("/api/by-location", app.getByLocation, middleware...)
-	rr.Get("/api/by-address", app.getByAddress, middleware...)
+	rr.Get("/api/by-location", app.getByLocation, mw...)
+	rr.Get("/api/by-address", app.getByAddress, mw...)
+	rr.Get("/api/candidates-by-location", app.getCandidatesByLocation, mw...)
+	rr.Get("/api/candidates-by-address", app.getCandidatesByAddress, mw...)
+
 	return &rr
 }
 
@@ -138,5 +142,79 @@ func NewLocationInfo(lat, long float64) LocationInfo {
 		NewHouse:    House2022Map.District(p).GetName(),
 		OldSenate:   Senate2012Map.District(p).GetName(),
 		NewSenate:   Senate2022Map.District(p).GetName(),
+	}
+}
+
+func (app *appEnv) getCandidatesByLocation(w http.ResponseWriter, r *http.Request) {
+	q := r.URL.Query()
+	lat, _ := strconv.ParseFloat(q.Get("lat"), 64)
+	long, _ := strconv.ParseFloat(q.Get("long"), 64)
+
+	loc := NewLocationInfo(lat, long)
+	data := NewCandiateInfo(loc)
+
+	w.Header().Set("Cache-Control", "public, max-age=3600, s-maxage=0")
+	app.replyJSON(http.StatusOK, w, r, data)
+}
+
+func (app *appEnv) getCandidatesByAddress(w http.ResponseWriter, r *http.Request) {
+	address := r.URL.Query().Get("address")
+	if address == "" {
+		app.replyErr(w, r, resperr.New(http.StatusBadRequest, "no address"))
+		return
+	}
+	var data GoogleMapsResults
+	if err := app.googleMaps.
+		Clone().
+		Param("address", address).
+		ToJSON(&data).
+		Fetch(r.Context()); err != nil {
+		err = resperr.WithStatusCode(err, http.StatusBadGateway)
+		app.replyErr(w, r, err)
+		return
+	}
+	if len(data.Results) < 1 {
+		app.replyErr(w, r, resperr.New(
+			http.StatusNotFound, "not found: %q", address))
+		return
+	}
+
+	result := data.Results[0]
+	long := result.Geometry.Location.Lng
+	lat := result.Geometry.Location.Lat
+	loc := NewLocationInfo(lat, long)
+	can := NewCandiateInfo(loc)
+
+	w.Header().Set("Cache-Control", "public, max-age=3600, s-maxage=0")
+	app.replyJSON(http.StatusOK, w, r, struct {
+		Address string  `json:"address"`
+		Lat     float64 `json:"lat"`
+		Long    float64 `json:"long"`
+		CandidateInfo
+	}{
+		result.FormattedAddress,
+		lat,
+		long,
+		can,
+	})
+}
+
+type CandidateInfo struct {
+	LocationInfo
+	Governor    []Candidate `json:"governor"`
+	USSenate    []Candidate `json:"us_senate"`
+	USHouse     []Candidate `json:"us_house"`
+	StateSenate []Candidate `json:"state_senate"`
+	StateHouse  []Candidate `json:"state_house"`
+}
+
+func NewCandiateInfo(loc LocationInfo) CandidateInfo {
+	return CandidateInfo{
+		LocationInfo: loc,
+		Governor:     CanGov,
+		USSenate:     CanUSSenate,
+		USHouse:      CanUSHouse[loc.NewCongress],
+		StateSenate:  CanPASenate[loc.NewSenate],
+		StateHouse:   CanPAHouse[loc.NewHouse],
 	}
 }
