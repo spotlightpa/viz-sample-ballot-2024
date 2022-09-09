@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="{{ .Param "language-code" | default site.LanguageCode }}">
+  <head itemscope itemtype="http://schema.org/WebSite">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      {{ .Title }}
+    </title>
+
+    {{ partial "header/meta.html" . }}
+    {{ partial "header/google-analytics-async.html" . }}
+
+
+    <link
+      rel="preload"
+      as="font"
+      href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/css/fonts/raleway-v13/raleway-v13-latin-ext_latin-600.woff2"
+      crossorigin
+    />
+    <link rel="dns-prefetch" href="https://a.basemaps.cartocdn.com" />
+    <link rel="dns-prefetch" href="https://b.basemaps.cartocdn.com" />
+    <link rel="dns-prefetch" href="https://c.basemaps.cartocdn.com" />
+    <link rel="dns-prefetch" href="https://d.basemaps.cartocdn.com" />
+    {{ $cssFonts := resources.Get "css/fonts.css" }}
+    {{ $cssTW := resources.Get "css/main.css" }}
+    {{ $cssLeaflet := resources.Get "@leaflet/leaflet.css" }}
+    {{ $css := slice $cssFonts $cssTW $cssLeaflet | resources.Concat "styles.css" }}
+    {{ $css = $css | postCSS }}
+    {{ if ne hugo.Environment "development" }}
+      {{ $css = $css | minify | resources.PostProcess }}
+      <style type="text/css">
+        {{ $css.Content }}
+      </style>
+    {{ else }}
+      <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+    {{ end }}
+    {{ $minify := not site.IsServer }}
+    {{ $jsOpts := dict
+      "minify" $minify
+      "targetPath" "/@src/district-finder.js"
+      "target" "es2019"
+      "defines" (dict
+      "process.env.NODE_ENV" `"production"`
+      "ALPINE_VERSION" `"spl-dev"`
+      )
+      "params" (dict
+      "apiBaseURL" (.Param "api-base-url")
+      )
+      }}
+    {{ $js := resources.Get "js/district-finder.js" | js.Build $jsOpts }}
+    {{ if $minify }}
+      {{ $js = $js | minify }}
+    <script type="module">
+      {{ $js.Content | safeJS }}
+    </script>
+    {{ else }}
+      <script type="module" src="{{ $js.RelPermalink }}"></script>
+    {{ end }}
+    {{ $jsOpts = dict "minify" $minify "targetPath" "embed.js" "target" "es2019" }}
+    {{ $js = resources.Get "js/embed.js" | js.Build $jsOpts }}
+    <meta name="embed-script" src="{{ $js.RelPermalink }}" />
+    <noscript>
+      <style>
+        .no-js-only {
+          display: block;
+        }
+        .no-js-hide {
+          display: none;
+        }
+      </style>
+    </noscript>
+  </head>
+  {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
+  {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
+  <body
+    data-ga-label="interactive:viz-redistricting-2020"
+    data-ga-category="interactive:viz-redistricting-2020"
+    class="flex w-screen flex-col overflow-x-hidden bg-beige font-rale leading-normal text-g-9"
+  >
+    <main class="flex-grow bg-white p-1" x-data="app">
+      <h1 class="text-2xl font-semibold">
+        Search for your district to find your ballot
+      </h1>
+      <form
+        class="mt-4 flex items-stretch gap-1"
+        autocomplete="on"
+        @submit.prevent="document.activeElement.blur()"
+      >
+        <button
+          aria-label="Find my location"
+          class="
+          flex-shrink-0 rounded-l-lg
+          border-2 border-goldenrod bg-yellow
+          px-4
+        "
+          type="button"
+          @click="byLocation"
+          data-ga-action="find-location"
+        >
+          <svg
+            aria-hidden="true"
+            class="inline-block h-6 w-6 fill-current text-white"
+            role="img"
+            aria-label="Spotlight PA logo"
+          >
+            <use xlink:href="#crosshairs-svg"></use>
+          </svg>
+        </button>
+        <input
+          class="
+          block w-full
+          appearance-none border-2 border-g-4
+          bg-white px-4 py-2
+          tracking-wider text-g-8
+          placeholder-g-5 placeholder-opacity-100
+          hover:border-g-5
+        "
+          type="search"
+          name="address"
+          placeholder="1723 Commonwealth Ave, Harrisburg"
+          autocomplete="postal-code"
+          x-model="address"
+        />
+        <button
+          aria-label="Search"
+          class="
+          rounded-r-lg
+          border-2 border-goldenrod bg-yellow
+          px-4 font-bold
+          uppercase tracking-widest text-g-1
+        "
+          @click="byAddress()"
+          data-ga-action="location-search"
+        >
+          <svg
+            aria-hidden="true"
+            class="h-6 w-6 fill-current text-white"
+            :class="{ 'animate-spin': isLoadingThrottled }"
+          >
+            <use x-show="!isLoadingThrottled" xlink:href="#search-svg"></use>
+            <use x-show="isLoadingThrottled" xlink:href="#spinner-svg"></use>
+          </svg>
+        </button>
+      </form>
+
+      <p class="mt-2 text-sm text-g-6">
+        Address information is not collected or stored.
+      </p>
+
+      <div
+        x-show="error && error.message"
+        class="font-semibold text-orange"
+        x-text="error && error.message || error"
+      ></div>
+
+      <template x-if="rawData">
+        <div class="mt-6">
+          <h2 class="text-lg font-bold">Your ballot:</h2>
+          <h3 class="mt-2 font-bold">Candidates for Governor</h3>
+          <ul>
+            <template x-for="candidate of lookup('governor')" key="name">
+              <li>
+                <span x-text="candidate.name"></span>
+                (<span x-text="candidate.party"></span>)
+              </li>
+            </template>
+          </ul>
+          <h3 class="mt-2 font-bold">Candidates for US Senator</h3>
+          <ul>
+            <template x-for="candidate of lookup('us_senate')" key="name">
+              <li>
+                <span x-text="candidate.name"></span>
+                (<span x-text="candidate.party"></span>)
+              </li>
+            </template>
+          </ul>
+          <h3 class="mt-2 font-bold">
+            Candidates for US House of Representatives District
+            <span x-text="lookup('new_congress')"></span>
+          </h3>
+          <ul>
+            <template x-for="candidate of lookup('us_house')" key="name">
+              <li>
+                <span x-text="candidate.name"></span>
+                (<span x-text="candidate.party"></span>)
+              </li>
+            </template>
+          </ul>
+          <h3 class="mt-2 font-bold">
+            Candidates for State Representative District
+            <span x-text="lookup('new_house')"></span>
+          </h3>
+          <ul>
+            <template x-for="candidate of lookup('state_house')" key="name">
+              <li>
+                <span x-text="candidate.name"></span>
+                (<span x-text="candidate.party"></span>)
+              </li>
+            </template>
+          </ul>
+          <h3 class="mt-2 font-bold">
+            Candidates for State Senate District
+            <span x-text="lookup('new_senate')"></span>
+          </h3>
+          <ul>
+            <template x-for="candidate of lookup('state_senate')" key="name">
+              <li>
+                <span x-text="candidate.name"></span>
+                (<span x-text="candidate.party"></span>)
+              </li>
+            </template>
+          </ul>
+          <p
+            class="italic"
+            x-text="lookup('state_senate').length? '': 'Not up for re-election this cycle.'"
+          ></p>
+        </div>
+      </template>
+
+      <footer>
+        <p class="mt-2 text-right">
+          <svg
+            class="inline-block h-8 w-48 fill-current text-g-8"
+            role="img"
+            aria-label="Spotlight PA banner"
+          >
+            <use xlink:href="#banner-svg"></use>
+          </svg>
+        </p>
+      </footer>
+    </main>
+
+    {{ $svgs := dict
+      "banner-svg" "/img/logos/banner-default-on-trans.svg"
+      "logo-svg" "/img/logos/circle-default-on-trans.svg"
+      "crosshairs-svg" "@fontawesome/solid/crosshairs.svg"
+      "email-svg" "@fontawesome/regular/envelope.svg"
+      "search-svg" "@fontawesome/solid/magnifying-glass.svg"
+      "spinner-svg" "@fontawesome/solid/spinner.svg"
+    }}
+    <div hidden>
+      {{ range $id, $rsc := $svgs }}
+        {{ $svg := resources.Get $rsc }}
+        <svg id="{{ $id }}">{{ $svg.Content|safeHTML }}</svg>
+      {{ end }}
+    </div>
+  </body>
+</html>

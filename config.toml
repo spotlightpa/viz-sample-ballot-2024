@@ -2,7 +2,7 @@ baseURL = "https://viz-redistricting-2020.data.spotlightpa.org"
 languageCode = "en-us"
 title = "Pennsylvania Redistricting"
 
-disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404"]
+disableKinds = ["section", "taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404"]
 buildFuture = true
 
 googleAnalytics = "UA-141126362-3"
