@@ -151,6 +151,11 @@ func (app *appEnv) getCandidatesByLocation(w http.ResponseWriter, r *http.Reques
 	long, _ := strconv.ParseFloat(q.Get("long"), 64)
 
 	loc := NewLocationInfo(lat, long)
+	if loc.NewCongress == "" {
+		app.replyErr(w, r, resperr.New(
+			http.StatusNotFound, "not found: %.2f %.2f", lat, long))
+		return
+	}
 	data := NewCandiateInfo(loc)
 
 	w.Header().Set("Cache-Control", "public, max-age=3600, s-maxage=0")
