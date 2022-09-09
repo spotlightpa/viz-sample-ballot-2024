@@ -143,8 +143,12 @@
             class="h-6 w-6 fill-current text-white"
             :class="{ 'animate-spin': isLoadingThrottled }"
           >
-            <use x-show="!isLoadingThrottled" xlink:href="#search-svg"></use>
-            <use x-show="isLoadingThrottled" xlink:href="#spinner-svg"></use>
+            <use x-show="!isLoadingThrottled" href="#search-svg" />
+            <use
+              x-show="isLoadingThrottled"
+              href="#spinner-svg"
+              x-cloak="true"
+            />
           </svg>
         </button>
       </form>
