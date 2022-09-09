@@ -79,8 +79,8 @@
   {{ $pageCat := printf "%s:%s" (.Section | default .Type) .Kind }}
   {{ if eq .Kind "home" }}{{ $pageCat = "home " }}{{ end }}
   <body
-    data-ga-label="interactive:viz-redistricting-2020"
-    data-ga-category="interactive:viz-redistricting-2020"
+    data-ga-label="interactive:viz-redistricting-2020:district-finder"
+    data-ga-category="interactive:viz-redistricting-2020:district-finder"
     class="flex w-screen flex-col overflow-x-hidden bg-beige font-rale leading-normal text-g-9"
   >
     <main class="flex-grow bg-white p-1" x-data="app">
