@@ -164,7 +164,7 @@
           <h2 class="text-lg font-bold">Your ballot:</h2>
           <h3 class="mt-2 font-bold">Candidates for Governor</h3>
           <ul>
-            <template x-for="candidate of lookup('governor')" key="name">
+            <template x-for="candidate of shuffled('governor')" key="name">
               <li>
                 <span x-text="candidate.name"></span>
                 (<span x-text="candidate.party"></span>)
@@ -173,7 +173,7 @@
           </ul>
           <h3 class="mt-2 font-bold">Candidates for US Senator</h3>
           <ul>
-            <template x-for="candidate of lookup('us_senate')" key="name">
+            <template x-for="candidate of shuffled('us_senate')" key="name">
               <li>
                 <span x-text="candidate.name"></span>
                 (<span x-text="candidate.party"></span>)
@@ -185,7 +185,7 @@
             <span x-text="lookup('new_congress')"></span>
           </h3>
           <ul>
-            <template x-for="candidate of lookup('us_house')" key="name">
+            <template x-for="candidate of shuffled('us_house')" key="name">
               <li>
                 <span x-text="candidate.name"></span>
                 (<span x-text="candidate.party"></span>)
@@ -197,7 +197,7 @@
             <span x-text="lookup('new_house')"></span>
           </h3>
           <ul>
-            <template x-for="candidate of lookup('state_house')" key="name">
+            <template x-for="candidate of shuffled('state_house')" key="name">
               <li>
                 <span x-text="candidate.name"></span>
                 (<span x-text="candidate.party"></span>)
@@ -209,7 +209,7 @@
             <span x-text="lookup('new_senate')"></span>
           </h3>
           <ul>
-            <template x-for="candidate of lookup('state_senate')" key="name">
+            <template x-for="candidate of shuffled('state_senate')" key="name">
               <li>
                 <span x-text="candidate.name"></span>
                 (<span x-text="candidate.party"></span>)
