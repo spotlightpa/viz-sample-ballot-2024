@@ -17,6 +17,32 @@ function shuffle(a) {
 
 Alpine.magic("report", () => (ev) => reportClick(ev));
 
+Alpine.magic("party", () => (short) => {
+  return {
+    DEM: "Democrat",
+    FOV: "Fostering Our Vote",
+    GRN: "Green",
+    IND: "Independent",
+    KEY: "Keystone Party of Pennsylvania",
+    LIB: "Libertarian",
+    REP: "Republican",
+    SWP: "Socialist Workers Party",
+  }[short];
+});
+
+Alpine.magic("partyColor", () => (short) => {
+  return {
+    DEM: "#0000ff",
+    FOV: "orange",
+    GRN: "forestgreen",
+    IND: "#ccc",
+    KEY: "rebeccapurple",
+    LIB: "goldenrod",
+    REP: "#ff0000",
+    SWP: "black",
+  }[short];
+});
+
 const locate = () =>
   new Promise((resolve, reject) =>
     navigator.geolocation.getCurrentPosition(resolve, reject)
