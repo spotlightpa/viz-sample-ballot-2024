@@ -175,10 +175,8 @@
           <template x-if="rawData">
             <div class="mt-6">
               <h2 class="">Your ballot:</h2>
-              <div
-                class="mx-auto mt-2 flex max-w-full flex-wrap justify-start gap-4"
-              >
-                {{ $cardClass := `rounded border border-g-5 p-3 w-96 max-w-full` }}
+              <div class="mx-auto mt-2 grid gap-4 sm:grid-cols-2">
+                {{ $cardClass := `rounded border border-g-5 p-3` }}
                 {{ $hedClass := `mt-2 uppercase font-semibold text-g-7` }}
                 <div class="{{ $cardClass }}">
                   <h3 class="{{ $hedClass }}">Governor</h3>
