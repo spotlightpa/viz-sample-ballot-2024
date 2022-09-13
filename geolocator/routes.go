@@ -152,8 +152,13 @@ func (app *appEnv) getCandidatesByLocation(w http.ResponseWriter, r *http.Reques
 
 	loc := NewLocationInfo(lat, long)
 	if loc.NewCongress == "" {
-		app.replyErr(w, r, resperr.New(
-			http.StatusNotFound, "not found: %.2f %.2f", lat, long))
+		app.replyJSON(http.StatusNotFound, w, r, struct {
+			Status       int    `json:"status"`
+			ErrorMessage string `json:"error_message"`
+		}{
+			http.StatusNotFound,
+			"Could any district information for that location. Are you in Pennsylvania?",
+		})
 		return
 	}
 	data := NewCandiateInfo(loc)
@@ -179,8 +184,13 @@ func (app *appEnv) getCandidatesByAddress(w http.ResponseWriter, r *http.Request
 		return
 	}
 	if len(data.Results) < 1 {
-		app.replyErr(w, r, resperr.New(
-			http.StatusNotFound, "not found: %q", address))
+		app.replyJSON(http.StatusNotFound, w, r, struct {
+			Status       int    `json:"status"`
+			ErrorMessage string `json:"error_message"`
+		}{
+			http.StatusNotFound,
+			fmt.Sprintf("Could any district information for %q.", address),
+		})
 		return
 	}
 
