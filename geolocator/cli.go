@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/carlmjohnson/flagext"
+	"github.com/carlmjohnson/flagx"
 	"github.com/carlmjohnson/gateway"
 	"github.com/carlmjohnson/requests"
 	"github.com/carlmjohnson/versioninfo"
@@ -49,19 +49,21 @@ func (app *appEnv) ParseArgs(args []string) error {
 	fl.IntVar(&app.port, "port", -1, "specify a port to use http rather than AWS Lambda")
 	sentryDSN := fl.String("sentry-dsn", "", "DSN `pseudo-URL` for Sentry")
 
-	app.googleMaps = NewMapsClient()
 	fl.Func("api-key", "Google Maps API `key`", func(s string) error {
-		app.googleMaps.Param("key", s)
+		app.googleMaps = NewMapsClient(s)
 		return nil
 	})
 
 	if err := fl.Parse(args); err != nil {
 		return err
 	}
-	if err := flagext.ParseEnv(fl, App); err != nil {
+	if err := flagx.ParseEnv(fl, App); err != nil {
 		return err
 	}
 	if err := app.initSentry(*sentryDSN); err != nil {
+		return err
+	}
+	if err := flagx.MustHave(fl, "api-key"); err != nil {
 		return err
 	}
 	return nil
@@ -69,7 +71,7 @@ func (app *appEnv) ParseArgs(args []string) error {
 
 type appEnv struct {
 	port       int
-	googleMaps *requests.Builder
+	googleMaps requests.Config
 }
 
 func (app *appEnv) Exec() (err error) {
@@ -106,7 +108,7 @@ func (app *appEnv) initSentry(dsn string) error {
 	}
 	return sentry.Init(sentry.ClientOptions{
 		Dsn:       dsn,
-		Release:   build.Rev,
+		Release:   versioninfo.Short(),
 		Transport: transport,
 	})
 }

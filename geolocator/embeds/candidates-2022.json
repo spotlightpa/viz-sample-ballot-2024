@@ -1,0 +1,2230 @@
+{
+  "Governor": {
+    "": [
+      {
+        "name": "Josh Shapiro",
+        "party": "DEM"
+      },
+      {
+        "name": "Douglas V Mastriano",
+        "party": "REP"
+      },
+      {
+        "name": "Matt Hackenburg",
+        "party": "LIB"
+      },
+      {
+        "name": "Christina Digiulio",
+        "party": "GRN"
+      },
+      {
+        "name": "Joe Soloski",
+        "party": "KEY"
+      }
+    ]
+  },
+  "US House": {
+    "1": [
+      {
+        "name": "Ashley Ehasz",
+        "party": "DEM"
+      },
+      {
+        "name": "Brian Fitzpatrick",
+        "party": "REP"
+      }
+    ],
+    "10": [
+      {
+        "name": "Shamaine Daniels",
+        "party": "DEM"
+      },
+      {
+        "name": "Scott Perry",
+        "party": "REP"
+      }
+    ],
+    "11": [
+      {
+        "name": "Bob Hollister",
+        "party": "DEM"
+      },
+      {
+        "name": "Lloyd K Smucker",
+        "party": "REP"
+      }
+    ],
+    "12": [
+      {
+        "name": "Summer Lee",
+        "party": "DEM"
+      },
+      {
+        "name": "Mike Doyle",
+        "party": "REP"
+      }
+    ],
+    "13": [
+      {
+        "name": "John Joyce",
+        "party": "REP"
+      }
+    ],
+    "14": [
+      {
+        "name": "Guy Reschenthaler",
+        "party": "REP"
+      }
+    ],
+    "15": [
+      {
+        "name": "Mike Molesevich",
+        "party": "DEM"
+      },
+      {
+        "name": "Glenn Gt Thompson",
+        "party": "REP"
+      }
+    ],
+    "16": [
+      {
+        "name": "Dan Pastore",
+        "party": "DEM"
+      },
+      {
+        "name": "Mike Kelly",
+        "party": "REP"
+      }
+    ],
+    "17": [
+      {
+        "name": "Chris Deluzio",
+        "party": "DEM"
+      },
+      {
+        "name": "Jeremy Shaffer",
+        "party": "REP"
+      }
+    ],
+    "2": [
+      {
+        "name": "Brendan F Boyle",
+        "party": "DEM"
+      },
+      {
+        "name": "Aaron Bashir",
+        "party": "REP"
+      }
+    ],
+    "3": [
+      {
+        "name": "Dwight Evans",
+        "party": "DEM"
+      },
+      {
+        "name": "Christopher Hoeppner",
+        "party": "SWP"
+      }
+    ],
+    "4": [
+      {
+        "name": "Madeleine Dean",
+        "party": "DEM"
+      },
+      {
+        "name": "Christian Nascimento",
+        "party": "REP"
+      }
+    ],
+    "5": [
+      {
+        "name": "Mary Gay Scanlon",
+        "party": "DEM"
+      },
+      {
+        "name": "David Galluch",
+        "party": "REP"
+      }
+    ],
+    "6": [
+      {
+        "name": "Chrissy Houlahan",
+        "party": "DEM"
+      },
+      {
+        "name": "Guy Ciarrocchi",
+        "party": "REP"
+      }
+    ],
+    "7": [
+      {
+        "name": "Susan Wild",
+        "party": "DEM"
+      },
+      {
+        "name": "Lisa Scheller",
+        "party": "REP"
+      }
+    ],
+    "8": [
+      {
+        "name": "Matt Cartwright",
+        "party": "DEM"
+      },
+      {
+        "name": "Jim Bognet",
+        "party": "REP"
+      }
+    ],
+    "9": [
+      {
+        "name": "Amanda R Waldman",
+        "party": "DEM"
+      },
+      {
+        "name": "Dan Meuser",
+        "party": "REP"
+      }
+    ]
+  },
+  "State House": {
+    "1": [
+      {
+        "name": "Patrick J Harkins",
+        "party": "DEM"
+      },
+      {
+        "name": "Michael G Thomas",
+        "party": "LIB"
+      }
+    ],
+    "10": [
+      {
+        "name": "Amen Brown",
+        "party": "DEM"
+      }
+    ],
+    "100": [
+      {
+        "name": "Bryan D Cutler",
+        "party": "REP"
+      }
+    ],
+    "101": [
+      {
+        "name": "Catherine Miller",
+        "party": "DEM"
+      },
+      {
+        "name": "John Schlegel",
+        "party": "REP"
+      }
+    ],
+    "102": [
+      {
+        "name": "Laura Quick",
+        "party": "DEM"
+      },
+      {
+        "name": "Russ Diamond",
+        "party": "REP"
+      }
+    ],
+    "103": [
+      {
+        "name": "Patty Kim",
+        "party": "DEM"
+      },
+      {
+        "name": "David D Buell",
+        "party": "REP"
+      }
+    ],
+    "104": [
+      {
+        "name": "Dave Madsen",
+        "party": "DEM"
+      },
+      {
+        "name": "David Kocur",
+        "party": "KEY"
+      }
+    ],
+    "105": [
+      {
+        "name": "Justin Fleming",
+        "party": "DEM"
+      },
+      {
+        "name": "Therese L Kenley",
+        "party": "REP"
+      }
+    ],
+    "106": [
+      {
+        "name": "Tom Mehaffie",
+        "party": "REP"
+      }
+    ],
+    "107": [
+      {
+        "name": "Ron Tanney",
+        "party": "DEM"
+      },
+      {
+        "name": "Joanne Stehr",
+        "party": "REP"
+      }
+    ],
+    "108": [
+      {
+        "name": "Lynda J Schlegel Culver",
+        "party": "REP"
+      }
+    ],
+    "109": [
+      {
+        "name": "Ed Giannattasio",
+        "party": "DEM"
+      },
+      {
+        "name": "Robert Leadbeter",
+        "party": "REP"
+      },
+      {
+        "name": "Thomas Anderson",
+        "party": "LIB"
+      }
+    ],
+    "11": [
+      {
+        "name": "Marci Mustello",
+        "party": "REP"
+      }
+    ],
+    "110": [
+      {
+        "name": "Tina Pickett",
+        "party": "REP"
+      }
+    ],
+    "111": [
+      {
+        "name": "Jonathan Fritz",
+        "party": "REP"
+      }
+    ],
+    "112": [
+      {
+        "name": "Kyle J Mullins",
+        "party": "DEM"
+      },
+      {
+        "name": "William Torbeck",
+        "party": "REP"
+      }
+    ],
+    "113": [
+      {
+        "name": "Kyle Donahue",
+        "party": "DEM"
+      },
+      {
+        "name": "Aaron Sepkowski",
+        "party": "REP"
+      }
+    ],
+    "114": [
+      {
+        "name": "Bridget Malloy Kosierowski",
+        "party": "DEM"
+      },
+      {
+        "name": "David Burgerhoff",
+        "party": "REP"
+      }
+    ],
+    "115": [
+      {
+        "name": "Maureen Madden",
+        "party": "DEM"
+      },
+      {
+        "name": "Krista Paolucci",
+        "party": "REP"
+      }
+    ],
+    "116": [
+      {
+        "name": "Yesenia Rodriguez",
+        "party": "DEM"
+      },
+      {
+        "name": "Dane Watro",
+        "party": "REP"
+      }
+    ],
+    "117": [
+      {
+        "name": "Mike Cabell",
+        "party": "REP"
+      }
+    ],
+    "118": [
+      {
+        "name": "Jim Haddock",
+        "party": "DEM"
+      },
+      {
+        "name": "James May",
+        "party": "REP"
+      }
+    ],
+    "119": [
+      {
+        "name": "Vito Malacari",
+        "party": "DEM"
+      },
+      {
+        "name": "Alec J Ryncavage",
+        "party": "REP"
+      }
+    ],
+    "12": [
+      {
+        "name": "Robert Vigue",
+        "party": "DEM"
+      },
+      {
+        "name": "Stephenie Scialabba",
+        "party": "REP"
+      }
+    ],
+    "120": [
+      {
+        "name": "Fern Leard",
+        "party": "DEM"
+      },
+      {
+        "name": "Aaron Kaufer",
+        "party": "REP"
+      }
+    ],
+    "121": [
+      {
+        "name": "Eddie Day Pashinski",
+        "party": "DEM"
+      },
+      {
+        "name": "Eryn Harvey",
+        "party": "REP"
+      }
+    ],
+    "122": [
+      {
+        "name": "Richard Kost",
+        "party": "DEM"
+      },
+      {
+        "name": "Doyle Heffley",
+        "party": "REP"
+      }
+    ],
+    "123": [
+      {
+        "name": "Kathy Laughlin Benyak",
+        "party": "DEM"
+      },
+      {
+        "name": "Tim Twardzik",
+        "party": "REP"
+      }
+    ],
+    "124": [
+      {
+        "name": "Tina Burns",
+        "party": "DEM"
+      },
+      {
+        "name": "Jamie Barton",
+        "party": "REP"
+      }
+    ],
+    "125": [
+      {
+        "name": "Joe Kerwin",
+        "party": "REP"
+      }
+    ],
+    "126": [
+      {
+        "name": "Mark Rozzi",
+        "party": "DEM"
+      },
+      {
+        "name": "James D Oswald",
+        "party": "REP"
+      }
+    ],
+    "127": [
+      {
+        "name": "Manny Guzman",
+        "party": "DEM"
+      },
+      {
+        "name": "Vincent D Gagliardo Jr",
+        "party": "REP"
+      }
+    ],
+    "128": [
+      {
+        "name": "Mark M Gillen",
+        "party": "REP"
+      }
+    ],
+    "129": [
+      {
+        "name": "Johanny Cepeda-Freytiz",
+        "party": "DEM"
+      },
+      {
+        "name": "Barry Llewellyn",
+        "party": "REP"
+      }
+    ],
+    "13": [
+      {
+        "name": "David Cunningham",
+        "party": "DEM"
+      },
+      {
+        "name": "John Lawrence",
+        "party": "REP"
+      }
+    ],
+    "130": [
+      {
+        "name": "David M Maloney",
+        "party": "REP"
+      }
+    ],
+    "131": [
+      {
+        "name": "Kevin Branco",
+        "party": "DEM"
+      },
+      {
+        "name": "Milou Mackenzie",
+        "party": "REP"
+      }
+    ],
+    "132": [
+      {
+        "name": "Mike Schlossberg",
+        "party": "DEM"
+      },
+      {
+        "name": "Beth Finch",
+        "party": "REP"
+      },
+      {
+        "name": "Matt Schutter",
+        "party": "LIB"
+      }
+    ],
+    "133": [
+      {
+        "name": "Jeanne Mcneill",
+        "party": "DEM"
+      }
+    ],
+    "134": [
+      {
+        "name": "Peter Schweyer",
+        "party": "DEM"
+      },
+      {
+        "name": "Brent Labenberg",
+        "party": "REP"
+      }
+    ],
+    "135": [
+      {
+        "name": "Steve Samuelson",
+        "party": "DEM"
+      }
+    ],
+    "136": [
+      {
+        "name": "Robert Freeman",
+        "party": "DEM"
+      }
+    ],
+    "137": [
+      {
+        "name": "Anna Thomas",
+        "party": "DEM"
+      },
+      {
+        "name": "Joe Emrick",
+        "party": "REP"
+      }
+    ],
+    "138": [
+      {
+        "name": "Gene Hunter",
+        "party": "DEM"
+      },
+      {
+        "name": "Ann Flood",
+        "party": "REP"
+      }
+    ],
+    "139": [
+      {
+        "name": "Meg Rosenfeld",
+        "party": "DEM"
+      },
+      {
+        "name": "Joseph W Adams",
+        "party": "REP"
+      }
+    ],
+    "14": [
+      {
+        "name": "Bruce A Carper",
+        "party": "DEM"
+      },
+      {
+        "name": "Jim Marshall",
+        "party": "REP"
+      }
+    ],
+    "140": [
+      {
+        "name": "John T Galloway",
+        "party": "DEM"
+      }
+    ],
+    "141": [
+      {
+        "name": "Tina Davis",
+        "party": "DEM"
+      },
+      {
+        "name": "Kelly Bellerby-Allen",
+        "party": "REP"
+      },
+      {
+        "name": "Anthony Portillo",
+        "party": "LIB"
+      }
+    ],
+    "142": [
+      {
+        "name": "Mark Moffa",
+        "party": "DEM"
+      },
+      {
+        "name": "Joseph F Hogan",
+        "party": "REP"
+      }
+    ],
+    "143": [
+      {
+        "name": "Gwen Stoltz",
+        "party": "DEM"
+      },
+      {
+        "name": "Shelby Labs",
+        "party": "REP"
+      }
+    ],
+    "144": [
+      {
+        "name": "Brian Munroe",
+        "party": "DEM"
+      },
+      {
+        "name": "Todd Polinchock",
+        "party": "REP"
+      }
+    ],
+    "145": [
+      {
+        "name": "Jim Miller",
+        "party": "DEM"
+      },
+      {
+        "name": "Craig Staats",
+        "party": "REP"
+      },
+      {
+        "name": "Lula Vanliew",
+        "party": "LIB"
+      }
+    ],
+    "146": [
+      {
+        "name": "Joe Ciresi",
+        "party": "DEM"
+      },
+      {
+        "name": "Thomas Neafcy",
+        "party": "REP"
+      }
+    ],
+    "147": [
+      {
+        "name": "Alexandra Wisser",
+        "party": "DEM"
+      },
+      {
+        "name": "Donna M Scheuren",
+        "party": "REP"
+      }
+    ],
+    "148": [
+      {
+        "name": "Mary Jo Daley",
+        "party": "DEM"
+      },
+      {
+        "name": "Fran O'Donnell",
+        "party": "REP"
+      }
+    ],
+    "149": [
+      {
+        "name": "Tim Briggs",
+        "party": "DEM"
+      },
+      {
+        "name": "Nancy Price",
+        "party": "REP"
+      }
+    ],
+    "15": [
+      {
+        "name": "Joshua D Kail",
+        "party": "REP"
+      }
+    ],
+    "150": [
+      {
+        "name": "Joe Webster",
+        "party": "DEM"
+      },
+      {
+        "name": "Beth Ann Bittner Mazza",
+        "party": "REP"
+      }
+    ],
+    "151": [
+      {
+        "name": "Melissa Cerrato",
+        "party": "DEM"
+      },
+      {
+        "name": "Todd Stephens",
+        "party": "REP"
+      }
+    ],
+    "152": [
+      {
+        "name": "Nancy Guenst",
+        "party": "DEM"
+      },
+      {
+        "name": "John Weinrich",
+        "party": "REP"
+      }
+    ],
+    "153": [
+      {
+        "name": "Ben Sanchez",
+        "party": "DEM"
+      },
+      {
+        "name": "Larry Ulrich",
+        "party": "REP"
+      }
+    ],
+    "154": [
+      {
+        "name": "Napoleon Nelson",
+        "party": "DEM"
+      },
+      {
+        "name": "Angelina Banks",
+        "party": "REP"
+      }
+    ],
+    "155": [
+      {
+        "name": "Danielle Friel Otten",
+        "party": "DEM"
+      },
+      {
+        "name": "Kyle Scribner",
+        "party": "REP"
+      }
+    ],
+    "156": [
+      {
+        "name": "Chris Pielli",
+        "party": "DEM"
+      },
+      {
+        "name": "Heidi Vanderwaal",
+        "party": "REP"
+      }
+    ],
+    "157": [
+      {
+        "name": "Melissa Shusterman",
+        "party": "DEM"
+      },
+      {
+        "name": "Sarah Marvin",
+        "party": "REP"
+      }
+    ],
+    "158": [
+      {
+        "name": "Christina Sappey",
+        "party": "DEM"
+      },
+      {
+        "name": "Leon Spencer",
+        "party": "REP"
+      }
+    ],
+    "159": [
+      {
+        "name": "Carol Kazeem",
+        "party": "DEM"
+      },
+      {
+        "name": "Ruth Moton",
+        "party": "REP"
+      }
+    ],
+    "16": [
+      {
+        "name": "Robert F Matzie",
+        "party": "DEM"
+      },
+      {
+        "name": "Rico Elmore",
+        "party": "REP"
+      }
+    ],
+    "160": [
+      {
+        "name": "Cathy Spahr",
+        "party": "DEM"
+      },
+      {
+        "name": "Craig Williams",
+        "party": "REP"
+      }
+    ],
+    "161": [
+      {
+        "name": "Leanne Krueger",
+        "party": "DEM"
+      },
+      {
+        "name": "Ed Mongelluzzo",
+        "party": "REP"
+      }
+    ],
+    "162": [
+      {
+        "name": "David M Delloso",
+        "party": "DEM"
+      },
+      {
+        "name": "Michelle Mattus",
+        "party": "REP"
+      }
+    ],
+    "163": [
+      {
+        "name": "Mike Zabel",
+        "party": "DEM"
+      },
+      {
+        "name": "Kenneth P Rucci",
+        "party": "REP"
+      },
+      {
+        "name": "Alfe Goodwin",
+        "party": "LIB"
+      }
+    ],
+    "164": [
+      {
+        "name": "Gina H Curry",
+        "party": "DEM"
+      }
+    ],
+    "165": [
+      {
+        "name": "Jennifer O'Mara",
+        "party": "DEM"
+      },
+      {
+        "name": "Nichole Missino",
+        "party": "REP"
+      },
+      {
+        "name": "Bill Foster",
+        "party": "FOV"
+      }
+    ],
+    "166": [
+      {
+        "name": "Greg Vitali",
+        "party": "DEM"
+      },
+      {
+        "name": "Kim Razzano",
+        "party": "REP"
+      },
+      {
+        "name": "Edward T Clifford Iii",
+        "party": "LIB"
+      }
+    ],
+    "167": [
+      {
+        "name": "Kristine C Howard",
+        "party": "DEM"
+      },
+      {
+        "name": "Gail Newman",
+        "party": "REP"
+      }
+    ],
+    "168": [
+      {
+        "name": "Lisa A Borowski",
+        "party": "DEM"
+      },
+      {
+        "name": "Chris Quinn",
+        "party": "REP"
+      }
+    ],
+    "169": [
+      {
+        "name": "Isaac Riston",
+        "party": "DEM"
+      },
+      {
+        "name": "Kate A Klunk",
+        "party": "REP"
+      }
+    ],
+    "17": [
+      {
+        "name": "Tim Bonner",
+        "party": "REP"
+      }
+    ],
+    "170": [
+      {
+        "name": "Martina White",
+        "party": "REP"
+      }
+    ],
+    "171": [
+      {
+        "name": "Robert Zeigler",
+        "party": "DEM"
+      },
+      {
+        "name": "Kerry A Benninghoff",
+        "party": "REP"
+      }
+    ],
+    "172": [
+      {
+        "name": "Kevin J Boyle",
+        "party": "DEM"
+      },
+      {
+        "name": "Al Taubenberger",
+        "party": "REP"
+      }
+    ],
+    "173": [
+      {
+        "name": "Pat Gallagher",
+        "party": "DEM"
+      }
+    ],
+    "174": [
+      {
+        "name": "Ed Neilson",
+        "party": "DEM"
+      }
+    ],
+    "175": [
+      {
+        "name": "Marylouise Isaacson",
+        "party": "DEM"
+      }
+    ],
+    "176": [
+      {
+        "name": "Hope Christman",
+        "party": "DEM"
+      },
+      {
+        "name": "Jack Rader",
+        "party": "REP"
+      },
+      {
+        "name": "Autumn Pangia",
+        "party": "LIB"
+      }
+    ],
+    "177": [
+      {
+        "name": "Joe Hohenstein",
+        "party": "DEM"
+      },
+      {
+        "name": "Mark Lavelle",
+        "party": "REP"
+      }
+    ],
+    "178": [
+      {
+        "name": "Ilya Breyman",
+        "party": "DEM"
+      },
+      {
+        "name": "Kristin Marcell",
+        "party": "REP"
+      }
+    ],
+    "179": [
+      {
+        "name": "Jason T Dawkins",
+        "party": "DEM"
+      }
+    ],
+    "18": [
+      {
+        "name": "Laurie Smith",
+        "party": "DEM"
+      },
+      {
+        "name": "Kathleen Kc Tomlinson",
+        "party": "REP"
+      }
+    ],
+    "180": [
+      {
+        "name": "Jose A Giral",
+        "party": "DEM"
+      }
+    ],
+    "181": [
+      {
+        "name": "Malcolm Kenyatta",
+        "party": "DEM"
+      }
+    ],
+    "182": [
+      {
+        "name": "Ben Waxman",
+        "party": "DEM"
+      },
+      {
+        "name": "Al Robles",
+        "party": "REP"
+      }
+    ],
+    "183": [
+      {
+        "name": "Zach Mako",
+        "party": "REP"
+      }
+    ],
+    "184": [
+      {
+        "name": "Elizabeth Fiedler",
+        "party": "DEM"
+      },
+      {
+        "name": "Marjilyn Murray",
+        "party": "REP"
+      }
+    ],
+    "185": [
+      {
+        "name": "Regina G Young",
+        "party": "DEM"
+      }
+    ],
+    "186": [
+      {
+        "name": "Jordan A Harris",
+        "party": "DEM"
+      }
+    ],
+    "187": [
+      {
+        "name": "Ryan E Mackenzie",
+        "party": "REP"
+      }
+    ],
+    "188": [
+      {
+        "name": "Rick Krajewski",
+        "party": "DEM"
+      }
+    ],
+    "189": [
+      {
+        "name": "Tarah Probst",
+        "party": "DEM"
+      },
+      {
+        "name": "Steve Ertle",
+        "party": "REP"
+      }
+    ],
+    "19": [
+      {
+        "name": "Aerion Andrew Abney",
+        "party": "DEM"
+      }
+    ],
+    "190": [
+      {
+        "name": "G Roni Green",
+        "party": "DEM"
+      },
+      {
+        "name": "James Love Jackson",
+        "party": "IND"
+      }
+    ],
+    "191": [
+      {
+        "name": "Joanna E Mcclinton",
+        "party": "DEM"
+      }
+    ],
+    "192": [
+      {
+        "name": "Morgan Cephas",
+        "party": "DEM"
+      }
+    ],
+    "193": [
+      {
+        "name": "Torren Ecker",
+        "party": "REP"
+      }
+    ],
+    "194": [
+      {
+        "name": "Tarik Khan",
+        "party": "DEM"
+      },
+      {
+        "name": "Torren Danowski",
+        "party": "LIB"
+      }
+    ],
+    "195": [
+      {
+        "name": "Donna Bullock",
+        "party": "DEM"
+      }
+    ],
+    "196": [
+      {
+        "name": "Seth Grove",
+        "party": "REP"
+      }
+    ],
+    "197": [
+      {
+        "name": "Danilo Burgos",
+        "party": "DEM"
+      }
+    ],
+    "198": [
+      {
+        "name": "Darisha K Parker",
+        "party": "DEM"
+      }
+    ],
+    "199": [
+      {
+        "name": "Alan Howe",
+        "party": "DEM"
+      },
+      {
+        "name": "Barbara Gleim",
+        "party": "REP"
+      }
+    ],
+    "2": [
+      {
+        "name": "Bob Merski",
+        "party": "DEM"
+      },
+      {
+        "name": "Michael Pace",
+        "party": "REP"
+      }
+    ],
+    "20": [
+      {
+        "name": "Emily Kinkead",
+        "party": "DEM"
+      },
+      {
+        "name": "Matt Kruth",
+        "party": "REP"
+      }
+    ],
+    "200": [
+      {
+        "name": "Chris Rabb",
+        "party": "DEM"
+      },
+      {
+        "name": "Kionna West",
+        "party": "REP"
+      }
+    ],
+    "201": [
+      {
+        "name": "Stephen Kinsey",
+        "party": "DEM"
+      }
+    ],
+    "202": [
+      {
+        "name": "Jared Solomon",
+        "party": "DEM"
+      }
+    ],
+    "203": [
+      {
+        "name": "Anthony A Bellmon",
+        "party": "DEM"
+      }
+    ],
+    "21": [
+      {
+        "name": "Sara Innamorato",
+        "party": "DEM"
+      },
+      {
+        "name": "Frank Perman",
+        "party": "REP"
+      }
+    ],
+    "22": [
+      {
+        "name": "Joshua Siegel",
+        "party": "DEM"
+      },
+      {
+        "name": "Robert E Smith Jr",
+        "party": "REP"
+      }
+    ],
+    "23": [
+      {
+        "name": "Dan Frankel",
+        "party": "DEM"
+      },
+      {
+        "name": "Jay Ting Walker",
+        "party": "GRN"
+      }
+    ],
+    "24": [
+      {
+        "name": "Latasha D Mayes",
+        "party": "DEM"
+      }
+    ],
+    "25": [
+      {
+        "name": "Brandon J Markosek",
+        "party": "DEM"
+      },
+      {
+        "name": "Steve Schlauch",
+        "party": "REP"
+      }
+    ],
+    "26": [
+      {
+        "name": "Paul Friel",
+        "party": "DEM"
+      },
+      {
+        "name": "Tim Hennessey",
+        "party": "REP"
+      }
+    ],
+    "27": [
+      {
+        "name": "Daniel J Deasy",
+        "party": "DEM"
+      },
+      {
+        "name": "Ed Brosky",
+        "party": "REP"
+      }
+    ],
+    "28": [
+      {
+        "name": "Alison Duncan",
+        "party": "DEM"
+      },
+      {
+        "name": "Rob Mercuri",
+        "party": "REP"
+      }
+    ],
+    "29": [
+      {
+        "name": "Tim Brennan",
+        "party": "DEM"
+      },
+      {
+        "name": "Diane Smith",
+        "party": "REP"
+      },
+      {
+        "name": "Robert Ronky",
+        "party": "IND"
+      }
+    ],
+    "3": [
+      {
+        "name": "Ryan Bizzarro",
+        "party": "DEM"
+      },
+      {
+        "name": "Joe Kujawa",
+        "party": "REP"
+      }
+    ],
+    "30": [
+      {
+        "name": "Arvind Venkat",
+        "party": "DEM"
+      },
+      {
+        "name": "Cindy Kirk",
+        "party": "REP"
+      }
+    ],
+    "31": [
+      {
+        "name": "Perry Warren",
+        "party": "DEM"
+      },
+      {
+        "name": "Bernie Sauer",
+        "party": "REP"
+      }
+    ],
+    "32": [
+      {
+        "name": "Tony Deluca",
+        "party": "DEM"
+      },
+      {
+        "name": "Queonia Livingston",
+        "party": "GRN"
+      }
+    ],
+    "33": [
+      {
+        "name": "Mandy Steele",
+        "party": "DEM"
+      },
+      {
+        "name": "Ted Tomson",
+        "party": "REP"
+      }
+    ],
+    "34": [
+      {
+        "name": "Summer Lee",
+        "party": "DEM"
+      }
+    ],
+    "35": [
+      {
+        "name": "Austin Davis",
+        "party": "DEM"
+      },
+      {
+        "name": "Don Nevills",
+        "party": "REP"
+      }
+    ],
+    "36": [
+      {
+        "name": "Jessica Benham",
+        "party": "DEM"
+      },
+      {
+        "name": "Ross Sylvester",
+        "party": "LIB"
+      }
+    ],
+    "37": [
+      {
+        "name": "Mindy Fee",
+        "party": "REP"
+      }
+    ],
+    "38": [
+      {
+        "name": "Nick Pisciottano",
+        "party": "DEM"
+      }
+    ],
+    "39": [
+      {
+        "name": "Rick Self",
+        "party": "DEM"
+      },
+      {
+        "name": "Andrew Kuzma",
+        "party": "REP"
+      }
+    ],
+    "4": [
+      {
+        "name": "Chelsea Oliver",
+        "party": "DEM"
+      },
+      {
+        "name": "Jake Banta",
+        "party": "REP"
+      }
+    ],
+    "40": [
+      {
+        "name": "Chris Todd",
+        "party": "DEM"
+      },
+      {
+        "name": "Natalie Mihalek",
+        "party": "REP"
+      }
+    ],
+    "41": [
+      {
+        "name": "Brett R Miller",
+        "party": "REP"
+      },
+      {
+        "name": "Favyan Asia",
+        "party": "LIB"
+      }
+    ],
+    "42": [
+      {
+        "name": "Dan Miller",
+        "party": "DEM"
+      },
+      {
+        "name": "Pat Tylka",
+        "party": "REP"
+      }
+    ],
+    "43": [
+      {
+        "name": "Keith J Greiner",
+        "party": "REP"
+      }
+    ],
+    "44": [
+      {
+        "name": "Debbie Turici",
+        "party": "DEM"
+      },
+      {
+        "name": "Valerie Gaydos",
+        "party": "REP"
+      }
+    ],
+    "45": [
+      {
+        "name": "Anita Astorino Kulik",
+        "party": "DEM"
+      },
+      {
+        "name": "Michael Pendel",
+        "party": "REP"
+      }
+    ],
+    "46": [
+      {
+        "name": "Jason Ortitay",
+        "party": "REP"
+      }
+    ],
+    "47": [
+      {
+        "name": "Joe D'Orsie",
+        "party": "REP"
+      }
+    ],
+    "48": [
+      {
+        "name": "Tim O'Neal",
+        "party": "REP"
+      }
+    ],
+    "49": [
+      {
+        "name": "Izzy Smith-Wade-El",
+        "party": "DEM"
+      },
+      {
+        "name": "Anne Rivers",
+        "party": "REP"
+      }
+    ],
+    "5": [
+      {
+        "name": "Barry Jozwiak",
+        "party": "REP"
+      }
+    ],
+    "50": [
+      {
+        "name": "Doug Mason",
+        "party": "DEM"
+      },
+      {
+        "name": "Bud Cook",
+        "party": "REP"
+      }
+    ],
+    "51": [
+      {
+        "name": "Richard Ringer",
+        "party": "DEM"
+      },
+      {
+        "name": "Charity Grimm Krupa",
+        "party": "REP"
+      }
+    ],
+    "52": [
+      {
+        "name": "Ryan Warner",
+        "party": "REP"
+      }
+    ],
+    "53": [
+      {
+        "name": "Steve Malagari",
+        "party": "DEM"
+      },
+      {
+        "name": "Jennifer Neha Sodha",
+        "party": "REP"
+      }
+    ],
+    "54": [
+      {
+        "name": "Greg Scott",
+        "party": "DEM"
+      },
+      {
+        "name": "Allen Arthur Anderson",
+        "party": "REP"
+      }
+    ],
+    "55": [
+      {
+        "name": "Scott Gauss",
+        "party": "DEM"
+      },
+      {
+        "name": "Jill Cooper",
+        "party": "REP"
+      }
+    ],
+    "56": [
+      {
+        "name": "George Dunbar",
+        "party": "REP"
+      }
+    ],
+    "57": [
+      {
+        "name": "Eric Nelson",
+        "party": "REP"
+      }
+    ],
+    "58": [
+      {
+        "name": "Ken Bach",
+        "party": "DEM"
+      },
+      {
+        "name": "Eric Davanzo",
+        "party": "REP"
+      }
+    ],
+    "59": [
+      {
+        "name": "Leslie Rossi",
+        "party": "REP"
+      }
+    ],
+    "6": [
+      {
+        "name": "Nerissa Galt",
+        "party": "DEM"
+      },
+      {
+        "name": "Brad Roae",
+        "party": "REP"
+      }
+    ],
+    "60": [
+      {
+        "name": "Bob George",
+        "party": "DEM"
+      },
+      {
+        "name": "Abby Major",
+        "party": "REP"
+      }
+    ],
+    "61": [
+      {
+        "name": "Liz Hanbidge",
+        "party": "DEM"
+      },
+      {
+        "name": "Jessie Bradica",
+        "party": "REP"
+      }
+    ],
+    "62": [
+      {
+        "name": "Brian Doyle",
+        "party": "DEM"
+      },
+      {
+        "name": "Jim Struzzi",
+        "party": "REP"
+      }
+    ],
+    "63": [
+      {
+        "name": "Donna Oberlander",
+        "party": "REP"
+      }
+    ],
+    "64": [
+      {
+        "name": "R Lee James",
+        "party": "REP"
+      }
+    ],
+    "65": [
+      {
+        "name": "Kathy L Rapp",
+        "party": "REP"
+      }
+    ],
+    "66": [
+      {
+        "name": "Brian Smith",
+        "party": "REP"
+      }
+    ],
+    "67": [
+      {
+        "name": "Martin T Causer",
+        "party": "REP"
+      }
+    ],
+    "68": [
+      {
+        "name": "Clint Owlett",
+        "party": "REP"
+      }
+    ],
+    "69": [
+      {
+        "name": "Carl Walker Metzgar",
+        "party": "REP"
+      }
+    ],
+    "7": [
+      {
+        "name": "Timothy M Mcgonigle",
+        "party": "DEM"
+      },
+      {
+        "name": "Parke Wentling",
+        "party": "REP"
+      }
+    ],
+    "70": [
+      {
+        "name": "Matt Bradford",
+        "party": "DEM"
+      },
+      {
+        "name": "Arthur C Bustard",
+        "party": "REP"
+      }
+    ],
+    "71": [
+      {
+        "name": "Jim Rigby",
+        "party": "REP"
+      }
+    ],
+    "72": [
+      {
+        "name": "Frank Burns",
+        "party": "DEM"
+      },
+      {
+        "name": "Renae Billow",
+        "party": "REP"
+      }
+    ],
+    "73": [
+      {
+        "name": "Dallas Kephart",
+        "party": "REP"
+      }
+    ],
+    "74": [
+      {
+        "name": "Dan Williams",
+        "party": "DEM"
+      },
+      {
+        "name": "Dale Hensel",
+        "party": "REP"
+      }
+    ],
+    "75": [
+      {
+        "name": "Erica Vogt",
+        "party": "DEM"
+      },
+      {
+        "name": "Mike Armanini",
+        "party": "REP"
+      }
+    ],
+    "76": [
+      {
+        "name": "Denise Maris",
+        "party": "DEM"
+      },
+      {
+        "name": "Stephanie Borowicz",
+        "party": "REP"
+      }
+    ],
+    "77": [
+      {
+        "name": "H Scott Conklin",
+        "party": "DEM"
+      },
+      {
+        "name": "Steve Yetsko",
+        "party": "REP"
+      }
+    ],
+    "78": [
+      {
+        "name": "Jesse Topper",
+        "party": "REP"
+      }
+    ],
+    "79": [
+      {
+        "name": "Lou Schmitt",
+        "party": "REP"
+      }
+    ],
+    "8": [
+      {
+        "name": "Aaron Bernstine",
+        "party": "REP"
+      }
+    ],
+    "80": [
+      {
+        "name": "Kimberly Capenos",
+        "party": "DEM"
+      },
+      {
+        "name": "Jim Gregory",
+        "party": "REP"
+      }
+    ],
+    "81": [
+      {
+        "name": "Ian Kidd",
+        "party": "DEM"
+      },
+      {
+        "name": "Rich Irvin",
+        "party": "REP"
+      }
+    ],
+    "82": [
+      {
+        "name": "Paul Takac",
+        "party": "DEM"
+      },
+      {
+        "name": "Justin V Behrens",
+        "party": "REP"
+      }
+    ],
+    "83": [
+      {
+        "name": "Jamie Flick",
+        "party": "REP"
+      }
+    ],
+    "84": [
+      {
+        "name": "Joe Hamm",
+        "party": "REP"
+      }
+    ],
+    "85": [
+      {
+        "name": "David H Rowe",
+        "party": "REP"
+      }
+    ],
+    "86": [
+      {
+        "name": "Perry Stambaugh",
+        "party": "REP"
+      }
+    ],
+    "87": [
+      {
+        "name": "Kristal Markle",
+        "party": "DEM"
+      },
+      {
+        "name": "Thomas Kutz",
+        "party": "REP"
+      }
+    ],
+    "88": [
+      {
+        "name": "Sara Agerton",
+        "party": "DEM"
+      },
+      {
+        "name": "Sheryl Delozier",
+        "party": "REP"
+      }
+    ],
+    "89": [
+      {
+        "name": "Rob Kauffman",
+        "party": "REP"
+      }
+    ],
+    "9": [
+      {
+        "name": "Chris Sainato",
+        "party": "DEM"
+      },
+      {
+        "name": "Marla Gallo Brown",
+        "party": "REP"
+      }
+    ],
+    "90": [
+      {
+        "name": "Paul Schemel",
+        "party": "REP"
+      }
+    ],
+    "91": [
+      {
+        "name": "Marty Karsteter Qually",
+        "party": "DEM"
+      },
+      {
+        "name": "Dan Moul",
+        "party": "REP"
+      },
+      {
+        "name": "Neil Belliveau",
+        "party": "LIB"
+      }
+    ],
+    "92": [
+      {
+        "name": "Dan Almoney",
+        "party": "DEM"
+      },
+      {
+        "name": "Dawn Keefer",
+        "party": "REP"
+      }
+    ],
+    "93": [
+      {
+        "name": "Chris Rodkey",
+        "party": "DEM"
+      },
+      {
+        "name": "Mike Jones",
+        "party": "REP"
+      },
+      {
+        "name": "Kristine Cousler-Womack",
+        "party": "KEY"
+      }
+    ],
+    "94": [
+      {
+        "name": "Wendy Fink",
+        "party": "REP"
+      }
+    ],
+    "95": [
+      {
+        "name": "Carol Hill-Evans",
+        "party": "DEM"
+      }
+    ],
+    "96": [
+      {
+        "name": "Mike Sturla",
+        "party": "DEM"
+      },
+      {
+        "name": "April Weaver",
+        "party": "REP"
+      }
+    ],
+    "97": [
+      {
+        "name": "Steve Mentzer",
+        "party": "REP"
+      }
+    ],
+    "98": [
+      {
+        "name": "Mark Temons",
+        "party": "DEM"
+      },
+      {
+        "name": "Tom Jones",
+        "party": "REP"
+      },
+      {
+        "name": "Josh Gerber",
+        "party": "LIB"
+      }
+    ],
+    "99": [
+      {
+        "name": "Joshua Caltagirone",
+        "party": "DEM"
+      },
+      {
+        "name": "Dave Zimmerman",
+        "party": "REP"
+      }
+    ]
+  },
+  "State Senate": {
+    "10": [
+      {
+        "name": "Steve Santarsiero",
+        "party": "DEM"
+      },
+      {
+        "name": "Matt Mccullough",
+        "party": "REP"
+      }
+    ],
+    "12": [
+      {
+        "name": "Maria Collett",
+        "party": "DEM"
+      },
+      {
+        "name": "Rob Davies",
+        "party": "REP"
+      }
+    ],
+    "14": [
+      {
+        "name": "Nick Miller",
+        "party": "DEM"
+      },
+      {
+        "name": "Dean N Browning",
+        "party": "REP"
+      }
+    ],
+    "16": [
+      {
+        "name": "Mark Pinsley",
+        "party": "DEM"
+      },
+      {
+        "name": "Jarrett Coleman",
+        "party": "REP"
+      }
+    ],
+    "18": [
+      {
+        "name": "Lisa Boscola",
+        "party": "DEM"
+      },
+      {
+        "name": "John Merhottein",
+        "party": "REP"
+      }
+    ],
+    "2": [
+      {
+        "name": "Christine M Tartaglione",
+        "party": "DEM"
+      }
+    ],
+    "20": [
+      {
+        "name": "Jackie Baker",
+        "party": "DEM"
+      },
+      {
+        "name": "Lisa Baker",
+        "party": "REP"
+      }
+    ],
+    "22": [
+      {
+        "name": "Marty Flynn",
+        "party": "DEM"
+      },
+      {
+        "name": "Tom Bassett",
+        "party": "REP"
+      }
+    ],
+    "24": [
+      {
+        "name": "Jill Dennin",
+        "party": "DEM"
+      },
+      {
+        "name": "Tracy Pennycuick",
+        "party": "REP"
+      }
+    ],
+    "26": [
+      {
+        "name": "Tim Kearney",
+        "party": "DEM"
+      },
+      {
+        "name": "Frank Agovino",
+        "party": "REP"
+      }
+    ],
+    "28": [
+      {
+        "name": "Judith Higgins",
+        "party": "DEM"
+      },
+      {
+        "name": "Kristin Phillips-Hill",
+        "party": "REP"
+      }
+    ],
+    "30": [
+      {
+        "name": "Carol Taylor",
+        "party": "DEM"
+      },
+      {
+        "name": "Judy Ward",
+        "party": "REP"
+      }
+    ],
+    "32": [
+      {
+        "name": "Pat Stefano",
+        "party": "REP"
+      }
+    ],
+    "34": [
+      {
+        "name": "Jim Massey",
+        "party": "DEM"
+      },
+      {
+        "name": "Greg Rothman",
+        "party": "REP"
+      }
+    ],
+    "36": [
+      {
+        "name": "Ryan P Aument",
+        "party": "REP"
+      }
+    ],
+    "38": [
+      {
+        "name": "Lindsey Williams",
+        "party": "DEM"
+      },
+      {
+        "name": "Lori Mizgorski",
+        "party": "REP"
+      }
+    ],
+    "4": [
+      {
+        "name": "Art Haywood",
+        "party": "DEM"
+      },
+      {
+        "name": "Todd Johnson",
+        "party": "REP"
+      }
+    ],
+    "40": [
+      {
+        "name": "Jennifer Shukaitis",
+        "party": "DEM"
+      },
+      {
+        "name": "Rosemary Brown",
+        "party": "REP"
+      }
+    ],
+    "42": [
+      {
+        "name": "Wayne D Fontana",
+        "party": "DEM"
+      }
+    ],
+    "44": [
+      {
+        "name": "Katie Muth",
+        "party": "DEM"
+      },
+      {
+        "name": "Jessica Florio",
+        "party": "REP"
+      }
+    ],
+    "46": [
+      {
+        "name": "Camera Bartolotta",
+        "party": "REP"
+      }
+    ],
+    "48": [
+      {
+        "name": "Calvin Clements",
+        "party": "DEM"
+      },
+      {
+        "name": "Chris Gebhard",
+        "party": "REP"
+      }
+    ],
+    "50": [
+      {
+        "name": "Rianna Czech",
+        "party": "DEM"
+      },
+      {
+        "name": "Michele Brooks",
+        "party": "REP"
+      }
+    ],
+    "6": [
+      {
+        "name": "Ann Marie Mitchell",
+        "party": "DEM"
+      },
+      {
+        "name": "Frank Farry",
+        "party": "REP"
+      },
+      {
+        "name": "Brandon Bentrim",
+        "party": "LIB"
+      }
+    ],
+    "8": [
+      {
+        "name": "Anthony Hardy Williams",
+        "party": "DEM"
+      },
+      {
+        "name": "John Hayes",
+        "party": "REP"
+      }
+    ]
+  },
+  "US Senate": {
+    "": [
+      {
+        "name": "John Fetterman",
+        "party": "DEM"
+      },
+      {
+        "name": "Mehmet Oz",
+        "party": "REP"
+      },
+      {
+        "name": "Erik Gerhardt",
+        "party": "LIB"
+      },
+      {
+        "name": "Richard L Weiss",
+        "party": "GRN"
+      },
+      {
+        "name": "Daniel Wassmer",
+        "party": "KEY"
+      }
+    ]
+  }
+}

@@ -162,121 +162,330 @@
               </svg>
             </button>
           </form>
-          <p class="mt-2 text-sm text-g-6">
-            Address information is not collected or stored.
-          </p>
+          <div x-data="{ party: 'none' }">
+            <div
+              class="mx-auto mt-2 align-baseline text-xl font-bold text-g-7 sm:flex md:max-w-lg"
+            >
+              <span class="block w-full sm:inline-flex sm:w-auto"
+                >Choose a party:</span
+              >
+              <label class="ml-2 block items-center md:inline-flex md:flex-1"
+                ><input
+                  class="mr-1 h-5 w-5"
+                  type="radio"
+                  value="R"
+                  x-model="party"
+                />
+                Republican</label
+              >
+              <label class="ml-2 block items-center md:inline-flex md:flex-1"
+                ><input
+                  class="mr-1 h-5 w-5"
+                  type="radio"
+                  value="D"
+                  x-model="party"
+                />
+                Democrat</label
+              >
+              <label class="ml-2 block items-center md:inline-flex md:flex-1"
+                ><input
+                  class="mr-1 h-5 w-5"
+                  type="radio"
+                  value="none"
+                  x-model="party"
+                />
+                Other</label
+              >
+            </div>
 
-          <div
-            x-show="error && error.message"
-            class="font-semibold text-red-9"
-            x-text="error && error.message || error"
-          ></div>
+            <p class="mt-2 text-center text-sm text-g-6">
+              Address information is not collected or stored.
+            </p>
 
-          <template x-if="rawData">
-            <div class="mt-6">
-              <h2 class="">Your ballot:</h2>
-              <div class="mx-auto mt-2 grid gap-4 sm:grid-cols-2">
-                {{ $cardClass := `rounded border border-g-5 p-3` }}
-                {{ $hedClass := `mt-2 uppercase font-semibold text-g-7` }}
-                <div class="{{ $cardClass }}">
-                  <h3 class="{{ $hedClass }}">Governor</h3>
-                  <ul>
-                    <template
-                      x-for="candidate of shuffled('governor')"
-                      key="name"
-                    >
-                      {{ block "candidate" . }}
-                        <li class="">
+            <div
+              x-show="error && error.message"
+              class="font-semibold text-red-9"
+              x-text="error && error.message || error"
+            ></div>
+            <template x-if="rawData">
+              <div class="mt-6">
+                <h2 class="">Your ballot:</h2>
+                <div class="mx-auto mt-2 grid gap-4 sm:grid-cols-2">
+                  {{ $cardClass := `rounded border border-g-5 p-3` }}
+                  {{ $hedClass := `mt-2 uppercase font-semibold text-g-7 text-xl` }}
+
+
+                  <div class="{{ $cardClass }}">
+                    <h3 class="{{ $hedClass }}">
+                      Justice of the Supreme Court
+                    </h3>
+                    <p><em>Vote for one.</em></p>
+                    <div x-show="party === 'D'">
+                      <h4 class="mt-2 font-semibold uppercase text-g-9">
+                        Democratic Party Candidates
+                      </h4>
+                      <ul>
+                        <li>
                           <span
-                            :style="{ backgroundColor: $partyColor(candidate.party)}"
+                            style=" background: rgb(0, 0, 255)"
                             class="mb-px inline-block h-3 w-3 rounded-full"
                           ></span>
-                          <span
-                            class="font-bold"
-                            x-text="candidate.name"
-                          ></span>
-                          (<span x-text="$party(candidate.party)"></span>)
+                          <span class="font-bold">Debbie Kunselman</span>
                         </li>
-                      {{ end }}
-                    </template>
-                  </ul>
+                        <li>
+                          <span
+                            style=" background: rgb(0, 0, 255)"
+                            class="mb-px inline-block h-3 w-3 rounded-full"
+                          ></span>
+                          <span class="font-bold">Daniel McCaffery</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div x-show="party === 'R'">
+                      <h4 class="mt-2 font-semibold uppercase text-g-9">
+                        Republican Party Candidates
+                      </h4>
+                      <ul>
+                        <li>
+                          <span
+                            style=" background: rgb(255, 0, 0)"
+                            class="mb-px inline-block h-3 w-3 rounded-full"
+                          ></span>
+                          <span class="font-bold">Carolyn Carluccio</span>
+                        </li>
+                        <li>
+                          <span
+                            style=" background: rgb(255, 0, 0)"
+                            class="mb-px inline-block h-3 w-3 rounded-full"
+                          ></span>
+                          <span class="font-bold">Patricia A. McCullough</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div x-show="party === 'none'">
+                      <h4 class="mt-2 font-semibold uppercase text-g-9">
+                        Independents and third-party voters cannot participate
+                        in this primary race.
+                        <a
+                          class="text-blue underline"
+                          href="https://www.spotlightpa.org/news/2023/04/pa-primary-election-2023-indepedents-third-party/"
+                          target="_blank"
+                          >Read more.</a
+                        >
+                      </h4>
+                    </div>
+                    <div class="content-area mt-2">
+                      <p>
+                        Read more about the
+                        <a
+                          href="https://www.spotlightpa.org/news/2023/03/pa-election-primary-2023-supreme-court-candidates/"
+                          >candidates for State Supreme Court</a
+                        >.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="{{ $cardClass }}">
+                    <h3 class="{{ $hedClass }}">Judge of the Superior Court</h3>
+                    <p><em>Vote for not more than two.</em></p>
+                    <div x-show="party === 'D'">
+                      <h4 class="mt-2 font-semibold uppercase text-g-9">
+                        Democratic Party Candidates
+                      </h4>
+                      <ul>
+                        <li>
+                          <span
+                            style=" background: rgb(0, 0, 255)"
+                            class="mb-px inline-block h-3 w-3 rounded-full"
+                          ></span>
+                          <span class="font-bold">Jill Beck</span>
+                        </li>
+                        <li>
+                          <span
+                            style=" background: rgb(0, 0, 255)"
+                            class="mb-px inline-block h-3 w-3 rounded-full"
+                          ></span>
+                          <span class="font-bold">Pat Dugan</span>
+                        </li>
+                        <li>
+                          <span
+                            style=" background: rgb(0, 0, 255)"
+                            class="mb-px inline-block h-3 w-3 rounded-full"
+                          ></span>
+                          <span class="font-bold">Timika Lane</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div x-show="party === 'R'">
+                      <h4 class="mt-2 font-semibold uppercase text-g-9">
+                        Republican Party Candidates
+                      </h4>
+                      <ul>
+                        <li>
+                          <span
+                            style=" background: rgb(255, 0, 0)"
+                            class="mb-px inline-block h-3 w-3 rounded-full"
+                          ></span>
+                          <span class="font-bold">Maria Battista</span>
+                        </li>
+                        <li>
+                          <span
+                            style=" background: rgb(255, 0, 0)"
+                            class="mb-px inline-block h-3 w-3 rounded-full"
+                          ></span>
+                          <span class="font-bold">Harry F. Smail Jr.</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div x-show="party === 'none'">
+                      <h4 class="mt-2 font-semibold uppercase text-g-9">
+                        Independents and third-party voters cannot participate
+                        in this primary race.
+                        <a
+                          class="text-blue underline"
+                          href="https://www.spotlightpa.org/news/2023/04/pa-primary-election-2023-indepedents-third-party/"
+                          target="_blank"
+                          >Read more.</a
+                        >
+                      </h4>
+                    </div>
+                    <div class="content-area mt-2">
+                      <p>
+                        Read more about the
+                        <a
+                          href="https://www.spotlightpa.org/news/2023/03/pa-election-primary-2023-commonwealth-superior-court-candidates/"
+                          >candidates for Superior Court</a
+                        >.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="{{ $cardClass }}">
+                    <h3 class="{{ $hedClass }}">
+                      Judge of the Commonwealth Court
+                    </h3>
+                    <p><em>Vote for one.</em></p>
+                    <div x-show="party === 'D'">
+                      <h4 class="mt-2 font-semibold uppercase text-g-9">
+                        Democratic Party Candidates
+                      </h4>
+                      <ul>
+                        <li>
+                          <span
+                            style=" background: rgb(0, 0, 255)"
+                            class="mb-px inline-block h-3 w-3 rounded-full"
+                          ></span>
+                          <span class="font-bold">Bryan Neft</span>
+                        </li>
+                        <li>
+                          <span
+                            style=" background: rgb(0, 0, 255)"
+                            class="mb-px inline-block h-3 w-3 rounded-full"
+                          ></span>
+                          <span class="font-bold">Matt Wolf</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div x-show="party === 'R'">
+                      <h4 class="mt-2 font-semibold uppercase text-g-9">
+                        Republican Party Candidates
+                      </h4>
+                      <ul>
+                        <li>
+                          <span
+                            style=" background: rgb(255, 0, 0)"
+                            class="mb-px inline-block h-3 w-3 rounded-full"
+                          ></span>
+                          <span class="font-bold">Megan Martin</span>
+                        </li>
+                        <li>
+                          <span
+                            style=" background: rgb(255, 0, 0)"
+                            class="mb-px inline-block h-3 w-3 rounded-full"
+                          ></span>
+                          <span class="font-bold">Josh Prince</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div x-show="party === 'none'">
+                      <h4 class="mt-2 font-semibold uppercase text-g-9">
+                        Independents and third-party voters cannot participate
+                        in this primary race.
+                        <a
+                          class="text-blue underline"
+                          href="https://www.spotlightpa.org/news/2023/04/pa-primary-election-2023-indepedents-third-party/"
+                          target="_blank"
+                          >Read more.</a
+                        >
+                      </h4>
+                    </div>
+                    <div class="content-area mt-2">
+                      <p>
+                        Read more about the
+                        <a
+                          href="https://www.spotlightpa.org/news/2023/03/pa-election-primary-2023-commonwealth-superior-court-candidates/"
+                          >candidates for Commonwealth Court</a
+                        >.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="{{ $cardClass }}">
+                    <h3 class="{{ $hedClass }}">
+                      State House, District
+                      <span x-text="lookup('new_house')"></span>
+                    </h3>
+                    <div>
+                      <h4 class="mt-2 font-semibold uppercase text-g-9">
+                        Candidates available to all Parties
+                      </h4>
+                      <ul>
+                        <template
+                          x-for="candidate of shuffled('state_house')"
+                          key="name"
+                        >
+                          <li>
+                            <span
+                              :style="{ backgroundColor: $partyColor(candidate.party)}"
+                              class="mb-px inline-block h-3 w-3 rounded-full"
+                            ></span>
+                            <span
+                              class="font-bold"
+                              x-text="candidate.name"
+                            ></span>
+                            (<span x-text="$party(candidate.party)"></span>)
+                          </li>
+                        </template>
+                      </ul>
+                      <p
+                        class="italic"
+                        x-text="lookup('state_house').length? '': 'This district is not conducting a special election in May 2023.'"
+                      ></p>
+                    </div>
+                  </div>
                 </div>
-                <div class="{{ $cardClass }}">
-                  <h3 class="{{ $hedClass }}">US Senate</h3>
-                  <ul>
-                    <template
-                      x-for="candidate of shuffled('us_senate')"
-                      key="name"
+
+                <div class="content-area mt-2">
+                  <p>
+                    Please note: This sample ballot is not comprehensive. It
+                    does not include races for Common Pleas or magisterial
+                    district judges nor does it include any municipal races for
+                    mayor, school board, and other contests. This information is
+                    not maintained in a centralized way, meaning Spotlight PA
+                    must reach out to all 67 counties to obtain it. Spotlight PA
+                    is working to update its sample ballot with more
+                    information. We recommend reaching out to your
+                    <a
+                      target="_blank"
+                      href="https://www.vote.pa.gov/resources/pages/contact-your-election-officials.aspx"
+                      >county election office</a
                     >
-                      {{ template "candidate" . }}
-                    </template>
-                  </ul>
-                </div>
-                <div class="{{ $cardClass }}">
-                  <h3 class="{{ $hedClass }}">
-                    US House, District
-                    <span x-text="lookup('new_congress')"></span>
-                  </h3>
-                  <ul>
-                    <template
-                      x-for="candidate of shuffled('us_house')"
-                      key="name"
-                    >
-                      {{ template "candidate" . }}
-                    </template>
-                  </ul>
-                </div>
-                <div class="{{ $cardClass }}">
-                  <h3 class="{{ $hedClass }}">
-                    State House, District
-                    <span x-text="lookup('new_house')"></span>
-                  </h3>
-                  <ul>
-                    <template
-                      x-for="candidate of shuffled('state_house')"
-                      key="name"
-                    >
-                      {{ template "candidate" . }}
-                    </template>
-                  </ul>
-                </div>
-                <div class="{{ $cardClass }}">
-                  <h3 class="{{ $hedClass }}">
-                    State Senate, District
-                    <span x-text="lookup('new_senate')"></span>
-                  </h3>
-                  <ul>
-                    <template
-                      x-for="candidate of shuffled('state_senate')"
-                      key="name"
-                    >
-                      {{ template "candidate" . }}
-                    </template>
-                  </ul>
-                  <p
-                    class="italic"
-                    x-text="lookup('state_senate').length? '': 'Not up for re-election this cycle.'"
-                  ></p>
+                    for more information.
+                  </p>
                 </div>
               </div>
-              <div class="content-area mt-2">
-                <p class="">
-                  This sample ballot does not show local ballot initiatives or
-                  special elections, including those for
-                  <a
-                    target="_blank"
-                    href="https://vote.phila.gov/news/2022/09/16/general-and-special-election/"
-                    >Philadelphia City Council</a
-                  >. Check with your
-                  <a
-                    target="_blank"
-                    href="https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx"
-                    >county election office</a
-                  >.
-                </p>
-              </div>
-            </div>
-          </template>
+            </template>
+          </div>
         </div>
         <div class="w-full rounded-b-sm bg-navy-0 p-2">
           <footer>

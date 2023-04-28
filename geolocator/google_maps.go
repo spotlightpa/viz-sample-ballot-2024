@@ -7,11 +7,14 @@ import (
 	"github.com/carlmjohnson/requests"
 )
 
-func NewMapsClient() *requests.Builder {
-	return requests.
-		URL("https://maps.googleapis.com/maps/api/geocode/json").
-		// Limit to PA
-		Param("components", "administrative_area:PA|country:US")
+func NewMapsClient(s string) requests.Config {
+	return func(rb *requests.Builder) {
+		rb.
+			BaseURL("https://maps.googleapis.com/maps/api/geocode/json").
+			// Limit to PA
+			Param("components", "administrative_area:PA|country:US").
+			Param("key", s)
+	}
 }
 
 type GoogleMapsResults struct {

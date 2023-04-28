@@ -1,2229 +1,1200 @@
 {
-  "Governor": {
+  "Judge of the Commonwealth Court": {
     "": [
       {
-        "name": "Josh Shapiro",
-        "party": "DEM"
+        "party": "DEM",
+        "name": "MATT WOLF",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Douglas V Mastriano",
-        "party": "REP"
+        "party": "DEM",
+        "name": "BRYAN NEFT",
+        "Municipality": "MT LEBANON",
+        "County": "ALLEGHENY"
       },
       {
-        "name": "Matt Hackenburg",
-        "party": "LIB"
+        "party": "REP",
+        "name": "JOSH PRINCE",
+        "Municipality": "DISTRICT TOWNSHIP",
+        "County": "BERKS"
       },
       {
-        "name": "Christina Digiulio",
-        "party": "GRN"
-      },
-      {
-        "name": "Joe Soloski",
-        "party": "KEY"
+        "party": "REP",
+        "name": "MEGAN MARTIN",
+        "Municipality": "SILVER SPRING",
+        "County": "CUMBERLAND"
       }
     ]
   },
-  "US House": {
-    "1": [
+  "Judge of the Superior Court": {
+    "": [
       {
-        "name": "Ashley Ehasz",
-        "party": "DEM"
+        "party": "DEM",
+        "name": "PAT DUGAN",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Brian Fitzpatrick",
-        "party": "REP"
-      }
-    ],
-    "10": [
-      {
-        "name": "Shamaine Daniels",
-        "party": "DEM"
+        "party": "DEM",
+        "name": "TIMIKA LANE",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Scott Perry",
-        "party": "REP"
-      }
-    ],
-    "11": [
-      {
-        "name": "Bob Hollister",
-        "party": "DEM"
+        "party": "DEM",
+        "name": "JILL BECK",
+        "Municipality": "PITTSBURGH",
+        "County": "ALLEGHENY"
       },
       {
-        "name": "Lloyd K Smucker",
-        "party": "REP"
-      }
-    ],
-    "12": [
-      {
-        "name": "Summer Lee",
-        "party": "DEM"
+        "party": "REP",
+        "name": "MARIA BATTISTA",
+        "Municipality": "SALEM TWP",
+        "County": "CLARION"
       },
       {
-        "name": "Mike Doyle",
-        "party": "REP"
+        "party": "REP",
+        "name": "HARRY F SMAIL JR",
+        "Municipality": "HEMPFIELD TOWNSHIP",
+        "County": "WESTMORELAND"
       }
-    ],
-    "13": [
+    ]
+  },
+  "Justice of the Supreme Court": {
+    "": [
       {
-        "name": "John Joyce",
-        "party": "REP"
-      }
-    ],
-    "14": [
-      {
-        "name": "Guy Reschenthaler",
-        "party": "REP"
-      }
-    ],
-    "15": [
-      {
-        "name": "Mike Molesevich",
-        "party": "DEM"
+        "party": "DEM",
+        "name": "DANIEL MCCAFFERY",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Glenn Gt Thompson",
-        "party": "REP"
-      }
-    ],
-    "16": [
-      {
-        "name": "Dan Pastore",
-        "party": "DEM"
+        "party": "DEM",
+        "name": "DEBBIE KUNSELMAN",
+        "Municipality": "CENTER TWP",
+        "County": "BEAVER"
       },
       {
-        "name": "Mike Kelly",
-        "party": "REP"
-      }
-    ],
-    "17": [
-      {
-        "name": "Chris Deluzio",
-        "party": "DEM"
+        "party": "REP",
+        "name": "PATRICIA A MCCULLOUGH",
+        "Municipality": "UPPER ST. CLAIR TOWNSHIP",
+        "County": "ALLEGHENY"
       },
       {
-        "name": "Jeremy Shaffer",
-        "party": "REP"
-      }
-    ],
-    "2": [
-      {
-        "name": "Brendan F Boyle",
-        "party": "DEM"
-      },
-      {
-        "name": "Aaron Bashir",
-        "party": "REP"
-      }
-    ],
-    "3": [
-      {
-        "name": "Dwight Evans",
-        "party": "DEM"
-      },
-      {
-        "name": "Christopher Hoeppner",
-        "party": "SWP"
-      }
-    ],
-    "4": [
-      {
-        "name": "Madeleine Dean",
-        "party": "DEM"
-      },
-      {
-        "name": "Christian Nascimento",
-        "party": "REP"
-      }
-    ],
-    "5": [
-      {
-        "name": "Mary Gay Scanlon",
-        "party": "DEM"
-      },
-      {
-        "name": "David Galluch",
-        "party": "REP"
-      }
-    ],
-    "6": [
-      {
-        "name": "Chrissy Houlahan",
-        "party": "DEM"
-      },
-      {
-        "name": "Guy Ciarrocchi",
-        "party": "REP"
-      }
-    ],
-    "7": [
-      {
-        "name": "Susan Wild",
-        "party": "DEM"
-      },
-      {
-        "name": "Lisa Scheller",
-        "party": "REP"
-      }
-    ],
-    "8": [
-      {
-        "name": "Matt Cartwright",
-        "party": "DEM"
-      },
-      {
-        "name": "Jim Bognet",
-        "party": "REP"
-      }
-    ],
-    "9": [
-      {
-        "name": "Amanda R Waldman",
-        "party": "DEM"
-      },
-      {
-        "name": "Dan Meuser",
-        "party": "REP"
+        "party": "REP",
+        "name": "CAROLYN CARLUCCIO",
+        "Municipality": "WHITPAIN",
+        "County": "MONTGOMERY"
       }
     ]
   },
   "State House": {
-    "1": [
-      {
-        "name": "Patrick J Harkins",
-        "party": "DEM"
-      },
-      {
-        "name": "Michael G Thomas",
-        "party": "LIB"
-      }
-    ],
-    "10": [
-      {
-        "name": "Amen Brown",
-        "party": "DEM"
-      }
-    ],
-    "100": [
-      {
-        "name": "Bryan D Cutler",
-        "party": "REP"
-      }
-    ],
-    "101": [
-      {
-        "name": "Catherine Miller",
-        "party": "DEM"
-      },
-      {
-        "name": "John Schlegel",
-        "party": "REP"
-      }
-    ],
-    "102": [
-      {
-        "name": "Laura Quick",
-        "party": "DEM"
-      },
-      {
-        "name": "Russ Diamond",
-        "party": "REP"
-      }
-    ],
-    "103": [
-      {
-        "name": "Patty Kim",
-        "party": "DEM"
-      },
-      {
-        "name": "David D Buell",
-        "party": "REP"
-      }
-    ],
-    "104": [
-      {
-        "name": "Dave Madsen",
-        "party": "DEM"
-      },
-      {
-        "name": "David Kocur",
-        "party": "KEY"
-      }
-    ],
-    "105": [
-      {
-        "name": "Justin Fleming",
-        "party": "DEM"
-      },
-      {
-        "name": "Therese L Kenley",
-        "party": "REP"
-      }
-    ],
-    "106": [
-      {
-        "name": "Tom Mehaffie",
-        "party": "REP"
-      }
-    ],
-    "107": [
-      {
-        "name": "Ron Tanney",
-        "party": "DEM"
-      },
-      {
-        "name": "Joanne Stehr",
-        "party": "REP"
-      }
-    ],
     "108": [
       {
-        "name": "Lynda J Schlegel Culver",
-        "party": "REP"
-      }
-    ],
-    "109": [
-      {
-        "name": "Ed Giannattasio",
-        "party": "DEM"
+        "party": "DEM",
+        "name": "Trevor S. Finn"
       },
       {
-        "name": "Robert Leadbeter",
-        "party": "REP"
+        "party": "REP",
+        "name": "Michael Stender"
       },
       {
-        "name": "Thomas Anderson",
-        "party": "LIB"
-      }
-    ],
-    "11": [
-      {
-        "name": "Marci Mustello",
-        "party": "REP"
-      }
-    ],
-    "110": [
-      {
-        "name": "Tina Pickett",
-        "party": "REP"
-      }
-    ],
-    "111": [
-      {
-        "name": "Jonathan Fritz",
-        "party": "REP"
-      }
-    ],
-    "112": [
-      {
-        "name": "Kyle J Mullins",
-        "party": "DEM"
-      },
-      {
-        "name": "William Torbeck",
-        "party": "REP"
-      }
-    ],
-    "113": [
-      {
-        "name": "Kyle Donahue",
-        "party": "DEM"
-      },
-      {
-        "name": "Aaron Sepkowski",
-        "party": "REP"
-      }
-    ],
-    "114": [
-      {
-        "name": "Bridget Malloy Kosierowski",
-        "party": "DEM"
-      },
-      {
-        "name": "David Burgerhoff",
-        "party": "REP"
-      }
-    ],
-    "115": [
-      {
-        "name": "Maureen Madden",
-        "party": "DEM"
-      },
-      {
-        "name": "Krista Paolucci",
-        "party": "REP"
-      }
-    ],
-    "116": [
-      {
-        "name": "Yesenia Rodriguez",
-        "party": "DEM"
-      },
-      {
-        "name": "Dane Watro",
-        "party": "REP"
-      }
-    ],
-    "117": [
-      {
-        "name": "Mike Cabell",
-        "party": "REP"
-      }
-    ],
-    "118": [
-      {
-        "name": "Jim Haddock",
-        "party": "DEM"
-      },
-      {
-        "name": "James May",
-        "party": "REP"
-      }
-    ],
-    "119": [
-      {
-        "name": "Vito Malacari",
-        "party": "DEM"
-      },
-      {
-        "name": "Alec J Ryncavage",
-        "party": "REP"
-      }
-    ],
-    "12": [
-      {
-        "name": "Robert Vigue",
-        "party": "DEM"
-      },
-      {
-        "name": "Stephenie Scialabba",
-        "party": "REP"
-      }
-    ],
-    "120": [
-      {
-        "name": "Fern Leard",
-        "party": "DEM"
-      },
-      {
-        "name": "Aaron Kaufer",
-        "party": "REP"
-      }
-    ],
-    "121": [
-      {
-        "name": "Eddie Day Pashinski",
-        "party": "DEM"
-      },
-      {
-        "name": "Eryn Harvey",
-        "party": "REP"
-      }
-    ],
-    "122": [
-      {
-        "name": "Richard Kost",
-        "party": "DEM"
-      },
-      {
-        "name": "Doyle Heffley",
-        "party": "REP"
-      }
-    ],
-    "123": [
-      {
-        "name": "Kathy Laughlin Benyak",
-        "party": "DEM"
-      },
-      {
-        "name": "Tim Twardzik",
-        "party": "REP"
-      }
-    ],
-    "124": [
-      {
-        "name": "Tina Burns",
-        "party": "DEM"
-      },
-      {
-        "name": "Jamie Barton",
-        "party": "REP"
-      }
-    ],
-    "125": [
-      {
-        "name": "Joe Kerwin",
-        "party": "REP"
-      }
-    ],
-    "126": [
-      {
-        "name": "Mark Rozzi",
-        "party": "DEM"
-      },
-      {
-        "name": "James D Oswald",
-        "party": "REP"
-      }
-    ],
-    "127": [
-      {
-        "name": "Manny Guzman",
-        "party": "DEM"
-      },
-      {
-        "name": "Vincent D Gagliardo Jr",
-        "party": "REP"
-      }
-    ],
-    "128": [
-      {
-        "name": "Mark M Gillen",
-        "party": "REP"
-      }
-    ],
-    "129": [
-      {
-        "name": "Johanny Cepeda-Freytiz",
-        "party": "DEM"
-      },
-      {
-        "name": "Barry Llewellyn",
-        "party": "REP"
-      }
-    ],
-    "13": [
-      {
-        "name": "David Cunningham",
-        "party": "DEM"
-      },
-      {
-        "name": "John Lawrence",
-        "party": "REP"
-      }
-    ],
-    "130": [
-      {
-        "name": "David M Maloney",
-        "party": "REP"
-      }
-    ],
-    "131": [
-      {
-        "name": "Kevin Branco",
-        "party": "DEM"
-      },
-      {
-        "name": "Milou Mackenzie",
-        "party": "REP"
-      }
-    ],
-    "132": [
-      {
-        "name": "Mike Schlossberg",
-        "party": "DEM"
-      },
-      {
-        "name": "Beth Finch",
-        "party": "REP"
-      },
-      {
-        "name": "Matt Schutter",
-        "party": "LIB"
-      }
-    ],
-    "133": [
-      {
-        "name": "Jeanne Mcneill",
-        "party": "DEM"
-      }
-    ],
-    "134": [
-      {
-        "name": "Peter Schweyer",
-        "party": "DEM"
-      },
-      {
-        "name": "Brent Labenberg",
-        "party": "REP"
-      }
-    ],
-    "135": [
-      {
-        "name": "Steve Samuelson",
-        "party": "DEM"
-      }
-    ],
-    "136": [
-      {
-        "name": "Robert Freeman",
-        "party": "DEM"
-      }
-    ],
-    "137": [
-      {
-        "name": "Anna Thomas",
-        "party": "DEM"
-      },
-      {
-        "name": "Joe Emrick",
-        "party": "REP"
-      }
-    ],
-    "138": [
-      {
-        "name": "Gene Hunter",
-        "party": "DEM"
-      },
-      {
-        "name": "Ann Flood",
-        "party": "REP"
-      }
-    ],
-    "139": [
-      {
-        "name": "Meg Rosenfeld",
-        "party": "DEM"
-      },
-      {
-        "name": "Joseph W Adams",
-        "party": "REP"
-      }
-    ],
-    "14": [
-      {
-        "name": "Bruce A Carper",
-        "party": "DEM"
-      },
-      {
-        "name": "Jim Marshall",
-        "party": "REP"
-      }
-    ],
-    "140": [
-      {
-        "name": "John T Galloway",
-        "party": "DEM"
-      }
-    ],
-    "141": [
-      {
-        "name": "Tina Davis",
-        "party": "DEM"
-      },
-      {
-        "name": "Kelly Bellerby-Allen",
-        "party": "REP"
-      },
-      {
-        "name": "Anthony Portillo",
-        "party": "LIB"
-      }
-    ],
-    "142": [
-      {
-        "name": "Mark Moffa",
-        "party": "DEM"
-      },
-      {
-        "name": "Joseph F Hogan",
-        "party": "REP"
-      }
-    ],
-    "143": [
-      {
-        "name": "Gwen Stoltz",
-        "party": "DEM"
-      },
-      {
-        "name": "Shelby Labs",
-        "party": "REP"
-      }
-    ],
-    "144": [
-      {
-        "name": "Brian Munroe",
-        "party": "DEM"
-      },
-      {
-        "name": "Todd Polinchock",
-        "party": "REP"
-      }
-    ],
-    "145": [
-      {
-        "name": "Jim Miller",
-        "party": "DEM"
-      },
-      {
-        "name": "Craig Staats",
-        "party": "REP"
-      },
-      {
-        "name": "Lula Vanliew",
-        "party": "LIB"
-      }
-    ],
-    "146": [
-      {
-        "name": "Joe Ciresi",
-        "party": "DEM"
-      },
-      {
-        "name": "Thomas Neafcy",
-        "party": "REP"
-      }
-    ],
-    "147": [
-      {
-        "name": "Alexandra Wisser",
-        "party": "DEM"
-      },
-      {
-        "name": "Donna M Scheuren",
-        "party": "REP"
-      }
-    ],
-    "148": [
-      {
-        "name": "Mary Jo Daley",
-        "party": "DEM"
-      },
-      {
-        "name": "Fran O'Donnell",
-        "party": "REP"
-      }
-    ],
-    "149": [
-      {
-        "name": "Tim Briggs",
-        "party": "DEM"
-      },
-      {
-        "name": "Nancy Price",
-        "party": "REP"
-      }
-    ],
-    "15": [
-      {
-        "name": "Joshua D Kail",
-        "party": "REP"
-      }
-    ],
-    "150": [
-      {
-        "name": "Joe Webster",
-        "party": "DEM"
-      },
-      {
-        "name": "Beth Ann Bittner Mazza",
-        "party": "REP"
-      }
-    ],
-    "151": [
-      {
-        "name": "Melissa Cerrato",
-        "party": "DEM"
-      },
-      {
-        "name": "Todd Stephens",
-        "party": "REP"
-      }
-    ],
-    "152": [
-      {
-        "name": "Nancy Guenst",
-        "party": "DEM"
-      },
-      {
-        "name": "John Weinrich",
-        "party": "REP"
-      }
-    ],
-    "153": [
-      {
-        "name": "Ben Sanchez",
-        "party": "DEM"
-      },
-      {
-        "name": "Larry Ulrich",
-        "party": "REP"
-      }
-    ],
-    "154": [
-      {
-        "name": "Napoleon Nelson",
-        "party": "DEM"
-      },
-      {
-        "name": "Angelina Banks",
-        "party": "REP"
-      }
-    ],
-    "155": [
-      {
-        "name": "Danielle Friel Otten",
-        "party": "DEM"
-      },
-      {
-        "name": "Kyle Scribner",
-        "party": "REP"
-      }
-    ],
-    "156": [
-      {
-        "name": "Chris Pielli",
-        "party": "DEM"
-      },
-      {
-        "name": "Heidi Vanderwaal",
-        "party": "REP"
-      }
-    ],
-    "157": [
-      {
-        "name": "Melissa Shusterman",
-        "party": "DEM"
-      },
-      {
-        "name": "Sarah Marvin",
-        "party": "REP"
-      }
-    ],
-    "158": [
-      {
-        "name": "Christina Sappey",
-        "party": "DEM"
-      },
-      {
-        "name": "Leon Spencer",
-        "party": "REP"
-      }
-    ],
-    "159": [
-      {
-        "name": "Carol Kazeem",
-        "party": "DEM"
-      },
-      {
-        "name": "Ruth Moton",
-        "party": "REP"
-      }
-    ],
-    "16": [
-      {
-        "name": "Robert F Matzie",
-        "party": "DEM"
-      },
-      {
-        "name": "Rico Elmore",
-        "party": "REP"
-      }
-    ],
-    "160": [
-      {
-        "name": "Cathy Spahr",
-        "party": "DEM"
-      },
-      {
-        "name": "Craig Williams",
-        "party": "REP"
-      }
-    ],
-    "161": [
-      {
-        "name": "Leanne Krueger",
-        "party": "DEM"
-      },
-      {
-        "name": "Ed Mongelluzzo",
-        "party": "REP"
-      }
-    ],
-    "162": [
-      {
-        "name": "David M Delloso",
-        "party": "DEM"
-      },
-      {
-        "name": "Michelle Mattus",
-        "party": "REP"
+        "party": "LIB",
+        "name": "Elijah Scretching"
       }
     ],
     "163": [
       {
-        "name": "Mike Zabel",
-        "party": "DEM"
+        "party": "DEM",
+        "name": "Heather Boyd"
       },
       {
-        "name": "Kenneth P Rucci",
-        "party": "REP"
+        "party": "REP",
+        "name": "Katie Ford"
+      }
+    ]
+  },
+  "Judge of the Municipal Court": {
+    "1": [
+      {
+        "party": "DEM",
+        "name": "BARBARA THOMSON",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Alfe Goodwin",
-        "party": "LIB"
-      }
-    ],
-    "164": [
-      {
-        "name": "Gina H Curry",
-        "party": "DEM"
-      }
-    ],
-    "165": [
-      {
-        "name": "Jennifer O'Mara",
-        "party": "DEM"
+        "party": "DEM",
+        "name": "RANIA MAJOR",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Nichole Missino",
-        "party": "REP"
+        "party": "DEM",
+        "name": "COLLEEN MCINTYRE OSBORNE",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Bill Foster",
-        "party": "FOV"
-      }
-    ],
-    "166": [
-      {
-        "name": "Greg Vitali",
-        "party": "DEM"
+        "party": "DEM",
+        "name": "MELISSA FRANCIS",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Kim Razzano",
-        "party": "REP"
+        "party": "DEM",
+        "name": "CAROLINE TURNER",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Edward T Clifford Iii",
-        "party": "LIB"
+        "party": "REP",
+        "name": "RANIA M MAJOR",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       }
-    ],
-    "167": [
+    ]
+  },
+  "Judge of the Court of Common Pleas": {
+    "1": [
       {
-        "name": "Kristine C Howard",
-        "party": "DEM"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "NATASHA TAYLOR-SMITH",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Gail Newman",
-        "party": "REP"
-      }
-    ],
-    "168": [
-      {
-        "name": "Lisa A Borowski",
-        "party": "DEM"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "CAROLINE TURNER",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Chris Quinn",
-        "party": "REP"
-      }
-    ],
-    "169": [
-      {
-        "name": "Isaac Riston",
-        "party": "DEM"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "KENNETH JOEL",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Kate A Klunk",
-        "party": "REP"
-      }
-    ],
-    "17": [
-      {
-        "name": "Tim Bonner",
-        "party": "REP"
-      }
-    ],
-    "170": [
-      {
-        "name": "Martina White",
-        "party": "REP"
-      }
-    ],
-    "171": [
-      {
-        "name": "Robert Zeigler",
-        "party": "DEM"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "BRIAN MCLAUGHLIN",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Kerry A Benninghoff",
-        "party": "REP"
-      }
-    ],
-    "172": [
-      {
-        "name": "Kevin J Boyle",
-        "party": "DEM"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "TAMIKA WASHINGTON",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Al Taubenberger",
-        "party": "REP"
-      }
-    ],
-    "173": [
-      {
-        "name": "Pat Gallagher",
-        "party": "DEM"
-      }
-    ],
-    "174": [
-      {
-        "name": "Ed Neilson",
-        "party": "DEM"
-      }
-    ],
-    "175": [
-      {
-        "name": "Marylouise Isaacson",
-        "party": "DEM"
-      }
-    ],
-    "176": [
-      {
-        "name": "Hope Christman",
-        "party": "DEM"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "DAMARIS GARCIA",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Jack Rader",
-        "party": "REP"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "QAWI ABDUL-RAHMAN",
+        "Municipality": "PHILADEPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Autumn Pangia",
-        "party": "LIB"
-      }
-    ],
-    "177": [
-      {
-        "name": "Joe Hohenstein",
-        "party": "DEM"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "SAMANTHA WILLIAMS",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Mark Lavelle",
-        "party": "REP"
-      }
-    ],
-    "178": [
-      {
-        "name": "Ilya Breyman",
-        "party": "DEM"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "JOE GREEN",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Kristin Marcell",
-        "party": "REP"
-      }
-    ],
-    "179": [
-      {
-        "name": "Jason T Dawkins",
-        "party": "DEM"
-      }
-    ],
-    "18": [
-      {
-        "name": "Laurie Smith",
-        "party": "DEM"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "WILL BRAVEMAN",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Kathleen Kc Tomlinson",
-        "party": "REP"
-      }
-    ],
-    "180": [
-      {
-        "name": "Jose A Giral",
-        "party": "DEM"
-      }
-    ],
-    "181": [
-      {
-        "name": "Malcolm Kenyatta",
-        "party": "DEM"
-      }
-    ],
-    "182": [
-      {
-        "name": "Ben Waxman",
-        "party": "DEM"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "WADE D ALBERT",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Al Robles",
-        "party": "REP"
-      }
-    ],
-    "183": [
-      {
-        "name": "Zach Mako",
-        "party": "REP"
-      }
-    ],
-    "184": [
-      {
-        "name": "Elizabeth Fiedler",
-        "party": "DEM"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "CHESLEY LIGHTSEY",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Marjilyn Murray",
-        "party": "REP"
-      }
-    ],
-    "185": [
-      {
-        "name": "Regina G Young",
-        "party": "DEM"
-      }
-    ],
-    "186": [
-      {
-        "name": "Jordan A Harris",
-        "party": "DEM"
-      }
-    ],
-    "187": [
-      {
-        "name": "Ryan E Mackenzie",
-        "party": "REP"
-      }
-    ],
-    "188": [
-      {
-        "name": "Rick Krajewski",
-        "party": "DEM"
-      }
-    ],
-    "189": [
-      {
-        "name": "Tarah Probst",
-        "party": "DEM"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "JESSICA R BROWN",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Steve Ertle",
-        "party": "REP"
-      }
-    ],
-    "19": [
-      {
-        "name": "Aerion Andrew Abney",
-        "party": "DEM"
-      }
-    ],
-    "190": [
-      {
-        "name": "G Roni Green",
-        "party": "DEM"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "KAY YU",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "James Love Jackson",
-        "party": "IND"
-      }
-    ],
-    "191": [
-      {
-        "name": "Joanna E Mcclinton",
-        "party": "DEM"
-      }
-    ],
-    "192": [
-      {
-        "name": "Morgan Cephas",
-        "party": "DEM"
-      }
-    ],
-    "193": [
-      {
-        "name": "Torren Ecker",
-        "party": "REP"
-      }
-    ],
-    "194": [
-      {
-        "name": "Tarik Khan",
-        "party": "DEM"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "MELISSA FRANCIS",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       },
       {
-        "name": "Torren Danowski",
-        "party": "LIB"
-      }
-    ],
-    "195": [
-      {
-        "name": "Donna Bullock",
-        "party": "DEM"
-      }
-    ],
-    "196": [
-      {
-        "name": "Seth Grove",
-        "party": "REP"
-      }
-    ],
-    "197": [
-      {
-        "name": "Danilo Burgos",
-        "party": "DEM"
-      }
-    ],
-    "198": [
-      {
-        "name": "Darisha K Parker",
-        "party": "DEM"
-      }
-    ],
-    "199": [
-      {
-        "name": "Alan Howe",
-        "party": "DEM"
-      },
-      {
-        "name": "Barbara Gleim",
-        "party": "REP"
+        "district_judicial": 1,
+        "party": "DEM",
+        "name": "JOHN PADOVA",
+        "Municipality": "PHILADELPHIA",
+        "County": "PHILADELPHIA"
       }
     ],
     "2": [
       {
-        "name": "Bob Merski",
-        "party": "DEM"
+        "district_judicial": 2,
+        "party": "DEM",
+        "name": "KAREN L MAISANO",
+        "Municipality": "LANCASTER TOWNSHIP",
+        "County": "LANCASTER"
       },
       {
-        "name": "Michael Pace",
-        "party": "REP"
-      }
-    ],
-    "20": [
-      {
-        "name": "Emily Kinkead",
-        "party": "DEM"
+        "district_judicial": 2,
+        "party": "REP",
+        "name": "CHRISTINA PARSONS",
+        "Municipality": "EAST HEMPFIELD TOWNSHIP",
+        "County": "LANCASTER"
       },
       {
-        "name": "Matt Kruth",
-        "party": "REP"
-      }
-    ],
-    "200": [
-      {
-        "name": "Chris Rabb",
-        "party": "DEM"
+        "district_judicial": 2,
+        "party": "REP",
+        "name": "SHAWN P MCLAUGHLIN",
+        "Municipality": "CONOY TOWNSHIP",
+        "County": "LANCASTER"
       },
       {
-        "name": "Kionna West",
-        "party": "REP"
-      }
-    ],
-    "201": [
-      {
-        "name": "Stephen Kinsey",
-        "party": "DEM"
-      }
-    ],
-    "202": [
-      {
-        "name": "Jared Solomon",
-        "party": "DEM"
-      }
-    ],
-    "203": [
-      {
-        "name": "Anthony A Bellmon",
-        "party": "DEM"
-      }
-    ],
-    "21": [
-      {
-        "name": "Sara Innamorato",
-        "party": "DEM"
+        "district_judicial": 2,
+        "party": "REP",
+        "name": "TODD BROWN",
+        "Municipality": "EAST HEMPFIELD TOWNSHIP",
+        "County": "LANCASTER"
       },
       {
-        "name": "Frank Perman",
-        "party": "REP"
-      }
-    ],
-    "22": [
-      {
-        "name": "Joshua Siegel",
-        "party": "DEM"
-      },
-      {
-        "name": "Robert E Smith Jr",
-        "party": "REP"
-      }
-    ],
-    "23": [
-      {
-        "name": "Dan Frankel",
-        "party": "DEM"
-      },
-      {
-        "name": "Jay Ting Walker",
-        "party": "GRN"
-      }
-    ],
-    "24": [
-      {
-        "name": "Latasha D Mayes",
-        "party": "DEM"
-      }
-    ],
-    "25": [
-      {
-        "name": "Brandon J Markosek",
-        "party": "DEM"
-      },
-      {
-        "name": "Steve Schlauch",
-        "party": "REP"
-      }
-    ],
-    "26": [
-      {
-        "name": "Paul Friel",
-        "party": "DEM"
-      },
-      {
-        "name": "Tim Hennessey",
-        "party": "REP"
-      }
-    ],
-    "27": [
-      {
-        "name": "Daniel J Deasy",
-        "party": "DEM"
-      },
-      {
-        "name": "Ed Brosky",
-        "party": "REP"
-      }
-    ],
-    "28": [
-      {
-        "name": "Alison Duncan",
-        "party": "DEM"
-      },
-      {
-        "name": "Rob Mercuri",
-        "party": "REP"
-      }
-    ],
-    "29": [
-      {
-        "name": "Tim Brennan",
-        "party": "DEM"
-      },
-      {
-        "name": "Diane Smith",
-        "party": "REP"
-      },
-      {
-        "name": "Robert Ronky",
-        "party": "IND"
+        "district_judicial": 2,
+        "party": "REP",
+        "name": "KAREN L MAISANO",
+        "Municipality": "LANCASTER TOWNSHIP",
+        "County": "LANCASTER"
       }
     ],
     "3": [
       {
-        "name": "Ryan Bizzarro",
-        "party": "DEM"
+        "district_judicial": 3,
+        "party": "DEM",
+        "name": "BRIAN PANELLA",
+        "Municipality": "FORKS TOWNSHIP",
+        "County": "NORTHAMPTON"
       },
       {
-        "name": "Joe Kujawa",
-        "party": "REP"
-      }
-    ],
-    "30": [
-      {
-        "name": "Arvind Venkat",
-        "party": "DEM"
+        "district_judicial": 3,
+        "party": "DEM",
+        "name": "NANCY AAROE",
+        "Municipality": "BETHLEHEM TOWNSHIP",
+        "County": "NORTHAMPTON"
       },
       {
-        "name": "Cindy Kirk",
-        "party": "REP"
-      }
-    ],
-    "31": [
-      {
-        "name": "Perry Warren",
-        "party": "DEM"
+        "district_judicial": 3,
+        "party": "REP",
+        "name": "NANCY AAROE",
+        "Municipality": "BETHLEHEM TOWNSHIP",
+        "County": "NORTHAMPTON"
       },
       {
-        "name": "Bernie Sauer",
-        "party": "REP"
-      }
-    ],
-    "32": [
-      {
-        "name": "Tony Deluca",
-        "party": "DEM"
-      },
-      {
-        "name": "Queonia Livingston",
-        "party": "GRN"
-      }
-    ],
-    "33": [
-      {
-        "name": "Mandy Steele",
-        "party": "DEM"
-      },
-      {
-        "name": "Ted Tomson",
-        "party": "REP"
-      }
-    ],
-    "34": [
-      {
-        "name": "Summer Lee",
-        "party": "DEM"
-      }
-    ],
-    "35": [
-      {
-        "name": "Austin Davis",
-        "party": "DEM"
-      },
-      {
-        "name": "Don Nevills",
-        "party": "REP"
-      }
-    ],
-    "36": [
-      {
-        "name": "Jessica Benham",
-        "party": "DEM"
-      },
-      {
-        "name": "Ross Sylvester",
-        "party": "LIB"
-      }
-    ],
-    "37": [
-      {
-        "name": "Mindy Fee",
-        "party": "REP"
-      }
-    ],
-    "38": [
-      {
-        "name": "Nick Pisciottano",
-        "party": "DEM"
-      }
-    ],
-    "39": [
-      {
-        "name": "Rick Self",
-        "party": "DEM"
-      },
-      {
-        "name": "Andrew Kuzma",
-        "party": "REP"
-      }
-    ],
-    "4": [
-      {
-        "name": "Chelsea Oliver",
-        "party": "DEM"
-      },
-      {
-        "name": "Jake Banta",
-        "party": "REP"
-      }
-    ],
-    "40": [
-      {
-        "name": "Chris Todd",
-        "party": "DEM"
-      },
-      {
-        "name": "Natalie Mihalek",
-        "party": "REP"
-      }
-    ],
-    "41": [
-      {
-        "name": "Brett R Miller",
-        "party": "REP"
-      },
-      {
-        "name": "Favyan Asia",
-        "party": "LIB"
-      }
-    ],
-    "42": [
-      {
-        "name": "Dan Miller",
-        "party": "DEM"
-      },
-      {
-        "name": "Pat Tylka",
-        "party": "REP"
-      }
-    ],
-    "43": [
-      {
-        "name": "Keith J Greiner",
-        "party": "REP"
-      }
-    ],
-    "44": [
-      {
-        "name": "Debbie Turici",
-        "party": "DEM"
-      },
-      {
-        "name": "Valerie Gaydos",
-        "party": "REP"
-      }
-    ],
-    "45": [
-      {
-        "name": "Anita Astorino Kulik",
-        "party": "DEM"
-      },
-      {
-        "name": "Michael Pendel",
-        "party": "REP"
-      }
-    ],
-    "46": [
-      {
-        "name": "Jason Ortitay",
-        "party": "REP"
-      }
-    ],
-    "47": [
-      {
-        "name": "Joe D'Orsie",
-        "party": "REP"
-      }
-    ],
-    "48": [
-      {
-        "name": "Tim O'Neal",
-        "party": "REP"
-      }
-    ],
-    "49": [
-      {
-        "name": "Izzy Smith-Wade-El",
-        "party": "DEM"
-      },
-      {
-        "name": "Anne Rivers",
-        "party": "REP"
+        "district_judicial": 3,
+        "party": "REP",
+        "name": "BRIAN PANELLA",
+        "Municipality": "FORKS TOWNSHIP",
+        "County": "NORTHAMPTON"
       }
     ],
     "5": [
       {
-        "name": "Barry Jozwiak",
-        "party": "REP"
-      }
-    ],
-    "50": [
-      {
-        "name": "Doug Mason",
-        "party": "DEM"
+        "district_judicial": 5,
+        "party": "DEM",
+        "name": "PATRICK A SWEENEY",
+        "Municipality": "PITTSBURGH",
+        "County": "ALLEGHENY"
       },
       {
-        "name": "Bud Cook",
-        "party": "REP"
-      }
-    ],
-    "51": [
-      {
-        "name": "Richard Ringer",
-        "party": "DEM"
+        "district_judicial": 5,
+        "party": "DEM",
+        "name": "ANDY SZEFI",
+        "Municipality": "MT LEBANON",
+        "County": "ALLEGHENY"
       },
       {
-        "name": "Charity Grimm Krupa",
-        "party": "REP"
-      }
-    ],
-    "52": [
-      {
-        "name": "Ryan Warner",
-        "party": "REP"
-      }
-    ],
-    "53": [
-      {
-        "name": "Steve Malagari",
-        "party": "DEM"
+        "district_judicial": 5,
+        "party": "DEM",
+        "name": "ANTHONY DELUCA",
+        "Municipality": "MT LEBANON",
+        "County": "ALLEGHENY"
       },
       {
-        "name": "Jennifer Neha Sodha",
-        "party": "REP"
-      }
-    ],
-    "54": [
-      {
-        "name": "Greg Scott",
-        "party": "DEM"
+        "district_judicial": 5,
+        "party": "REP",
+        "name": "PATRICK A SWEENEY",
+        "Municipality": "PITTSBURGH",
+        "County": "ALLEGHENY"
       },
       {
-        "name": "Allen Arthur Anderson",
-        "party": "REP"
-      }
-    ],
-    "55": [
-      {
-        "name": "Scott Gauss",
-        "party": "DEM"
+        "district_judicial": 5,
+        "party": "REP",
+        "name": "ANDY SZEFI",
+        "Municipality": "MT LEBANON",
+        "County": "ALLEGHENY"
       },
       {
-        "name": "Jill Cooper",
-        "party": "REP"
-      }
-    ],
-    "56": [
-      {
-        "name": "George Dunbar",
-        "party": "REP"
-      }
-    ],
-    "57": [
-      {
-        "name": "Eric Nelson",
-        "party": "REP"
-      }
-    ],
-    "58": [
-      {
-        "name": "Ken Bach",
-        "party": "DEM"
-      },
-      {
-        "name": "Eric Davanzo",
-        "party": "REP"
-      }
-    ],
-    "59": [
-      {
-        "name": "Leslie Rossi",
-        "party": "REP"
+        "district_judicial": 5,
+        "party": "REP",
+        "name": "ANTHONY DELUCA",
+        "Municipality": "MT LEBANON",
+        "County": "ALLEGHENY"
       }
     ],
     "6": [
       {
-        "name": "Nerissa Galt",
-        "party": "DEM"
+        "district_judicial": 6,
+        "party": "DEM",
+        "name": "PETE SALA",
+        "Municipality": "ERIE",
+        "County": "ERIE"
       },
       {
-        "name": "Brad Roae",
-        "party": "REP"
-      }
-    ],
-    "60": [
-      {
-        "name": "Bob George",
-        "party": "DEM"
+        "district_judicial": 6,
+        "party": "DEM",
+        "name": "ERIC MIKOVCH",
+        "Municipality": "ELK CREEK TOWNSHIP",
+        "County": "ERIE"
       },
       {
-        "name": "Abby Major",
-        "party": "REP"
-      }
-    ],
-    "61": [
-      {
-        "name": "Liz Hanbidge",
-        "party": "DEM"
+        "district_judicial": 6,
+        "party": "DEM",
+        "name": "LEIGH ANN ORTON",
+        "Municipality": "NORTH EAST",
+        "County": "ERIE"
       },
       {
-        "name": "Jessie Bradica",
-        "party": "REP"
-      }
-    ],
-    "62": [
-      {
-        "name": "Brian Doyle",
-        "party": "DEM"
+        "district_judicial": 6,
+        "party": "REP",
+        "name": "PETE SALA",
+        "Municipality": "ERIE",
+        "County": "ERIE"
       },
       {
-        "name": "Jim Struzzi",
-        "party": "REP"
-      }
-    ],
-    "63": [
+        "district_judicial": 6,
+        "party": "REP",
+        "name": "LEIGH ANN ORTON",
+        "Municipality": "NORTH EAST",
+        "County": "ERIE"
+      },
       {
-        "name": "Donna Oberlander",
-        "party": "REP"
-      }
-    ],
-    "64": [
-      {
-        "name": "R Lee James",
-        "party": "REP"
-      }
-    ],
-    "65": [
-      {
-        "name": "Kathy L Rapp",
-        "party": "REP"
-      }
-    ],
-    "66": [
-      {
-        "name": "Brian Smith",
-        "party": "REP"
-      }
-    ],
-    "67": [
-      {
-        "name": "Martin T Causer",
-        "party": "REP"
-      }
-    ],
-    "68": [
-      {
-        "name": "Clint Owlett",
-        "party": "REP"
-      }
-    ],
-    "69": [
-      {
-        "name": "Carl Walker Metzgar",
-        "party": "REP"
+        "district_judicial": 6,
+        "party": "REP",
+        "name": "ERIC MIKOVCH",
+        "Municipality": "ELK CREEK TOWNSHIP",
+        "County": "ERIE"
       }
     ],
     "7": [
       {
-        "name": "Timothy M Mcgonigle",
-        "party": "DEM"
-      },
-      {
-        "name": "Parke Wentling",
-        "party": "REP"
-      }
-    ],
-    "70": [
-      {
-        "name": "Matt Bradford",
-        "party": "DEM"
-      },
-      {
-        "name": "Arthur C Bustard",
-        "party": "REP"
-      }
-    ],
-    "71": [
-      {
-        "name": "Jim Rigby",
-        "party": "REP"
-      }
-    ],
-    "72": [
-      {
-        "name": "Frank Burns",
-        "party": "DEM"
-      },
-      {
-        "name": "Renae Billow",
-        "party": "REP"
-      }
-    ],
-    "73": [
-      {
-        "name": "Dallas Kephart",
-        "party": "REP"
-      }
-    ],
-    "74": [
-      {
-        "name": "Dan Williams",
-        "party": "DEM"
-      },
-      {
-        "name": "Dale Hensel",
-        "party": "REP"
-      }
-    ],
-    "75": [
-      {
-        "name": "Erica Vogt",
-        "party": "DEM"
-      },
-      {
-        "name": "Mike Armanini",
-        "party": "REP"
-      }
-    ],
-    "76": [
-      {
-        "name": "Denise Maris",
-        "party": "DEM"
-      },
-      {
-        "name": "Stephanie Borowicz",
-        "party": "REP"
-      }
-    ],
-    "77": [
-      {
-        "name": "H Scott Conklin",
-        "party": "DEM"
-      },
-      {
-        "name": "Steve Yetsko",
-        "party": "REP"
-      }
-    ],
-    "78": [
-      {
-        "name": "Jesse Topper",
-        "party": "REP"
-      }
-    ],
-    "79": [
-      {
-        "name": "Lou Schmitt",
-        "party": "REP"
+        "district_judicial": 7,
+        "party": "REP",
+        "name": "MATT WEINTRAUB",
+        "Municipality": "DOYLESTOWN TOWNSHIP",
+        "County": "BUCKS"
       }
     ],
     "8": [
       {
-        "name": "Aaron Bernstine",
-        "party": "REP"
-      }
-    ],
-    "80": [
-      {
-        "name": "Kimberly Capenos",
-        "party": "DEM"
+        "district_judicial": 8,
+        "party": "DEM",
+        "name": "MIKE TOOMEY",
+        "Municipality": "ROCKEFELLER",
+        "County": "NORTHUMBERLAND"
       },
       {
-        "name": "Jim Gregory",
-        "party": "REP"
-      }
-    ],
-    "81": [
-      {
-        "name": "Ian Kidd",
-        "party": "DEM"
-      },
-      {
-        "name": "Rich Irvin",
-        "party": "REP"
-      }
-    ],
-    "82": [
-      {
-        "name": "Paul Takac",
-        "party": "DEM"
-      },
-      {
-        "name": "Justin V Behrens",
-        "party": "REP"
-      }
-    ],
-    "83": [
-      {
-        "name": "Jamie Flick",
-        "party": "REP"
-      }
-    ],
-    "84": [
-      {
-        "name": "Joe Hamm",
-        "party": "REP"
-      }
-    ],
-    "85": [
-      {
-        "name": "David H Rowe",
-        "party": "REP"
-      }
-    ],
-    "86": [
-      {
-        "name": "Perry Stambaugh",
-        "party": "REP"
-      }
-    ],
-    "87": [
-      {
-        "name": "Kristal Markle",
-        "party": "DEM"
-      },
-      {
-        "name": "Thomas Kutz",
-        "party": "REP"
-      }
-    ],
-    "88": [
-      {
-        "name": "Sara Agerton",
-        "party": "DEM"
-      },
-      {
-        "name": "Sheryl Delozier",
-        "party": "REP"
-      }
-    ],
-    "89": [
-      {
-        "name": "Rob Kauffman",
-        "party": "REP"
-      }
-    ],
-    "9": [
-      {
-        "name": "Chris Sainato",
-        "party": "DEM"
-      },
-      {
-        "name": "Marla Gallo Brown",
-        "party": "REP"
-      }
-    ],
-    "90": [
-      {
-        "name": "Paul Schemel",
-        "party": "REP"
-      }
-    ],
-    "91": [
-      {
-        "name": "Marty Karsteter Qually",
-        "party": "DEM"
-      },
-      {
-        "name": "Dan Moul",
-        "party": "REP"
-      },
-      {
-        "name": "Neil Belliveau",
-        "party": "LIB"
-      }
-    ],
-    "92": [
-      {
-        "name": "Dan Almoney",
-        "party": "DEM"
-      },
-      {
-        "name": "Dawn Keefer",
-        "party": "REP"
-      }
-    ],
-    "93": [
-      {
-        "name": "Chris Rodkey",
-        "party": "DEM"
-      },
-      {
-        "name": "Mike Jones",
-        "party": "REP"
-      },
-      {
-        "name": "Kristine Cousler-Womack",
-        "party": "KEY"
-      }
-    ],
-    "94": [
-      {
-        "name": "Wendy Fink",
-        "party": "REP"
-      }
-    ],
-    "95": [
-      {
-        "name": "Carol Hill-Evans",
-        "party": "DEM"
-      }
-    ],
-    "96": [
-      {
-        "name": "Mike Sturla",
-        "party": "DEM"
-      },
-      {
-        "name": "April Weaver",
-        "party": "REP"
-      }
-    ],
-    "97": [
-      {
-        "name": "Steve Mentzer",
-        "party": "REP"
-      }
-    ],
-    "98": [
-      {
-        "name": "Mark Temons",
-        "party": "DEM"
-      },
-      {
-        "name": "Tom Jones",
-        "party": "REP"
-      },
-      {
-        "name": "Josh Gerber",
-        "party": "LIB"
-      }
-    ],
-    "99": [
-      {
-        "name": "Joshua Caltagirone",
-        "party": "DEM"
-      },
-      {
-        "name": "Dave Zimmerman",
-        "party": "REP"
-      }
-    ]
-  },
-  "State Senate": {
-    "10": [
-      {
-        "name": "Steve Santarsiero",
-        "party": "DEM"
-      },
-      {
-        "name": "Matt Mccullough",
-        "party": "REP"
+        "district_judicial": 8,
+        "party": "REP",
+        "name": "MIKE TOOMEY",
+        "Municipality": "ROCKEFELLER",
+        "County": "NORTHUMBERLAND"
       }
     ],
     "12": [
       {
-        "name": "Maria Collett",
-        "party": "DEM"
+        "district_judicial": 12,
+        "party": "DEM",
+        "name": "LA TASHA C WILLIAMS",
+        "Municipality": "SUSQUEHANNA TOWNSHIP",
+        "County": "DAUPHIN"
       },
       {
-        "name": "Rob Davies",
-        "party": "REP"
+        "district_judicial": 12,
+        "party": "DEM",
+        "name": "COURTNEY K POWELL",
+        "Municipality": "LOWER PAXTON TOWNSHIP",
+        "County": "DAUPHIN"
+      },
+      {
+        "district_judicial": 12,
+        "party": "REP",
+        "name": "COURTNEY K POWELL",
+        "Municipality": "LOWER PAXTON TOWNSHIP",
+        "County": "DAUPHIN"
       }
     ],
     "14": [
       {
-        "name": "Nick Miller",
-        "party": "DEM"
+        "district_judicial": 14,
+        "party": "DEM",
+        "name": "MARK M MEHALOV",
+        "Municipality": "FAIRCHANCE BOROUGH",
+        "County": "FAYETTE"
       },
       {
-        "name": "Dean N Browning",
-        "party": "REP"
-      }
-    ],
-    "16": [
-      {
-        "name": "Mark Pinsley",
-        "party": "DEM"
+        "district_judicial": 14,
+        "party": "DEM",
+        "name": "MELINDA DELLAROSE",
+        "Municipality": "REDSTONE TOWNSHIP",
+        "County": "FAYETTE"
       },
       {
-        "name": "Jarrett Coleman",
-        "party": "REP"
-      }
-    ],
-    "18": [
-      {
-        "name": "Lisa Boscola",
-        "party": "DEM"
+        "district_judicial": 14,
+        "party": "REP",
+        "name": "MARK M MEHALOV",
+        "Municipality": "FAIRCHANCE BOROUGH",
+        "County": "FAYETTE"
       },
       {
-        "name": "John Merhottein",
-        "party": "REP"
+        "district_judicial": 14,
+        "party": "REP",
+        "name": "MELINDA DELLAROSE",
+        "Municipality": "REDSTONE",
+        "County": "FAYETTE"
       }
     ],
-    "2": [
+    "15": [
       {
-        "name": "Christine M Tartaglione",
-        "party": "DEM"
+        "district_judicial": 15,
+        "party": "DEM",
+        "name": "DAVE BLACK",
+        "Municipality": "THORNBURY TOWNSHIP",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "DEM",
+        "name": "ANDY RONGAUS",
+        "Municipality": "WEST GOSHEN TOWNSHIP",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "DEM",
+        "name": "DEB RYAN",
+        "Municipality": "BIRMINGHAM TOWNSHIP",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "DEM",
+        "name": "PJ REDMOND",
+        "Municipality": "WEST GOSHEN",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "DEM",
+        "name": "DON KOHLER",
+        "Municipality": "NEW GARDEN TOWNSHIP",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "DEM",
+        "name": "NICOLE FORZATO",
+        "Municipality": "EASTTOWN TOWNSHIP",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "DEM",
+        "name": "FREDDA D MADDOX",
+        "Municipality": "EAST GOSHEN",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "DEM",
+        "name": "KRISTINE C HOWARD",
+        "Municipality": "EAST WHITELAND",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "DEM",
+        "name": "THOMAS MCCABE",
+        "Municipality": "NEWLIN TOWNSHIP",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "DEM",
+        "name": "LOU MINCARELLI",
+        "Municipality": "EAST BRANDYWINE",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "DEM",
+        "name": "SARAH B  BLACK",
+        "Municipality": "WEST CHESTER BOROUGH",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "DEM",
+        "name": "PAIGE SIMMONS",
+        "Municipality": "WEST PIKELAND",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "REP",
+        "name": "DON KOHLER",
+        "Municipality": "NEW GARDEN TOWNSHIP",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "REP",
+        "name": "LOU MINCARELLI",
+        "Municipality": "EAST BRANDYWINE TOWNSHIP",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "REP",
+        "name": "DAVE BLACK",
+        "Municipality": "THORNBURY TOWNSHIP",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "REP",
+        "name": "PAIGE SIMMONS",
+        "Municipality": "WEST PIKELAND",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "REP",
+        "name": "FREDDA D MADDOX",
+        "Municipality": "EAST GOSHEN",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "REP",
+        "name": "SARAH B BLACK",
+        "Municipality": "WEST CHESTER BOROUGH",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "REP",
+        "name": "ANDY RONGAUS",
+        "Municipality": "WEST GOSHEN TOWNSHIP",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "REP",
+        "name": "THOMAS MCCABE",
+        "Municipality": "NEWLIN TOWNSHIP",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "REP",
+        "name": "DEB RYAN",
+        "Municipality": "BIRMINGHAM TOWNSHIP",
+        "County": "CHESTER"
+      },
+      {
+        "district_judicial": 15,
+        "party": "REP",
+        "name": "PJ REDMOND",
+        "Municipality": "WEST GOSHEN",
+        "County": "CHESTER"
+      }
+    ],
+    "17": [
+      {
+        "district_judicial": 17,
+        "party": "DEM",
+        "name": "MIKE PIECUCH",
+        "Municipality": "PENN TOWNSHIP",
+        "County": "SNYDER"
+      },
+      {
+        "district_judicial": 17,
+        "party": "REP",
+        "name": "MIKE PIECUCH",
+        "Municipality": "PENN TOWNSHIP",
+        "County": "SNYDER"
+      }
+    ],
+    "19": [
+      {
+        "district_judicial": 19,
+        "party": "REP",
+        "name": "KELLEY L MARGETAS",
+        "Municipality": "WEST MANCHESTER TOWNSHIP",
+        "County": "YORK"
       }
     ],
     "20": [
       {
-        "name": "Jackie Baker",
-        "party": "DEM"
+        "district_judicial": 20,
+        "party": "DEM",
+        "name": "GEORGE ZANIC",
+        "Municipality": "HUNTINGDON BORO",
+        "County": "HUNTINGDON"
       },
       {
-        "name": "Lisa Baker",
-        "party": "REP"
+        "district_judicial": 20,
+        "party": "REP",
+        "name": "GEORGE ZANIC",
+        "Municipality": "HUNTINGDON BORO",
+        "County": "HUNTINGDON"
       }
     ],
-    "22": [
+    "21": [
       {
-        "name": "Marty Flynn",
-        "party": "DEM"
+        "district_judicial": 21,
+        "party": "DEM",
+        "name": "MICHAEL A O'PAKE",
+        "Municipality": "NORWEGIAN TOWNSHIP",
+        "County": "SCHUYLKILL"
       },
       {
-        "name": "Tom Bassett",
-        "party": "REP"
+        "district_judicial": 21,
+        "party": "DEM",
+        "name": "BILL BURKE",
+        "Municipality": "PORT CARBON",
+        "County": "SCHUYLKILL"
+      },
+      {
+        "district_judicial": 21,
+        "party": "REP",
+        "name": "MICHAEL A O'PAKE",
+        "Municipality": "NORWEGIAN TOWNSHIP",
+        "County": "SCHUYLKILL"
+      },
+      {
+        "district_judicial": 21,
+        "party": "REP",
+        "name": "BILL BURKE",
+        "Municipality": "PORT CARBON",
+        "County": "SCHUYLKILL"
+      }
+    ],
+    "23": [
+      {
+        "district_judicial": 23,
+        "party": "DEM",
+        "name": "JUSTIN D BODOR",
+        "Municipality": "OLEY TOWNSHIP",
+        "County": "BERKS"
+      },
+      {
+        "district_judicial": 23,
+        "party": "DEM",
+        "name": "KURT GEISHAUSER",
+        "Municipality": "EXETER",
+        "County": "BERKS"
+      },
+      {
+        "district_judicial": 23,
+        "party": "DEM",
+        "name": "JILL SCHEIDT",
+        "Municipality": "WYOMISSING",
+        "County": "BERKS"
+      },
+      {
+        "district_judicial": 23,
+        "party": "REP",
+        "name": "KURT GEISHAUSER",
+        "Municipality": "EXETER",
+        "County": "BERKS"
+      },
+      {
+        "district_judicial": 23,
+        "party": "REP",
+        "name": "JILL SCHEIDT",
+        "Municipality": "WYOMISSING",
+        "County": "BERKS"
+      },
+      {
+        "district_judicial": 23,
+        "party": "REP",
+        "name": "JUSTIN D BODOR",
+        "Municipality": "OLEY",
+        "County": "BERKS"
       }
     ],
     "24": [
       {
-        "name": "Jill Dennin",
-        "party": "DEM"
+        "district_judicial": 24,
+        "party": "DEM",
+        "name": "JOEL SEELYE",
+        "Municipality": "HOLLIDAYSBURG",
+        "County": "BLAIR"
       },
       {
-        "name": "Tracy Pennycuick",
-        "party": "REP"
+        "district_judicial": 24,
+        "party": "DEM",
+        "name": "FRED B MILLER",
+        "Municipality": "TYRONE TOWNSHIP",
+        "County": "BLAIR"
+      },
+      {
+        "district_judicial": 24,
+        "party": "DEM",
+        "name": "DAVID CONSIGLIO",
+        "Municipality": "FRANKSTOWN TOWNSHIP",
+        "County": "BLAIR"
+      },
+      {
+        "district_judicial": 24,
+        "party": "REP",
+        "name": "FRED B MILLER",
+        "Municipality": "TYRONE TOWNSHIP",
+        "County": "BLAIR"
+      },
+      {
+        "district_judicial": 24,
+        "party": "REP",
+        "name": "JOEL SEELYE",
+        "Municipality": "HOLLIDAYSBURG",
+        "County": "BLAIR"
+      },
+      {
+        "district_judicial": 24,
+        "party": "REP",
+        "name": "DAVID CONSIGLIO",
+        "Municipality": "FRANKSTOWN TOWNSHIP",
+        "County": "BLAIR"
       }
     ],
     "26": [
       {
-        "name": "Tim Kearney",
-        "party": "DEM"
+        "district_judicial": 26,
+        "party": "DEM",
+        "name": "RICHARD W KNECHT",
+        "Municipality": "BRIAR CREEK TOWNSHIP",
+        "County": "COLUMBIA"
       },
       {
-        "name": "Frank Agovino",
-        "party": "REP"
+        "district_judicial": 26,
+        "party": "REP",
+        "name": "RICHARD W KNECHT",
+        "Municipality": "BRIAR CREEK TOWNSHIP",
+        "County": "COLUMBIA"
       }
     ],
     "28": [
       {
-        "name": "Judith Higgins",
-        "party": "DEM"
+        "district_judicial": 28,
+        "party": "DEM",
+        "name": "MATTHEW KIRTLAND",
+        "Municipality": "SANDYCREEK TOWNSHIP",
+        "County": "VENANGO"
       },
       {
-        "name": "Kristin Phillips-Hill",
-        "party": "REP"
+        "district_judicial": 28,
+        "party": "DEM",
+        "name": "GREGORY J MERKEL",
+        "Municipality": "CITY OF FRANKLIN",
+        "County": "VENANGO"
+      },
+      {
+        "district_judicial": 28,
+        "party": "DEM",
+        "name": "JUSTIN FLEEGER",
+        "Municipality": "CRANBERRY TWP",
+        "County": "VENANGO"
+      },
+      {
+        "district_judicial": 28,
+        "party": "REP",
+        "name": "GREGORY J MERKEL",
+        "Municipality": "CITY OF FRANKLIN",
+        "County": "VENANGO"
+      },
+      {
+        "district_judicial": 28,
+        "party": "REP",
+        "name": "JUSTIN FLEEGER",
+        "Municipality": "CRANBERRY TWP",
+        "County": "VENANGO"
+      },
+      {
+        "district_judicial": 28,
+        "party": "REP",
+        "name": "MATTHEW KIRTLAND",
+        "Municipality": "SANDYCREEK TOWNSHIP",
+        "County": "VENANGO"
       }
     ],
-    "30": [
+    "29": [
       {
-        "name": "Carol Taylor",
-        "party": "DEM"
+        "district_judicial": 29,
+        "party": "DEM",
+        "name": "ANDREA PULIZZI",
+        "Municipality": "LOYALSOCK TOWNSHIP",
+        "County": "LYCOMING"
       },
       {
-        "name": "Judy Ward",
-        "party": "REP"
+        "district_judicial": 29,
+        "party": "DEM",
+        "name": "WILLIAM P CARLUCCI",
+        "Municipality": "LOYALSOCK TOWNSHIP",
+        "County": "LYCOMING"
+      },
+      {
+        "district_judicial": 29,
+        "party": "DEM",
+        "name": "RYAN C GARDNER",
+        "Municipality": "GAMBLE TOWNSHIP",
+        "County": "LYCOMING"
+      },
+      {
+        "district_judicial": 29,
+        "party": "REP",
+        "name": "ANDREA PULIZZI",
+        "Municipality": "LOYALSOCK TOWNSHIP",
+        "County": "LYCOMING"
+      },
+      {
+        "district_judicial": 29,
+        "party": "REP",
+        "name": "WILLIAM P CARLUCCI",
+        "Municipality": "LOYALSOCK TOWNSHIP",
+        "County": "LYCOMING"
+      },
+      {
+        "district_judicial": 29,
+        "party": "REP",
+        "name": "RYAN C GARDNER",
+        "Municipality": "GAMBLE TOWNSHIP",
+        "County": "LYCOMING"
       }
     ],
     "32": [
       {
-        "name": "Pat Stefano",
-        "party": "REP"
-      }
-    ],
-    "34": [
-      {
-        "name": "Jim Massey",
-        "party": "DEM"
+        "district_judicial": 32,
+        "party": "DEM",
+        "name": "DAWN GETTY SUTPHIN",
+        "Municipality": "PROSPECT PARK BOROUGH",
+        "County": "DELAWARE"
       },
       {
-        "name": "Greg Rothman",
-        "party": "REP"
-      }
-    ],
-    "36": [
+        "district_judicial": 32,
+        "party": "DEM",
+        "name": "RACHEL EZZELL BERRY",
+        "Municipality": "MIDDLETOWN TOWNSHIP",
+        "County": "DELAWARE"
+      },
       {
-        "name": "Ryan P Aument",
-        "party": "REP"
+        "district_judicial": 32,
+        "party": "REP",
+        "name": "DAWN GETTY SUTPHIN",
+        "Municipality": "PROSPECT PARK BOROUGH",
+        "County": "DELAWARE"
       }
     ],
     "38": [
       {
-        "name": "Lindsey Williams",
-        "party": "DEM"
+        "district_judicial": 38,
+        "party": "DEM",
+        "name": "DANIEL G RONCA",
+        "Municipality": "AMBLER",
+        "County": "MONTGOMERY"
       },
       {
-        "name": "Lori Mizgorski",
-        "party": "REP"
-      }
-    ],
-    "4": [
-      {
-        "name": "Art Haywood",
-        "party": "DEM"
+        "district_judicial": 38,
+        "party": "REP",
+        "name": "CHARLIE ROSENBAUM",
+        "Municipality": "LOWER MORELAND TOWNSHIP",
+        "County": "MONTGOMERY"
       },
       {
-        "name": "Todd Johnson",
-        "party": "REP"
+        "district_judicial": 38,
+        "party": "REP",
+        "name": "DANIEL G RONCA",
+        "Municipality": "AMBLER",
+        "County": "MONTGOMERY"
       }
     ],
-    "40": [
+    "45": [
       {
-        "name": "Jennifer Shukaitis",
-        "party": "DEM"
+        "district_judicial": 45,
+        "party": "DEM",
+        "name": "FRANK J RUGGIERO",
+        "Municipality": "GREENFIELD TOWNSHIP",
+        "County": "LACKAWANNA"
       },
       {
-        "name": "Rosemary Brown",
-        "party": "REP"
+        "district_judicial": 45,
+        "party": "REP",
+        "name": "FRANK J RUGGIERO",
+        "Municipality": "GREENFIELD TOWNSHIP",
+        "County": "LACKAWANNA"
       }
     ],
-    "42": [
+    "47": [
       {
-        "name": "Wayne D Fontana",
-        "party": "DEM"
-      }
-    ],
-    "44": [
-      {
-        "name": "Katie Muth",
-        "party": "DEM"
+        "district_judicial": 47,
+        "party": "DEM",
+        "name": "TONILYN CHIPPIE KARGO",
+        "Municipality": "PORTAGE TOWNSHIP",
+        "County": "CAMBRIA"
       },
       {
-        "name": "Jessica Florio",
-        "party": "REP"
-      }
-    ],
-    "46": [
-      {
-        "name": "Camera Bartolotta",
-        "party": "REP"
-      }
-    ],
-    "48": [
-      {
-        "name": "Calvin Clements",
-        "party": "DEM"
+        "district_judicial": 47,
+        "party": "DEM",
+        "name": "FORREST B FORDHAM",
+        "Municipality": "RICHLAND TOWNSHIP",
+        "County": "CAMBRIA"
       },
       {
-        "name": "Chris Gebhard",
-        "party": "REP"
+        "district_judicial": 47,
+        "party": "DEM",
+        "name": "MICHAEL CARBONARA",
+        "Municipality": "RICHLAND TOWNSHIP",
+        "County": "CAMBRIA"
+      },
+      {
+        "district_judicial": 47,
+        "party": "DEM",
+        "name": "BRETT J SMITH",
+        "Municipality": "ADAMS",
+        "County": "CAMBRIA"
+      },
+      {
+        "district_judicial": 47,
+        "party": "DEM",
+        "name": "TIM SLOAN",
+        "Municipality": "CAMBRIA TOWNSHIP",
+        "County": "CAMBRIA"
+      },
+      {
+        "district_judicial": 47,
+        "party": "REP",
+        "name": "TONILYN CHIPPIE KARGO",
+        "Municipality": "PORTAGE TOWNSHIP",
+        "County": "CAMBRIA"
+      },
+      {
+        "district_judicial": 47,
+        "party": "REP",
+        "name": "FORREST B FORDHAM",
+        "Municipality": "RICHLAND TOWNSHIP",
+        "County": "CAMBRIA"
+      },
+      {
+        "district_judicial": 47,
+        "party": "REP",
+        "name": "BRETT J SMITH",
+        "Municipality": "ADAMS",
+        "County": "CAMBRIA"
+      },
+      {
+        "district_judicial": 47,
+        "party": "REP",
+        "name": "MICHAEL CARBONARA",
+        "Municipality": "RICHLAND TOWNSHIP",
+        "County": "CAMBRIA"
+      },
+      {
+        "district_judicial": 47,
+        "party": "REP",
+        "name": "TIM SLOAN",
+        "Municipality": "EBENSBURG",
+        "County": "CAMBRIA"
+      }
+    ],
+    "49": [
+      {
+        "district_judicial": 49,
+        "party": "DEM",
+        "name": "GOPAL BALACHANDRAN",
+        "Municipality": "STATE COLLEGE",
+        "County": "CENTRE"
+      },
+      {
+        "district_judicial": 49,
+        "party": "DEM",
+        "name": "JULIA RATER",
+        "Municipality": "PATTON TOWNSHIP",
+        "County": "CENTRE"
+      },
+      {
+        "district_judicial": 49,
+        "party": "REP",
+        "name": "JULIA RATER",
+        "Municipality": "PATTON TOWNSHIP",
+        "County": "CENTRE"
+      },
+      {
+        "district_judicial": 49,
+        "party": "REP",
+        "name": "GOPAL BALACHANDRAN",
+        "Municipality": "STATE COLLEGE",
+        "County": "CENTRE"
       }
     ],
     "50": [
       {
-        "name": "Rianna Czech",
-        "party": "DEM"
+        "district_judicial": 50,
+        "party": "DEM",
+        "name": "MAURA PALUMBI",
+        "Municipality": "ADAMS TOWNSHIP",
+        "County": "BUTLER"
       },
       {
-        "name": "Michele Brooks",
-        "party": "REP"
+        "district_judicial": 50,
+        "party": "DEM",
+        "name": "TERRI M SCHULTZ",
+        "Municipality": "CENTER TOWNSHIP",
+        "County": "BUTLER"
+      },
+      {
+        "district_judicial": 50,
+        "party": "REP",
+        "name": "TERRI M SCHULTZ",
+        "Municipality": "CENTER TOWNSHIP",
+        "County": "BUTLER"
+      },
+      {
+        "district_judicial": 50,
+        "party": "REP",
+        "name": "MAURA PALUMBI",
+        "Municipality": "ADAMS TOWNSHIP",
+        "County": "BUTLER"
       }
     ],
-    "6": [
+    "52": [
       {
-        "name": "Ann Marie Mitchell",
-        "party": "DEM"
+        "district_judicial": 52,
+        "party": "DEM",
+        "name": "MEGAN RYLAND TANNER",
+        "Municipality": "NORTH CORNWALL TOWNSHIP",
+        "County": "LEBANON"
       },
       {
-        "name": "Frank Farry",
-        "party": "REP"
+        "district_judicial": 52,
+        "party": "DEM",
+        "name": "ELIZABETH JUDD",
+        "Municipality": "SOUTH ANNVILLE TOWNSHIP",
+        "County": "LEBANON"
       },
       {
-        "name": "Brandon Bentrim",
-        "party": "LIB"
+        "district_judicial": 52,
+        "party": "REP",
+        "name": "DONNA LONG BRIGHTBILL",
+        "Municipality": "WEST CORNWALL TOWNSHIP",
+        "County": "LEBANON"
+      },
+      {
+        "district_judicial": 52,
+        "party": "REP",
+        "name": "ELIZABETH JUDD",
+        "Municipality": "SOUTH ANNVILLE TOWNSHIP",
+        "County": "LEBANON"
+      },
+      {
+        "district_judicial": 52,
+        "party": "REP",
+        "name": "MEGAN RYLAND TANNER",
+        "Municipality": "NORTH CORNWALL TOWNSHIP",
+        "County": "LEBANON"
       }
     ],
-    "8": [
+    "58": [
       {
-        "name": "Anthony Hardy Williams",
-        "party": "DEM"
+        "district_judicial": 58,
+        "party": "DEM",
+        "name": "JONATHAN REED",
+        "Municipality": "DERRY TOWNSHIP",
+        "County": "MIFFLIN"
       },
       {
-        "name": "John Hayes",
-        "party": "REP"
-      }
-    ]
-  },
-  "US Senate": {
-    "": [
-      {
-        "name": "John Fetterman",
-        "party": "DEM"
+        "district_judicial": 58,
+        "party": "DEM",
+        "name": "JERRY L WAGNER",
+        "Municipality": "BROWN",
+        "County": "MIFFLIN"
       },
       {
-        "name": "Mehmet Oz",
-        "party": "REP"
+        "district_judicial": 58,
+        "party": "DEM",
+        "name": "JEFF DAVIS",
+        "Municipality": "DERRY",
+        "County": "MIFFLIN"
       },
       {
-        "name": "Erik Gerhardt",
-        "party": "LIB"
+        "district_judicial": 58,
+        "party": "REP",
+        "name": "JERRY L WAGNER",
+        "Municipality": "BROWN",
+        "County": "MIFFLIN"
       },
       {
-        "name": "Richard L Weiss",
-        "party": "GRN"
+        "district_judicial": 58,
+        "party": "REP",
+        "name": "JONATHAN REED",
+        "Municipality": "DERRY TOWNSHIP",
+        "County": "MIFFLIN"
       },
       {
-        "name": "Daniel Wassmer",
-        "party": "KEY"
+        "district_judicial": 58,
+        "party": "REP",
+        "name": "JEFF DAVIS",
+        "Municipality": "DERRY",
+        "County": "MIFFLIN"
       }
     ]
   }

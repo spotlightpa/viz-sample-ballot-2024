@@ -6,9 +6,6 @@ import (
 	"strings"
 )
 
-//go:embed rev.txt
-var Rev string
-
 //go:embed url.txt
 var embedurl string
 

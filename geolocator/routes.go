@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/carlmjohnson/requests"
 	"github.com/carlmjohnson/resperr"
 	"github.com/carlmjohnson/rootdown"
 	"github.com/getsentry/sentry-go"
@@ -91,8 +92,8 @@ func (app *appEnv) getByAddress(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	var data GoogleMapsResults
-	if err := app.googleMaps.
-		Clone().
+	if err := requests.
+		New(app.googleMaps).
 		Param("address", address).
 		ToJSON(&data).
 		Fetch(r.Context()); err != nil {
@@ -174,8 +175,8 @@ func (app *appEnv) getCandidatesByAddress(w http.ResponseWriter, r *http.Request
 		return
 	}
 	var data GoogleMapsResults
-	if err := app.googleMaps.
-		Clone().
+	if err := requests.
+		New(app.googleMaps).
 		Param("address", address).
 		ToJSON(&data).
 		Fetch(r.Context()); err != nil {
