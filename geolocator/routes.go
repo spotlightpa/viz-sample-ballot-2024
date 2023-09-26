@@ -160,7 +160,7 @@ func (app *appEnv) getCandidatesByLocation(w http.ResponseWriter, r *http.Reques
 			ErrorMessage string `json:"error_message"`
 		}{
 			http.StatusNotFound,
-			"Could any district information for that location. Are you in Pennsylvania?",
+			"Could not find any district information for that location. Are you in Pennsylvania?",
 		})
 		return
 	}
