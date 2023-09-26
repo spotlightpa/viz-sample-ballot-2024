@@ -9,6 +9,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	"strings"
 
 	"github.com/paulmach/orb"
 	"github.com/paulmach/orb/geojson"
@@ -27,6 +28,8 @@ var (
 	house2022 []byte
 	//go:embed embeds/senate-2022.geojson
 	senate2022 []byte
+	//go:embed embeds/pennsylvania-counties.geojson
+	counties []byte
 )
 
 var (
@@ -36,6 +39,7 @@ var (
 	House2022Map    = geojson2Map(house2022, "embeds/house-2022.gob", false)
 	Senate2012Map   = geojson2Map(senate2012, "embeds/senate-2012.gob", false)
 	Senate2022Map   = geojson2Map(senate2022, "embeds/senate-2022.gob", false)
+	CountiesMap     = geojson2Map(counties, "embeds/pennsylvania-counties.gob", false)
 )
 
 func geojson2Map(b []byte, name string, newstyle bool) Map {
@@ -54,6 +58,8 @@ func geojson2Map(b []byte, name string, newstyle bool) Map {
 		} else if v, ok := f.Properties["LEG_DISTRICT_NO"]; ok {
 			n := v.(float64)
 			dist = strconv.Itoa(int(n))
+		} else if v, ok := f.Properties["county_nam"]; ok {
+			dist = strings.Title(strings.ToLower(v.(string)))
 		}
 
 		if dist == "" {

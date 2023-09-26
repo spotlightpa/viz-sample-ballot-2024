@@ -132,6 +132,7 @@ type LocationInfo struct {
 	NewHouse    string `json:"new_house"`
 	OldSenate   string `json:"old_senate"`
 	NewSenate   string `json:"new_senate"`
+	County      string `json:"county"`
 }
 
 func NewLocationInfo(lat, long float64) LocationInfo {
@@ -143,6 +144,7 @@ func NewLocationInfo(lat, long float64) LocationInfo {
 		NewHouse:    House2022Map.District(p).GetName(),
 		OldSenate:   Senate2012Map.District(p).GetName(),
 		NewSenate:   Senate2022Map.District(p).GetName(),
+		County:      CountiesMap.District(p).GetName(),
 	}
 }
 

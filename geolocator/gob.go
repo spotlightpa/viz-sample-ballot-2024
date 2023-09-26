@@ -21,6 +21,8 @@ var (
 	senate2012 []byte
 	//go:embed embeds/senate-2022.gob
 	senate2022 []byte
+	//go:embed embeds/pennsylvania-counties.gob
+	counties []byte
 )
 
 var (
@@ -30,6 +32,7 @@ var (
 	House2022Map    = gob2Map(house2022)
 	Senate2012Map   = gob2Map(senate2012)
 	Senate2022Map   = gob2Map(senate2022)
+	CountiesMap     = gob2Map(counties)
 )
 
 func gob2Map(b []byte) Map {
