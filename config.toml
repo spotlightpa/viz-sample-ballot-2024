@@ -1,6 +1,6 @@
 baseURL = "https://viz-sample-ballot-2024.data.spotlightpa.org"
 languageCode = "en-us"
-title = "Pennsylvania Redistricting"
+title = "Pennsylvania Election 2024"
 
 disableKinds = ["section", "taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404"]
 buildFuture = true
