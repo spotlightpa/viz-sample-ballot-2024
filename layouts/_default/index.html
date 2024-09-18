@@ -40,7 +40,7 @@
     {{ else }}
       <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
     {{ end }}
-    {{ $minify := not site.IsServer }}
+    {{ $minify := not hugo.IsServer }}
     {{ $jsOpts := dict
       "minify" $minify
       "targetPath" "/@src/enhancements.js"
