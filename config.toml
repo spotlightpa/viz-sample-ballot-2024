@@ -2,7 +2,15 @@ baseURL = "https://viz-sample-ballot-2024.data.spotlightpa.org"
 languageCode = "en-us"
 title = "Pennsylvania Election 2024"
 
-disableKinds = ["section", "taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404"]
+disableKinds = [
+    "section",
+    "taxonomy",
+    "term",
+    "RSS",
+    "sitemap",
+    "robotsTXT",
+    "404",
+]
 buildFuture = true
 
 googleAnalytics = "UA-141126362-3"
@@ -11,11 +19,11 @@ googleAnalytics = "UA-141126362-3"
 api-base-url = ""
 
 [build]
-  writeStats = true
-  noJSConfigInAssets = true
+writeStats = true
+noJSConfigInAssets = true
 
 [minify]
-  minifyOutput = true
+minifyOutput = true
 
 [[module.mounts]]
 source = "assets"
