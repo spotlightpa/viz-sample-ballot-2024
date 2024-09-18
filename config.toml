@@ -1,4 +1,4 @@
-baseURL = "https://viz-redistricting-2020.data.spotlightpa.org"
+baseURL = "https://viz-sample-ballot-2024.data.spotlightpa.org"
 languageCode = "en-us"
 title = "Pennsylvania Redistricting"
 
