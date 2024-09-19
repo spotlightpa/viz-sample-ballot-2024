@@ -27,6 +27,9 @@ Alpine.magic("party", () => (short) => {
     LIB: "Libertarian",
     REP: "Republican",
     SWP: "Socialist Workers Party",
+    CST: "Constitution Party",
+    ASP: "American Solidarity Party",
+    FWD: "Forward Party",
   }[short];
 });
 
@@ -40,6 +43,9 @@ Alpine.magic("partyColor", () => (short) => {
     LIB: "goldenrod",
     REP: "#ff0000",
     SWP: "black",
+    CST: "linen",
+    ASP: "orangered",
+    FWD: "mediumorchid",
   }[short];
 });
 
