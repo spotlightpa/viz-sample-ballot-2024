@@ -9,8 +9,8 @@
 {{ $json.SetInMap "logo" "url" $icon.Permalink }}
 
 {{ $json.SetInMap "publisher" "@type" "Organization" }}
-{{ $json.SetInMap "publisher" "name" .Site.Title }}
-{{ $json.SetInMap "publisher" "url" .Site.BaseURL }}
+{{ $json.SetInMap "publisher" "name" site.Title }}
+{{ $json.SetInMap "publisher" "url" site.BaseURL }}
 {{ $json.Get "location" | $json.SetInMap "publisher" "location" }}
 {{ $json.Get "logo" | $json.SetInMap "publisher" "logo" }}
 
@@ -47,11 +47,11 @@
 
 {{ $json.SetInMap "org" "@context" "http://schema.org" }}
 {{ $json.SetInMap "org" "@type" "Organization" }}
-{{ $json.SetInMap "org" "name" .Site.Title }}
+{{ $json.SetInMap "org" "name" site.Title }}
 {{ $json.SetInMap "org" "logo" $icon.Permalink }}
 {{ $json.SetInMap "org" "foundingDate" 2019 }}
 {{ $json.SetInMap "org" "sameAs" $socialURLs }}
-{{ $json.SetInMap "org" "url" .Site.BaseURL }}
+{{ $json.SetInMap "org" "url" site.BaseURL }}
 {{ $json.Get "location" | $json.SetInMap "org" "location" }}
 <script type="application/ld+json">
 {{ $json.Get "org" | jsonify | safeJS }}
@@ -63,7 +63,7 @@
 {{ range $i, $page := partialCached "helper/find-parents" . .RelPermalink }}
   {{ $name := .Title }}
   {{ if .IsHome }}
-    {{ $name = .Site.Title }}
+    {{ $name = site.Title }}
   {{ end }}
   {{ $pos := add 1 $i }}
   {{ $item := dict "@id" .Permalink "name" $name }}
