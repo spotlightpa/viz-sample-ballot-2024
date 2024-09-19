@@ -12,8 +12,6 @@ github.com/carlmjohnson/requests v0.24.2 h1:JDakhAmTIKL/qL/1P7Kkc2INGBJIkIFP6xUe
 github.com/carlmjohnson/requests v0.24.2/go.mod h1:duYA/jDnyZ6f3xbcF5PpZ9N8clgopubP2nK5i6MVMhU=
 github.com/carlmjohnson/resperr v0.22.0 h1:oSliyZLmyncmPLEZXydy6gNhJgQ/9AaVpaGQLDRQ/NM=
 github.com/carlmjohnson/resperr v0.22.0/go.mod h1:iEKmv4gBlxjy4iLy7ExxLjdCBJ5wSaRlDZDnqGfBtls=
-github.com/carlmjohnson/rootdown v0.22.4 h1:DX+ESIFKPA519BUM9u/ONvT2AHAiPDveBT1aCZhTvEc=
-github.com/carlmjohnson/rootdown v0.22.4/go.mod h1:L8VUKNHObVp8EqgaAgKJ2Axc2ZuiX28F59288qJTHB4=
 github.com/carlmjohnson/versioninfo v0.22.5 h1:O00sjOLUAFxYQjlN/bzYTuZiS0y6fWDQjMRvwtKgwwc=
 github.com/carlmjohnson/versioninfo v0.22.5/go.mod h1:QT9mph3wcVfISUKd0i9sZfVrPviHuSF+cUtLjm2WSf8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
