@@ -1,0 +1,3014 @@
+{
+  "ATTORNEY GENERAL": {
+    "": [
+      {
+        "name": "EUGENE DEPASQUALE",
+        "District": "Statewide",
+        "Office": "ATTORNEY GENERAL",
+        "party": "DEM"
+      },
+      {
+        "name": "DAVE SUNDAY",
+        "District": "Statewide",
+        "Office": "ATTORNEY GENERAL",
+        "party": "REP"
+      },
+      {
+        "name": "ROBERT COWBURN",
+        "District": "Statewide",
+        "Office": "ATTORNEY GENERAL",
+        "party": "LIB"
+      },
+      {
+        "name": "RICHARD L WEISS",
+        "District": "Statewide",
+        "Office": "ATTORNEY GENERAL",
+        "party": "GRN"
+      },
+      {
+        "name": "JUSTIN L MAGILL",
+        "District": "Statewide",
+        "Office": "ATTORNEY GENERAL",
+        "party": "CST"
+      },
+      {
+        "name": "ERIC L SETTLE",
+        "District": "Statewide",
+        "Office": "ATTORNEY GENERAL",
+        "party": "FWD"
+      }
+    ]
+  },
+  "AUDITOR GENERAL": {
+    "": [
+      {
+        "name": "MALCOLM KENYATTA",
+        "District": "Statewide",
+        "Office": "AUDITOR GENERAL",
+        "party": "DEM"
+      },
+      {
+        "name": "TIM DEFOOR",
+        "District": "Statewide",
+        "Office": "AUDITOR GENERAL",
+        "party": "REP"
+      },
+      {
+        "name": "REECE SMITH",
+        "District": "Statewide",
+        "Office": "AUDITOR GENERAL",
+        "party": "LIB"
+      },
+      {
+        "name": "ERIC K ANTON",
+        "District": "Statewide",
+        "Office": "AUDITOR GENERAL",
+        "party": "ASP"
+      },
+      {
+        "name": "BOB GOODRICH",
+        "District": "Statewide",
+        "Office": "AUDITOR GENERAL",
+        "party": "CST"
+      }
+    ]
+  },
+  "PRESIDENT OF THE UNITED STATES": {
+    "": [
+      {
+        "name": "KAMALA D HARRIS",
+        "District": "Statewide",
+        "Office": "PRESIDENT OF THE UNITED STATES",
+        "party": "DEM"
+      },
+      {
+        "name": "DONALD J TRUMP",
+        "District": "Statewide",
+        "Office": "PRESIDENT OF THE UNITED STATES",
+        "party": "REP"
+      },
+      {
+        "name": "CHASE OLIVER",
+        "District": "Statewide",
+        "Office": "PRESIDENT OF THE UNITED STATES",
+        "party": "LIB"
+      },
+      {
+        "name": "JILL STEIN",
+        "District": "Statewide",
+        "Office": "PRESIDENT OF THE UNITED STATES",
+        "party": "GRN"
+      }
+    ]
+  },
+  "US House": {
+    "10": [
+      {
+        "name": "JANELLE STELSON",
+        "District": "10th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "SCOTT PERRY",
+        "District": "10th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "11": [
+      {
+        "name": "JIM ATKINSON",
+        "District": "11th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "LLOYD K SMUCKER",
+        "District": "11th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "12": [
+      {
+        "name": "SUMMER LEE",
+        "District": "12th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "JAMES HAYES",
+        "District": "12th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "13": [
+      {
+        "name": "BETH FARNHAM",
+        "District": "13th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "JOHN JOYCE",
+        "District": "13th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "14": [
+      {
+        "name": "CHRIS DZIADOS",
+        "District": "14th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "GUY RESCHENTHALER",
+        "District": "14th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "15": [
+      {
+        "name": "ZACH WOMER",
+        "District": "15th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "GLENN GT THOMPSON",
+        "District": "15th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "16": [
+      {
+        "name": "PRESTON NOURI",
+        "District": "16th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "MIKE KELLY",
+        "District": "16th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "17": [
+      {
+        "name": "CHRIS DELUZIO",
+        "District": "17th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "ROB MERCURI",
+        "District": "17th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "1": [
+      {
+        "name": "ASHLEY EHASZ",
+        "District": "1st Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "BRIAN FITZPATRICK",
+        "District": "1st Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "2": [
+      {
+        "name": "BRENDAN F BOYLE",
+        "District": "2nd Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "AARON BASHIR",
+        "District": "2nd Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "3": [
+      {
+        "name": "DWIGHT EVANS",
+        "District": "3rd Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      }
+    ],
+    "4": [
+      {
+        "name": "MADELEINE DEAN",
+        "District": "4th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "DAVID WINKLER",
+        "District": "4th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "5": [
+      {
+        "name": "MARY GAY SCANLON",
+        "District": "5th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "ALFEIA GOODWIN",
+        "District": "5th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "6": [
+      {
+        "name": "CHRISSY HOULAHAN",
+        "District": "6th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "NEIL YOUNG",
+        "District": "6th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "7": [
+      {
+        "name": "SUSAN WILD",
+        "District": "7th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "RYAN E MACKENZIE",
+        "District": "7th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "8": [
+      {
+        "name": "MATT CARTWRIGHT",
+        "District": "8th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "ROB BRESNAHAN JR",
+        "District": "8th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ],
+    "9": [
+      {
+        "name": "AMANDA WALDMAN",
+        "District": "9th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "DEM"
+      },
+      {
+        "name": "DAN MEUSER",
+        "District": "9th Congressional District",
+        "Office": "REPRESENTATIVE IN CONGRESS",
+        "party": "REP"
+      }
+    ]
+  },
+  "State House": {
+    "100": [
+      {
+        "name": "BRYAN D CUTLER",
+        "District": "100th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "101": [
+      {
+        "name": "JOHN SCHLEGEL",
+        "District": "101st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "102": [
+      {
+        "name": "RUSS DIAMOND",
+        "District": "102nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "103": [
+      {
+        "name": "NATE DAVIDSON",
+        "District": "103rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "CINDI WARD",
+        "District": "103rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "104": [
+      {
+        "name": "DAVE MADSEN",
+        "District": "104th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "105": [
+      {
+        "name": "JUSTIN C FLEMING",
+        "District": "105th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "106": [
+      {
+        "name": "ANJU SINGH",
+        "District": "106th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "TOM MEHAFFIE",
+        "District": "106th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "107": [
+      {
+        "name": "JOANNE STEHR",
+        "District": "107th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "108": [
+      {
+        "name": "MICHAEL STENDER",
+        "District": "108th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "109": [
+      {
+        "name": "NICK MCGAW",
+        "District": "109th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "ROBERT LEADBETER",
+        "District": "109th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "10": [
+      {
+        "name": "AMEN BROWN",
+        "District": "10th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "110": [
+      {
+        "name": "TINA PICKETT",
+        "District": "110th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "111": [
+      {
+        "name": "JONATHAN FRITZ",
+        "District": "111th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "112": [
+      {
+        "name": "KYLE J MULLINS",
+        "District": "112th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "113": [
+      {
+        "name": "KYLE T DONAHUE",
+        "District": "113th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "114": [
+      {
+        "name": "BRIDGET MALLOY KOSIEROWSKI",
+        "District": "114th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "115": [
+      {
+        "name": "MAUREEN E MADDEN",
+        "District": "115th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MATT LONG",
+        "District": "115th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "116": [
+      {
+        "name": "DEBORAH ADOFF",
+        "District": "116th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "DANE WATRO",
+        "District": "116th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "117": [
+      {
+        "name": "JAMIE WALSH",
+        "District": "117th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "118": [
+      {
+        "name": "JIM HADDOCK",
+        "District": "118th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MCKAYLA KATHIO",
+        "District": "118th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "119": [
+      {
+        "name": "MEGAN KOCHER",
+        "District": "119th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "ALEC J RYNCAVAGE",
+        "District": "119th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "11": [
+      {
+        "name": "MARCI MUSTELLO",
+        "District": "11th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      },
+      {
+        "name": "JUSTIN KONCHAR",
+        "District": "11th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "LIB"
+      }
+    ],
+    "120": [
+      {
+        "name": "FERN LEARD",
+        "District": "120th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "BRENDA PUGH",
+        "District": "120th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "121": [
+      {
+        "name": "EDDIE DAY PASHINSKI",
+        "District": "121st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "DINO DISLER",
+        "District": "121st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "122": [
+      {
+        "name": "DOYLE HEFFLEY",
+        "District": "122nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "123": [
+      {
+        "name": "MICHAEL ZVALAREN",
+        "District": "123rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "TIM TWARDZIK",
+        "District": "123rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "124": [
+      {
+        "name": "TINA BURNS",
+        "District": "124th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JAMIE BARTON",
+        "District": "124th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "125": [
+      {
+        "name": "GENE STILP",
+        "District": "125th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JOE KERWIN",
+        "District": "125th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "126": [
+      {
+        "name": "JACKLYN RUSNOCK",
+        "District": "126th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JAMES OSWALD",
+        "District": "126th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "127": [
+      {
+        "name": "MANNY GUZMAN",
+        "District": "127th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "128": [
+      {
+        "name": "MARK M GILLEN",
+        "District": "128th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "129": [
+      {
+        "name": "JOHANNY CEPEDA FREYTIZ",
+        "District": "129th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "SUSAN LARKIN",
+        "District": "129th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "12": [
+      {
+        "name": "ROBERT VIGUE",
+        "District": "12th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "STEPHENIE SCIALABBA",
+        "District": "12th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "130": [
+      {
+        "name": "RAYNE REITNAUER",
+        "District": "130th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "DAVID M MALONEY",
+        "District": "130th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "131": [
+      {
+        "name": "MERIAM SABIH",
+        "District": "131st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MILOU MACKENZIE",
+        "District": "131st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "132": [
+      {
+        "name": "MIKE SCHLOSSBERG",
+        "District": "132nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "133": [
+      {
+        "name": "JEANNE M MCNEILL",
+        "District": "133rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "134": [
+      {
+        "name": "PETER SCHWEYER",
+        "District": "134th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "135": [
+      {
+        "name": "STEVE SAMUELSON",
+        "District": "135th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "136": [
+      {
+        "name": "ROBERT FREEMAN",
+        "District": "136th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "137": [
+      {
+        "name": "ANNA THOMAS",
+        "District": "137th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JOE EMRICK",
+        "District": "137th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "138": [
+      {
+        "name": "JARED BITTING",
+        "District": "138th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "ANN FLOOD",
+        "District": "138th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "139": [
+      {
+        "name": "ROBIN SCHOOLEY SKIBBER",
+        "District": "139th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JEFF OLSOMMER",
+        "District": "139th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "13": [
+      {
+        "name": "CRISTIAN LUNA",
+        "District": "13th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JOHN LAWRENCE",
+        "District": "13th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "140": [
+      {
+        "name": "JIM PROKOPIAK",
+        "District": "140th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "CANDACE CABANAS",
+        "District": "140th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "141": [
+      {
+        "name": "TINA DAVIS",
+        "District": "141st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "NOAH BOYD",
+        "District": "141st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "142": [
+      {
+        "name": "ANNA PAYNE",
+        "District": "142nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JOE HOGAN",
+        "District": "142nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "143": [
+      {
+        "name": "ELEANOR BRESLIN",
+        "District": "143rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "SHELBY LABS",
+        "District": "143rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "144": [
+      {
+        "name": "BRIAN MUNROE",
+        "District": "144th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "DANIEL J MCPHILLIPS",
+        "District": "144th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "145": [
+      {
+        "name": "VERA COLE",
+        "District": "145th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "CRAIG STAATS",
+        "District": "145th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "146": [
+      {
+        "name": "JOE CIRESI",
+        "District": "146th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MICHAEL J MCCLOSKEY III",
+        "District": "146th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "147": [
+      {
+        "name": "ALBERT LEACH",
+        "District": "147th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "DONNA M SCHEUREN",
+        "District": "147th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "148": [
+      {
+        "name": "MARY JO DALEY",
+        "District": "148th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "149": [
+      {
+        "name": "TIM BRIGGS",
+        "District": "149th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "14": [
+      {
+        "name": "KENYA JOHNS",
+        "District": "14th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "ROMAN KOZAK",
+        "District": "14th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "150": [
+      {
+        "name": "JOE WEBSTER",
+        "District": "150th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "SIMONE COLLINS",
+        "District": "150th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "151": [
+      {
+        "name": "MELISSA CERRATO",
+        "District": "151st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "ALLEN ARTHUR ANDERSON",
+        "District": "151st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "152": [
+      {
+        "name": "NANCY GUENST",
+        "District": "152nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "TIM BERTMAN",
+        "District": "152nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "153": [
+      {
+        "name": "BEN SANCHEZ",
+        "District": "153rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JOSEPH J ROONEY",
+        "District": "153rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "154": [
+      {
+        "name": "NAPOLEON NELSON",
+        "District": "154th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "THOM ESTILOW",
+        "District": "154th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "155": [
+      {
+        "name": "DANIELLE FRIEL OTTEN",
+        "District": "155th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "RODNEY SIMON",
+        "District": "155th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "156": [
+      {
+        "name": "CHRIS PIELLI",
+        "District": "156th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "KRIS R VOLLRATH",
+        "District": "156th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "157": [
+      {
+        "name": "MELISSA SHUSTERMAN",
+        "District": "157th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "REGINA MAURO",
+        "District": "157th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "158": [
+      {
+        "name": "CHRISTINA D SAPPEY",
+        "District": "158th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "TINA AYALA",
+        "District": "158th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "159": [
+      {
+        "name": "CAROL KAZEEM",
+        "District": "159th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "15": [
+      {
+        "name": "ASHLEE CAUL",
+        "District": "15th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JOSHUA D KAIL",
+        "District": "15th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "160": [
+      {
+        "name": "ELIZABETH R MORO",
+        "District": "160th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "CRAIG WILLIAMS",
+        "District": "160th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "161": [
+      {
+        "name": "LEANNE KRUEGER",
+        "District": "161st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JOHN MANCINELLI JR",
+        "District": "161st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "162": [
+      {
+        "name": "DAVE DELLOSO",
+        "District": "162nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "GABRIELLA MENDEZ",
+        "District": "162nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "163": [
+      {
+        "name": "HEATHER BOYD",
+        "District": "163rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JEFFREY O JONES",
+        "District": "163rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "164": [
+      {
+        "name": "GINA H CURRY",
+        "District": "164th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "165": [
+      {
+        "name": "JENNIFER O'MARA",
+        "District": "165th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "LIZ PIAZZA",
+        "District": "165th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "166": [
+      {
+        "name": "GREG VITALI",
+        "District": "166th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "KAY DUGERY",
+        "District": "166th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "167": [
+      {
+        "name": "KRISTINE HOWARD",
+        "District": "167th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MELISSA DICRANIAN",
+        "District": "167th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "168": [
+      {
+        "name": "LISA A BOROWSKI",
+        "District": "168th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "KATHRYN BUCKLEY",
+        "District": "168th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "169": [
+      {
+        "name": "KATE A KLUNK",
+        "District": "169th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "16": [
+      {
+        "name": "ROBERT F MATZIE",
+        "District": "16th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MICHAEL J PERICH",
+        "District": "16th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "170": [
+      {
+        "name": "MARTINA WHITE",
+        "District": "170th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "171": [
+      {
+        "name": "KERRY A BENNINGHOFF",
+        "District": "171st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "172": [
+      {
+        "name": "SEAN DOUGHERTY",
+        "District": "172nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "AIZAZ GILL",
+        "District": "172nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "173": [
+      {
+        "name": "PAT GALLAGHER",
+        "District": "173rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "174": [
+      {
+        "name": "ED NEILSON",
+        "District": "174th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "175": [
+      {
+        "name": "MARYLOUISE ISAACSON",
+        "District": "175th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "176": [
+      {
+        "name": "HOPE CHRISTMAN",
+        "District": "176th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JACK RADER",
+        "District": "176th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "177": [
+      {
+        "name": "JOE HOHENSTEIN",
+        "District": "177th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "178": [
+      {
+        "name": "PAUL LANG JR",
+        "District": "178th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "KRISTIN MARCELL",
+        "District": "178th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "179": [
+      {
+        "name": "JASON DAWKINS",
+        "District": "179th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "17": [
+      {
+        "name": "TIM BONNER",
+        "District": "17th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "180": [
+      {
+        "name": "JOSE A GIRAL",
+        "District": "180th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "181": [
+      {
+        "name": "MALCOLM KENYATTA",
+        "District": "181st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "182": [
+      {
+        "name": "BEN WAXMAN",
+        "District": "182nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "183": [
+      {
+        "name": "JOE LENZI",
+        "District": "183rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "ZACH MAKO",
+        "District": "183rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "184": [
+      {
+        "name": "ELIZABETH FIEDLER",
+        "District": "184th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "185": [
+      {
+        "name": "REGINA G YOUNG",
+        "District": "185th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "186": [
+      {
+        "name": "JORDAN A HARRIS",
+        "District": "186th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "187": [
+      {
+        "name": "STEFANIE RAFES",
+        "District": "187th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "GARY DAY",
+        "District": "187th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "188": [
+      {
+        "name": "RICK KRAJEWSKI",
+        "District": "188th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "189": [
+      {
+        "name": "TARAH PROBST",
+        "District": "189th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "LISA VANWHY",
+        "District": "189th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "18": [
+      {
+        "name": "ANAND PATEL",
+        "District": "18th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "KATHLEEN K C TOMLINSON",
+        "District": "18th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "190": [
+      {
+        "name": "RONI GREEN",
+        "District": "190th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "191": [
+      {
+        "name": "JOANNA E MCCLINTON",
+        "District": "191st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "192": [
+      {
+        "name": "MORGAN CEPHAS",
+        "District": "192nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "193": [
+      {
+        "name": "TORREN ECKER",
+        "District": "193rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "194": [
+      {
+        "name": "TARIK KHAN",
+        "District": "194th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "195": [
+      {
+        "name": "KEITH S HARRIS",
+        "District": "195th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "196": [
+      {
+        "name": "SETH M GROVE",
+        "District": "196th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "197": [
+      {
+        "name": "DANILO BURGOS",
+        "District": "197th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "198": [
+      {
+        "name": "DARISHA K PARKER",
+        "District": "198th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "199": [
+      {
+        "name": "RICK CHRISTIE",
+        "District": "199th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "BARB GLEIM",
+        "District": "199th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "19": [
+      {
+        "name": "AERION ANDREW ABNEY",
+        "District": "19th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "1": [
+      {
+        "name": "PATRICK J HARKINS",
+        "District": "1st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "200": [
+      {
+        "name": "CHRIS RABB",
+        "District": "200th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "201": [
+      {
+        "name": "ANDRE D CARROLL",
+        "District": "201st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "202": [
+      {
+        "name": "JARED SOLOMON",
+        "District": "202nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "203": [
+      {
+        "name": "ANTHONY BELLMON",
+        "District": "203rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "20": [
+      {
+        "name": "EMILY KINKEAD",
+        "District": "20th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MATT KRUTH",
+        "District": "20th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "21": [
+      {
+        "name": "LINDSAY POWELL",
+        "District": "21st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "22": [
+      {
+        "name": "JOSHUA M SIEGEL",
+        "District": "22nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "23": [
+      {
+        "name": "DAN FRANKEL",
+        "District": "23rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "24": [
+      {
+        "name": "LATASHA D MAYES",
+        "District": "24th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "25": [
+      {
+        "name": "BRANDON J MARKOSEK",
+        "District": "25th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JOHN RITTER",
+        "District": "25th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "26": [
+      {
+        "name": "PAUL FRIEL",
+        "District": "26th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "SHAWN BLICKLEY",
+        "District": "26th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "27": [
+      {
+        "name": "DANIEL J DEASY",
+        "District": "27th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "28": [
+      {
+        "name": "BILL PETULLA",
+        "District": "28th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JEREMY SHAFFER",
+        "District": "28th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "29": [
+      {
+        "name": "TIM BRENNAN",
+        "District": "29th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "STEVE MEKANIK",
+        "District": "29th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      },
+      {
+        "name": "ROB RONKY",
+        "District": "29th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "LIB"
+      }
+    ],
+    "2": [
+      {
+        "name": "BOB MERSKI",
+        "District": "2nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MATT STRUPCZEWSKI",
+        "District": "2nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "30": [
+      {
+        "name": "ARVIND VENKAT",
+        "District": "30th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "NATHAN WOLFE",
+        "District": "30th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      },
+      {
+        "name": "WILLIAM JOHNSON BAIERL",
+        "District": "30th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "LIB"
+      }
+    ],
+    "31": [
+      {
+        "name": "PERRY WARREN",
+        "District": "31st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "BERNIE SAUER",
+        "District": "31st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "32": [
+      {
+        "name": "JOE MCANDREW",
+        "District": "32nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "D/R"
+      }
+    ],
+    "33": [
+      {
+        "name": "MANDY STEELE",
+        "District": "33rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "GARY LOTZ",
+        "District": "33rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "34": [
+      {
+        "name": "ABIGAIL SALISBURY",
+        "District": "34th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "35": [
+      {
+        "name": "MATTHEW R GERGELY",
+        "District": "35th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "36": [
+      {
+        "name": "JESSICA BENHAM",
+        "District": "36th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "ROSS SYLVESTER",
+        "District": "36th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "LIB"
+      }
+    ],
+    "37": [
+      {
+        "name": "JOHN GEORGE",
+        "District": "37th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MINDY FEE",
+        "District": "37th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "38": [
+      {
+        "name": "JOHN INGLIS",
+        "District": "38th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "STONE SOBIERALSKI",
+        "District": "38th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "39": [
+      {
+        "name": "ANGELA GIROL",
+        "District": "39th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "ANDREW KUZMA",
+        "District": "39th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "3": [
+      {
+        "name": "RYAN BIZZARRO",
+        "District": "3rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MICAH GORING",
+        "District": "3rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "40": [
+      {
+        "name": "PETER KOHNKE",
+        "District": "40th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "NATALIE MIHALEK",
+        "District": "40th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "41": [
+      {
+        "name": "BRAD CHAMBERS",
+        "District": "41st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "BRETT R MILLER",
+        "District": "41st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "42": [
+      {
+        "name": "DAN MILLER",
+        "District": "42nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JOSEPH LECKENBY",
+        "District": "42nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "43": [
+      {
+        "name": "KEITH J GREINER",
+        "District": "43rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "44": [
+      {
+        "name": "HADLEY HAAS",
+        "District": "44th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "VALERIE GAYDOS",
+        "District": "44th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "45": [
+      {
+        "name": "ANITA ASTORINO KULIK",
+        "District": "45th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JAMES JULIUS",
+        "District": "45th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "46": [
+      {
+        "name": "ALEX TAYLOR",
+        "District": "46th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JASON ORTITAY",
+        "District": "46th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "47": [
+      {
+        "name": "EDWARD RITTER",
+        "District": "47th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JOE D'ORSIE",
+        "District": "47th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "48": [
+      {
+        "name": "TIM O'NEAL",
+        "District": "48th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "49": [
+      {
+        "name": "IZZY SMITH-WADE-EL",
+        "District": "49th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "4": [
+      {
+        "name": "JOE CANCILLA",
+        "District": "4th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JAKE BANTA",
+        "District": "4th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "50": [
+      {
+        "name": "DREW ROSS MANKO",
+        "District": "50th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "BUD COOK",
+        "District": "50th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "51": [
+      {
+        "name": "GEORGE HUCK RATTAY",
+        "District": "51st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "CHARITY GRIMM KRUPA",
+        "District": "51st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "52": [
+      {
+        "name": "RYAN WARNER",
+        "District": "52nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "53": [
+      {
+        "name": "STEVE MALAGARI",
+        "District": "53rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "CHERYL BONAVITA",
+        "District": "53rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "54": [
+      {
+        "name": "GREG SCOTT",
+        "District": "54th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MARTIN DICKERSON",
+        "District": "54th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "55": [
+      {
+        "name": "DAVON MAGWOOD",
+        "District": "55th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JILL COOPER",
+        "District": "55th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "56": [
+      {
+        "name": "BRIAN RASEL",
+        "District": "56th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "57": [
+      {
+        "name": "ERIC NELSON",
+        "District": "57th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "58": [
+      {
+        "name": "CHERRI ROGERS",
+        "District": "58th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "ERIC DAVANZO",
+        "District": "58th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "59": [
+      {
+        "name": "MARGIE ZELENAK",
+        "District": "59th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "LESLIE ROSSI",
+        "District": "59th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "5": [
+      {
+        "name": "HEATHER HANNA",
+        "District": "5th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "ERIC J WEAKNECHT",
+        "District": "5th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "60": [
+      {
+        "name": "ABBY MAJOR",
+        "District": "60th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "61": [
+      {
+        "name": "LIZ HANBIDGE",
+        "District": "61st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MICHELLE RUPP",
+        "District": "61st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "62": [
+      {
+        "name": "JIM STRUZZI",
+        "District": "62nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "63": [
+      {
+        "name": "PAT RITCHIE",
+        "District": "63rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JOSH BASHLINE",
+        "District": "63rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "64": [
+      {
+        "name": "R LEE JAMES",
+        "District": "64th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      },
+      {
+        "name": "RON JOHNSON",
+        "District": "64th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "CST"
+      }
+    ],
+    "65": [
+      {
+        "name": "ERIN WILLMAN",
+        "District": "65th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "KATHY L RAPP",
+        "District": "65th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "66": [
+      {
+        "name": "BRIAN SMITH",
+        "District": "66th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "67": [
+      {
+        "name": "RAJEEV PRADHAN",
+        "District": "67th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MARTIN T CAUSER",
+        "District": "67th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "68": [
+      {
+        "name": "CLINT OWLETT",
+        "District": "68th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "69": [
+      {
+        "name": "CARL WALKER METZGAR",
+        "District": "69th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "6": [
+      {
+        "name": "MICHAEL WALKER",
+        "District": "6th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "BRAD ROAE",
+        "District": "6th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "70": [
+      {
+        "name": "MATT BRADFORD",
+        "District": "70th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "ED MOYE",
+        "District": "70th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "71": [
+      {
+        "name": "JIM RIGBY",
+        "District": "71st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "72": [
+      {
+        "name": "FRANK BURNS",
+        "District": "72nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "AMY BRADLEY",
+        "District": "72nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "73": [
+      {
+        "name": "DALLAS KEPHART",
+        "District": "73rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "74": [
+      {
+        "name": "DAN WILLIAMS",
+        "District": "74th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "DALE HENSEL",
+        "District": "74th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "75": [
+      {
+        "name": "MIKE ARMANINI",
+        "District": "75th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "76": [
+      {
+        "name": "DENISE MARIS",
+        "District": "76th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "STEPHANIE BOROWICZ",
+        "District": "76th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "77": [
+      {
+        "name": "H SCOTT CONKLIN",
+        "District": "77th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MARIE LIBRIZZI",
+        "District": "77th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "78": [
+      {
+        "name": "JESSE TOPPER",
+        "District": "78th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "79": [
+      {
+        "name": "LOU SCHMITT",
+        "District": "79th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "7": [
+      {
+        "name": "PARKE WENTLING",
+        "District": "7th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "80": [
+      {
+        "name": "SCOTT BARGER",
+        "District": "80th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "81": [
+      {
+        "name": "SEAN STEEG",
+        "District": "81st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "RICH IRVIN",
+        "District": "81st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "82": [
+      {
+        "name": "PAUL TAKAC",
+        "District": "82nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "THERESE HOLLEN",
+        "District": "82nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "83": [
+      {
+        "name": "JAMIE FLICK",
+        "District": "83rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "84": [
+      {
+        "name": "JOE HAMM",
+        "District": "84th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "85": [
+      {
+        "name": "NICK JACOBSON",
+        "District": "85th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "DAVID H ROWE",
+        "District": "85th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "86": [
+      {
+        "name": "PERRY A STAMBAUGH",
+        "District": "86th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "87": [
+      {
+        "name": "JOHN FLOOD",
+        "District": "87th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "THOMAS KUTZ",
+        "District": "87th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "88": [
+      {
+        "name": "SARA AGERTON",
+        "District": "88th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "SHERYL DELOZIER",
+        "District": "88th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "89": [
+      {
+        "name": "NOAH KREISCHER",
+        "District": "89th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "ROB KAUFFMAN",
+        "District": "89th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "8": [
+      {
+        "name": "AARON BERNSTINE",
+        "District": "8th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "90": [
+      {
+        "name": "CHAD GERALD REICHARD",
+        "District": "90th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "91": [
+      {
+        "name": "DAN MOUL",
+        "District": "91st Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "92": [
+      {
+        "name": "DAN ALMONEY",
+        "District": "92nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MARC ANDERSON",
+        "District": "92nd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "93": [
+      {
+        "name": "MIKE JONES",
+        "District": "93rd Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "94": [
+      {
+        "name": "WENDY FINK",
+        "District": "94th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "95": [
+      {
+        "name": "CAROL HILL-EVANS",
+        "District": "95th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JASMINE RIVERA",
+        "District": "95th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "96": [
+      {
+        "name": "NIKKI RIVERA",
+        "District": "96th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "ERIC BEEZER",
+        "District": "96th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "97": [
+      {
+        "name": "BOB RUDY",
+        "District": "97th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "STEVE MENTZER",
+        "District": "97th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "98": [
+      {
+        "name": "LYNN MCCLEARY",
+        "District": "98th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "TOM JONES",
+        "District": "98th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "99": [
+      {
+        "name": "DAVE ZIMMERMAN",
+        "District": "99th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "9": [
+      {
+        "name": "MARLA BROWN",
+        "District": "9th Legislative District",
+        "Office": "REPRESENTATIVE IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ]
+  },
+  "State Senate": {
+    "11": [
+      {
+        "name": "JUDY SCHWANK",
+        "District": "11th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "LISHA L ROWE",
+        "District": "11th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "13": [
+      {
+        "name": "TREX PROFFITT",
+        "District": "13th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "SCOTT MARTIN",
+        "District": "13th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "15": [
+      {
+        "name": "PATTY KIM",
+        "District": "15th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "NICK DIFRANCESCO",
+        "District": "15th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "17": [
+      {
+        "name": "AMANDA M CAPPELLETTI",
+        "District": "17th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "GREG HARRIS",
+        "District": "17th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "19": [
+      {
+        "name": "CAROLYN COMITTA",
+        "District": "19th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "DUANE MILNE",
+        "District": "19th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "1": [
+      {
+        "name": "NIKIL SAVAL",
+        "District": "1st Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "21": [
+      {
+        "name": "SCOTT E HUTCHINSON",
+        "District": "21st Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "23": [
+      {
+        "name": "KIM PITCHER",
+        "District": "23rd Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "GENE YAW",
+        "District": "23rd Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "25": [
+      {
+        "name": "WILLIAM MCGILL",
+        "District": "25th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "CRIS DUSH",
+        "District": "25th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "27": [
+      {
+        "name": "PATRICIA LAWTON",
+        "District": "27th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "LYNDA J SCHLEGEL CULVER",
+        "District": "27th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "29": [
+      {
+        "name": "JOHN ZUGAREK",
+        "District": "29th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "DAVE ARGALL",
+        "District": "29th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      },
+      {
+        "name": "TIMOTHY HENNING",
+        "District": "29th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "LIB"
+      }
+    ],
+    "31": [
+      {
+        "name": "MARK TEMONS",
+        "District": "31st Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "DAWN KEEFER",
+        "District": "31st Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "33": [
+      {
+        "name": "CAMERON SCHROY",
+        "District": "33rd Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "DOUG MASTRIANO",
+        "District": "33rd Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "35": [
+      {
+        "name": "WAYNE LANGERHOLC JR",
+        "District": "35th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "37": [
+      {
+        "name": "NICOLE RUSCITTO",
+        "District": "37th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "DEVLIN ROBINSON",
+        "District": "37th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "39": [
+      {
+        "name": "KIM WARD",
+        "District": "39th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "3": [
+      {
+        "name": "SHARIF STREET",
+        "District": "3rd Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "41": [
+      {
+        "name": "JOE PITTMAN",
+        "District": "41st Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "43": [
+      {
+        "name": "JAY COSTA JR",
+        "District": "43rd Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "45": [
+      {
+        "name": "NICK PISCIOTTANO",
+        "District": "45th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JEN DINTINI",
+        "District": "45th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "47": [
+      {
+        "name": "KATE LENNEN",
+        "District": "47th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "ELDER VOGEL JR",
+        "District": "47th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "49": [
+      {
+        "name": "JIM WERTZ",
+        "District": "49th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "DAN LAUGHLIN",
+        "District": "49th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "5": [
+      {
+        "name": "JIMMY DILLON",
+        "District": "5th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "JOE PICOZZI",
+        "District": "5th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ],
+    "7": [
+      {
+        "name": "VINCENT HUGHES",
+        "District": "7th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      }
+    ],
+    "9": [
+      {
+        "name": "JOHN I KANE",
+        "District": "9th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "DEM"
+      },
+      {
+        "name": "MIKE WOODIN",
+        "District": "9th Senatorial District",
+        "Office": "SENATOR IN THE GENERAL ASSEMBLY",
+        "party": "REP"
+      }
+    ]
+  },
+  "STATE TREASURER": {
+    "": [
+      {
+        "name": "ERIN MCCLELLAND",
+        "District": "Statewide",
+        "Office": "STATE TREASURER",
+        "party": "DEM"
+      },
+      {
+        "name": "STACY GARRITY",
+        "District": "Statewide",
+        "Office": "STATE TREASURER",
+        "party": "REP"
+      },
+      {
+        "name": "NICKOLAS CIESIELSKI",
+        "District": "Statewide",
+        "Office": "STATE TREASURER",
+        "party": "LIB"
+      },
+      {
+        "name": "TROY BOWMAN",
+        "District": "Statewide",
+        "Office": "STATE TREASURER",
+        "party": "CST"
+      },
+      {
+        "name": "CHRIS FOSTER",
+        "District": "Statewide",
+        "Office": "STATE TREASURER",
+        "party": "FWD"
+      }
+    ]
+  },
+  "US Senate": {
+    "": [
+      {
+        "name": "ROBERT P CASEY JR",
+        "District": "Statewide",
+        "Office": "UNITED STATES SENATOR",
+        "party": "DEM"
+      },
+      {
+        "name": "DAVE MCCORMICK",
+        "District": "Statewide",
+        "Office": "UNITED STATES SENATOR",
+        "party": "REP"
+      },
+      {
+        "name": "JOHN C THOMAS",
+        "District": "Statewide",
+        "Office": "UNITED STATES SENATOR",
+        "party": "LIB"
+      },
+      {
+        "name": "LEILA HAZOU",
+        "District": "Statewide",
+        "Office": "UNITED STATES SENATOR",
+        "party": "GRN"
+      },
+      {
+        "name": "MARTY SELKER",
+        "District": "Statewide",
+        "Office": "UNITED STATES SENATOR",
+        "party": "CST"
+      }
+    ]
+  }
+}

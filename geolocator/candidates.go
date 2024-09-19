@@ -18,7 +18,7 @@ var (
 	CanPASenate map[string][]Candidate
 )
 
-//go:embed embeds/candidates.json
+//go:embed embeds/candidates-2024.json
 var canData []byte
 
 func init() {
