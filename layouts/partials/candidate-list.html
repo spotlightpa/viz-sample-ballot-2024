@@ -17,7 +17,7 @@
     <h4 class="mt-2 font-semibold uppercase text-g-9">Candidates</h4>
     <ul>
       <template
-        x-for="candidate of shuffled($el.dataset.kind)"
+        x-for="candidate of lookup($el.dataset.kind)"
         data-kind="{{ .kind }}"
         key="name"
       >
