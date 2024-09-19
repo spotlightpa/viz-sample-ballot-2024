@@ -4,7 +4,7 @@ import (
 	"os"
 
 	"github.com/carlmjohnson/exitcode"
-	"github.com/spotlightpa/viz-redistricting-2020/geolocator"
+	"github.com/spotlightpa/viz-sample-ballot-2024/geolocator"
 )
 
 func main() {
