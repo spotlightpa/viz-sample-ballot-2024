@@ -1,0 +1,40 @@
+{{ $cardClass := `rounded border border-g-5 p-3` }}
+{{ $hedClass := `mt-2 uppercase font-semibold text-g-7 text-xl` }}
+
+
+<div class="{{ $cardClass }}">
+  <h3 class="{{ $hedClass }}">
+    {{ .title }}{{ if .showDistrict }},{{ end }}
+    {{ if .showDistrict }}
+      District
+      <span
+        x-text="lookup($el.dataset.lookup)"
+        data-lookup="{{ .showDistrict }}"
+      ></span>
+    {{ end }}
+  </h3>
+  <div>
+    <h4 class="mt-2 font-semibold uppercase text-g-9">Candidates</h4>
+    <ul>
+      <template
+        x-for="candidate of shuffled($el.dataset.kind)"
+        data-kind="{{ .kind }}"
+        key="name"
+      >
+        <li>
+          <span
+            :style="{ backgroundColor: $partyColor(candidate.party)}"
+            class="mb-px inline-block h-3 w-3 rounded-full"
+          ></span>
+          <span class="font-bold" x-text="candidate.name"></span>
+          (<span x-text="$party(candidate.party)"></span>)
+        </li>
+      </template>
+    </ul>
+    <p
+      class="italic"
+      x-text="lookup($el.dataset.kind).length? '': 'No candidates found.'"
+      data-kind="{{ .kind }}"
+    ></p>
+  </div>
+</div>

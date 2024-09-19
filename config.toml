@@ -15,6 +15,9 @@ buildFuture = true
 
 googleAnalytics = "UA-141126362-3"
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
 api-base-url = ""
 
