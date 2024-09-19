@@ -105,6 +105,10 @@ Alpine.data("app", () => {
       if (this.isLoading) {
         return;
       }
+      if (!this.address) {
+        this.error = new Error("Please enter address.");
+        return;
+      }
       this.isLoading = true;
 
       return callAPI("/api/candidates-by-address", {
