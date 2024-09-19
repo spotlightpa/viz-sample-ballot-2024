@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/paulmach/orb"
-	"github.com/spotlightpa/viz-redistricting-2020/geolocator"
+	"github.com/spotlightpa/viz-sample-ballot-2024/geolocator"
 )
 
 func TestGetDistrict(t *testing.T) {

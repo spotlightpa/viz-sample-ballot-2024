@@ -15,7 +15,7 @@ import (
 	"github.com/carlmjohnson/versioninfo"
 	"github.com/getsentry/sentry-go"
 	sentryhttp "github.com/getsentry/sentry-go/http"
-	"github.com/spotlightpa/viz-redistricting-2020/build"
+	"github.com/spotlightpa/viz-sample-ballot-2024/build"
 )
 
 const App = "geolocator"

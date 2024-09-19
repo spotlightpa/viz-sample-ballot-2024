@@ -8,25 +8,20 @@ import (
 
 	"github.com/carlmjohnson/requests"
 	"github.com/carlmjohnson/resperr"
-	"github.com/carlmjohnson/rootdown"
+	"github.com/earthboundkid/mid"
 	"github.com/getsentry/sentry-go"
 	"github.com/paulmach/orb"
 	"github.com/rs/cors"
 )
 
 func (app *appEnv) routes() http.Handler {
-	var mw rootdown.MiddlewareStack
+	var mw mid.Stack
 	mw.Push(app.logRoute)
-	if !app.isLambda() {
-		mw.Push(cors.AllowAll().Handler)
-	}
-	var rr rootdown.Router
-	rr.Get("/api/by-location", app.getByLocation, mw...)
-	rr.Get("/api/by-address", app.getByAddress, mw...)
-	rr.Get("/api/candidates-by-location", app.getCandidatesByLocation, mw...)
-	rr.Get("/api/candidates-by-address", app.getCandidatesByAddress, mw...)
-
-	return &rr
+	mw.PushIf(!app.isLambda(), cors.AllowAll().Handler)
+	srv := http.NewServeMux()
+	srv.HandleFunc("GET /api/candidates-by-location", app.getCandidatesByLocation)
+	srv.HandleFunc("GET /api/candidates-by-address", app.getCandidatesByAddress)
+	return mw.Handler(srv)
 }
 
 func (app *appEnv) logRoute(h http.Handler) http.Handler {
@@ -74,55 +69,6 @@ func (app *appEnv) logErr(r *http.Request, err error) {
 	}
 
 	logger.Printf("[%s] %q - err: %v", r.Method, r.URL.Path, err)
-}
-
-func (app *appEnv) getByLocation(w http.ResponseWriter, r *http.Request) {
-	q := r.URL.Query()
-	lat, _ := strconv.ParseFloat(q.Get("lat"), 64)
-	long, _ := strconv.ParseFloat(q.Get("long"), 64)
-
-	w.Header().Set("Cache-Control", "public, max-age=3600, s-maxage=0")
-	app.replyJSON(http.StatusOK, w, r, NewLocationInfo(lat, long))
-}
-
-func (app *appEnv) getByAddress(w http.ResponseWriter, r *http.Request) {
-	address := r.URL.Query().Get("address")
-	if address == "" {
-		app.replyErr(w, r, resperr.New(http.StatusBadRequest, "no address"))
-		return
-	}
-	var data GoogleMapsResults
-	if err := requests.
-		New(app.googleMaps).
-		Param("address", address).
-		ToJSON(&data).
-		Fetch(r.Context()); err != nil {
-		err = resperr.WithStatusCode(err, http.StatusBadGateway)
-		app.replyErr(w, r, err)
-		return
-	}
-	if len(data.Results) < 1 {
-		app.replyErr(w, r, resperr.New(
-			http.StatusNotFound, "not found: %q", address))
-		return
-	}
-
-	result := data.Results[0]
-	long := result.Geometry.Location.Lng
-	lat := result.Geometry.Location.Lat
-
-	w.Header().Set("Cache-Control", "public, max-age=3600, s-maxage=0")
-	app.replyJSON(http.StatusOK, w, r, struct {
-		Address string  `json:"address"`
-		Lat     float64 `json:"lat"`
-		Long    float64 `json:"long"`
-		LocationInfo
-	}{
-		result.FormattedAddress,
-		lat,
-		long,
-		NewLocationInfo(lat, long),
-	})
 }
 
 type LocationInfo struct {
