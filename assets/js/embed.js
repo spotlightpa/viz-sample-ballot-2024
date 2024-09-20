@@ -3,7 +3,7 @@ import { Framer } from "js/framer/index.mjs";
 import { each, onLoad } from "./utils/dom-utils.js";
 
 onLoad(() => {
-  each("[data-spl-interactive=viz-redistricting-2020]", (el) => {
+  each("[data-spl-interactive=viz-sample-ballot-2024]", (el) => {
     // Bail if we were already attached or old JS
     if (el.shadowRoot || !("attachShadow" in el)) {
       return;
