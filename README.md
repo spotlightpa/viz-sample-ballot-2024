@@ -1,4 +1,4 @@
-## Spotlight PA District Finder
+## Spotlight PA Sample Ballot 2024
 
 ### Installation
 
