@@ -26,11 +26,7 @@ In another terminal tab/window, launch hugo:
 hugo server
 ```
 
-Open district finder in a web browser:
-
-```
-http://localhost:1313/district-finder/
-```
+Open district finder in a web browser: http://localhost:1313/
 
 ## Architecture
 
