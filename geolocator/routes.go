@@ -185,7 +185,7 @@ func NewCandiateInfo(loc LocationInfo) CandidateInfo {
 	}
 }
 
-var goodOrigin = regexp.MustCompile(`(^localhost)|(spotlightpa\.org$)`)
+var goodOrigin = regexp.MustCompile(`(^https?://localhost)|(spotlightpa\.org$)`)
 
 func (app *appEnv) getGeolocate(w http.ResponseWriter, r *http.Request) {
 	if !goodOrigin.MatchString(r.Header.Get("Origin")) {
