@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"regexp"
 	"strconv"
 
 	"github.com/carlmjohnson/requests"
@@ -21,6 +22,7 @@ func (app *appEnv) routes() http.Handler {
 	srv := http.NewServeMux()
 	srv.HandleFunc("GET /api/candidates-by-location", app.getCandidatesByLocation)
 	srv.HandleFunc("GET /api/candidates-by-address", app.getCandidatesByAddress)
+	srv.HandleFunc("GET /api/geolocate", app.getGeolocate)
 	return mw.Handler(srv)
 }
 
@@ -181,4 +183,31 @@ func NewCandiateInfo(loc LocationInfo) CandidateInfo {
 		StateSenate:     CanPASenate[loc.NewSenate],
 		StateHouse:      CanPAHouse[loc.NewHouse],
 	}
+}
+
+var goodOrigin = regexp.MustCompile(`(^localhost)|(spotlightpa\.org$)`)
+
+func (app *appEnv) getGeolocate(w http.ResponseWriter, r *http.Request) {
+	if !goodOrigin.MatchString(r.Header.Get("Origin")) {
+		app.replyErr(w, r, resperr.New(http.StatusBadRequest, "bad origin"))
+		return
+	}
+	address := r.URL.Query().Get("address")
+	if address == "" {
+		app.replyErr(w, r, resperr.New(http.StatusBadRequest, "no address"))
+		return
+	}
+	var data GoogleMapsResults
+	if err := requests.
+		New(app.googleMaps).
+		Param("address", address).
+		ToJSON(&data).
+		Fetch(r.Context()); err != nil {
+		err = resperr.WithStatusCode(err, http.StatusBadGateway)
+		app.replyErr(w, r, err)
+		return
+	}
+	w.Header().Set("Cache-Control", "public, max-age=3600, s-maxage=0")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	app.replyJSON(http.StatusOK, w, r, data)
 }
