@@ -11,4 +11,5 @@ echo "$DEPLOY_PRIME_URL" >build/url.txt
 if [[ "$CONTEXT" == "production" ]]; then
 	echo "$URL" >build/url.txt
 fi
-GOBIN=$THIS_DIR/functions go install ./cmd/...
+LDFLAGS="-linkmode external -extldflags '-static'"
+GOBIN=$THIS_DIR/functions go install -ldflags "$LDFLAGS" ./cmd/...
