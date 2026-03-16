@@ -11,8 +11,6 @@ func NewMapsClient(s string) requests.Config {
 	return func(rb *requests.Builder) {
 		rb.
 			BaseURL("https://maps.googleapis.com/maps/api/geocode/json").
-			// Limit to PA
-			Param("components", "administrative_area:PA|country:US").
 			Param("key", s)
 	}
 }

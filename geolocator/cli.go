@@ -9,10 +9,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/carlmjohnson/flagx"
 	"github.com/carlmjohnson/gateway"
 	"github.com/carlmjohnson/requests"
-	"github.com/carlmjohnson/versioninfo"
+	"github.com/earthboundkid/flagx/v2"
+	"github.com/earthboundkid/versioninfo/v2"
 	"github.com/getsentry/sentry-go"
 	sentryhttp "github.com/getsentry/sentry-go/http"
 	"github.com/spotlightpa/viz-sample-ballot-2024/build"
