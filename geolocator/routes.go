@@ -8,8 +8,8 @@ import (
 	"strconv"
 
 	"github.com/carlmjohnson/requests"
-	"github.com/carlmjohnson/resperr"
 	"github.com/earthboundkid/mid"
+	"github.com/earthboundkid/resperr/v2"
 	"github.com/getsentry/sentry-go"
 	"github.com/paulmach/orb"
 	"github.com/rs/cors"
@@ -115,7 +115,7 @@ func (app *appEnv) getCandidatesByLocation(w http.ResponseWriter, r *http.Reques
 func (app *appEnv) getCandidatesByAddress(w http.ResponseWriter, r *http.Request) {
 	address := r.URL.Query().Get("address")
 	if address == "" {
-		app.replyErr(w, r, resperr.New(http.StatusBadRequest, "no address"))
+		app.replyErr(w, r, resperr.E{S: http.StatusBadGateway, M: "no address"})
 		return
 	}
 	var data GoogleMapsResults
@@ -124,7 +124,7 @@ func (app *appEnv) getCandidatesByAddress(w http.ResponseWriter, r *http.Request
 		Param("address", address).
 		ToJSON(&data).
 		Fetch(r.Context()); err != nil {
-		err = resperr.WithStatusCode(err, http.StatusBadGateway)
+		err = resperr.E{S: http.StatusBadGateway, E: err}
 		app.replyErr(w, r, err)
 		return
 	}
@@ -189,21 +189,31 @@ var goodOrigin = regexp.MustCompile(`(^https?://localhost)|(spotlightpa\.org$)|(
 
 func (app *appEnv) getGeolocate(w http.ResponseWriter, r *http.Request) {
 	if !goodOrigin.MatchString(r.Header.Get("Origin")) {
-		app.replyErr(w, r, resperr.New(http.StatusBadRequest, "bad origin"))
+		app.replyErr(w, r, resperr.E{S: http.StatusBadGateway, M: "bad origin"})
 		return
 	}
-	address := r.URL.Query().Get("address")
-	if address == "" {
-		app.replyErr(w, r, resperr.New(http.StatusBadRequest, "no address"))
+	q := r.URL.Query()
+	address, latlng := q.Get("address"), q.Get("latlng")
+	if address == "" && latlng == "" {
+		app.replyErr(w, r, resperr.E{S: http.StatusBadGateway, M: "no address or latlng"})
 		return
 	}
+
 	var data GoogleMapsResults
-	if err := requests.
-		New(app.googleMaps).
-		Param("address", address).
+	rb := requests.New(app.googleMaps)
+	if address != "" {
+		rb.
+			// Limit to PA
+			Param("components", "administrative_area:PA|country:US").
+			Param("address", address)
+	} else {
+		rb.
+			Param("latlng", latlng)
+	}
+	if err := rb.
 		ToJSON(&data).
 		Fetch(r.Context()); err != nil {
-		err = resperr.WithStatusCode(err, http.StatusBadGateway)
+		err = resperr.E{S: http.StatusBadGateway, E: err}
 		app.replyErr(w, r, err)
 		return
 	}
